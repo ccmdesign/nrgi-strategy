@@ -1,0 +1,143 @@
+/* Adds a space between form's direct children */
+/*form * + * { margin-left: var(--s0); }*/
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input[type="text"],
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input[type="text"] {
+  line-height: 1.5; /* MAGIC NUMBER - This is used to make sure this button and input are the same height */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Adds compatibility for IE8 (pulled from Puse-CSS) */
+input:not([type]) {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Deletes the outline used by chorme on focus */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+select:focus,
+textarea:focus,
+input:not([type]):focus { outline: 0; }
+
+  /* Sets the cursor with a forbidden sign for when the input is disabled */
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="email"][disabled],
+input[type="url"][disabled],
+input[type="date"][disabled],
+input[type="month"][disabled],
+input[type="time"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="week"][disabled],
+input[type="number"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="color"][disabled],
+select[disabled],
+textarea[disabled] { 
+  cursor: not-allowed; 
+  opacity: .4;
+  pointer-events: none;
+}
+
+textarea {
+  width: 100%;
+  background-color: transparent;
+  &.no-resize-x { resize: vertical; }
+  &.no-resize   { resize: none; }
+}
+
+.select {
+  position: relative;
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    line-height: 1.5;
+  }
+
+  &::after {
+    right: 0;
+    margin-top: 1px;
+    position: absolute;
+    padding: var(--s-2);
+    pointer-events: none;
+    @include material-icons;
+  }
+}
+
+input[type="checkbox"]:after,
+input[type="radio"]:after { 
+  @include material-icons;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:after { content: "check_box_outline_blank"; }
+input[type="checkbox"]:checked:after { content: "check_box"; }
+input[type="checkbox"]:indeterminate:after { content: "indeterminate_check_box"; }
+input[type="radio"]:after { content: "radio_button_unchecked"; }
+input[type="radio"]:checked:after { content: "radio_button_checked"; }
+
+} /* Closing the @support condition */

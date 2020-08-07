@@ -1,0 +1,73 @@
+[
+  {
+    "class": "classname",
+    "heading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "subheading": "Blanditiis dicta, provident maiores sequi similique explicabo odit assumenda hic",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sed recusandae molestiae nihil! Aliquam commodi neque repellendus vel, totam adipisci accusantium quaerat culpa animi ab eum nihil suscipit nobis beatae.",
+    "author": {
+      "name": "Author name",
+      "url": "#"
+    },
+    "button": {
+      "label": "This is the label",
+      "class": ""
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "description": "Description for image"
+    }
+  },
+  {
+    "class": "",
+    "heading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "subheading": "Blanditiis dicta, provident maiores sequi similique explicabo odit assumenda hic",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sed recusandae molestiae nihil! Aliquam commodi neque repellendus.",
+    "author": {
+      "name": "Author name",
+      "url": "#"
+    },
+    "button": {
+      "label": "",
+      "class": "button--primary"
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "description": "Description for image"
+    }
+  },{
+    "class": "classname",
+    "heading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "subheading": "Blanditiis dicta, provident maiores sequi similique explicabo odit assumenda hic",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sed recusandae molestiae nihil! Aliquam commodi neque repellendus vel, totam adipisci accusantium quaerat culpa animi ab eum nihil suscipit nobis beatae.",
+    "author": {
+      "name": "Author name",
+      "url": "#"
+    },
+    "button": {
+      "label": "This is the label",
+      "class": ""
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "description": "Description for image"
+    }
+  },
+  {
+    "class": "",
+    "heading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "subheading": "Blanditiis dicta, provident maiores sequi similique explicabo odit assumenda hic",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sed recusandae molestiae nihil! Aliquam commodi neque repellendus.",
+    "author": {
+      "name": "Author name",
+      "url": "#"
+    },
+    "button": {
+      "label": "",
+      "class": "button--primary"
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "description": "Description for image"
+    }
+  }
+]

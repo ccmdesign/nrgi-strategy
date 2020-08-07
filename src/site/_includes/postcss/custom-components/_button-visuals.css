@@ -1,0 +1,136 @@
+/* 
+  This file contains the css rules for the button system. 
+  Most of the visual configurations can be made through the variables. (Lines 13-21)
+  Many of these configurations have fallbacks values. 
+*/
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+  /* Required Values */
+  --button-hsl:           var(--form-hsl);
+  --button-text-hsl:      var(--form-text-hsl);
+  --button-color:         hsla(var(--button-hsl), 1);
+  --button-text-color:    hsla(var(--button-text-hsl), 1);
+  --button-padding:       var(--s-1) var(--s0);
+
+  /* Optional Values */
+  --button-border-radius: var(--form-border-radius, 0);    /* Fallback to 0 */
+  --button-border-color:  var(--button-color);             /* Fallback to 1px */
+  --button-border-width:  var(--form-border-width, 1px);   /* Fallback to 1px */
+  --button-border-style:  var(--form-border-style, solid); /* Fallback to solid */
+  --button-font-weight:   var(--form-font-weight, 400);    /* Fallback to 400 */
+}
+
+/*
+  The button system has 4 modifier groups:
+  
+  Button Hierarchy .button--primary
+                   .button--secondary
+                   .button--unstyled
+
+  Button Color     .button--primary-color
+                   .button--secondary-color
+                   .button--accent-color
+                   .button--base-color
+                   .button--success
+                   .button--cancel
+                   .button--warning
+                   
+  Button Size      .button (default)
+                   .button--small
+                   .button--large
+
+  Button Status    .button[disabled] or .button--disabled
+                   .button--hidden
+*/
+
+.button--primary-color   { --button-hsl: var(--primary-hsl); }
+.button--secondary-color { --button-hsl: var(--secondary-hsl); }
+.button--accent-color    { --button-hsl: var(--accent-hsl); }
+.button--base-color      { --button-hsl: var(--base-hsl); }
+.button--success         { --button-hsl: var(--green-hsl); }
+.button--cancel          { --button-hsl: var(--red-hsl); }
+.button--warning         { --button-hsl: var(--yellow-hsl); }
+
+.button--large {
+  --button-padding: var(--s0) var(--s1);
+  font-size: 120%;
+}
+
+.button--small {
+  --button-padding: var(--s-2) var(--s-1);
+  font-size: 75%; 
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button, 
+.button {
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius, 0);
+  font-weight: var(--button-font-weight, 400);
+  border-width: var(--button-border-width, 1px);
+  border-style: var(--button-border-style, solid);
+  border-color: var(--button-border-color);
+  color: var(--button-text-color);
+  background-color: transparent;
+
+  &:hover { background-image: linear-gradient(hsla(var(--button-hsl), 0.05), hsla(var(--button-hsl), 0.05)); }
+
+  &:active {
+    background-image: linear-gradient(hsla(var(--button-hsl), 0.15), hsla(var(--button-hsl), 0.15));
+    border-color: hsla(var(--button-color), 1);
+  }
+}
+
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+button:focus, 
+.button:focus { box-shadow: var(--focus-effect); }
+
+input[type="button"].button--primary,
+input[type="submit"].button--primary,
+input[type="reset"].button--primary,
+button.button--primary,
+.button.button--primary {
+  color: white;
+  border-width: var(--button-border-width, 1px);
+  border-style: var(--button-border-style, solid);
+  border-color: hsla(var(--button-hsl), 1);
+  background-color: hsla(var(--button-hsl), 1);
+
+  &:hover,
+  &:focus { background-image: linear-gradient(hsla(0,0%,0%, 0.15), hsla(0,0%,0%, 0.25)); }
+}
+
+input[type="button"].button--secondary,
+input[type="submit"].button--secondary,
+input[type="reset"].button--secondary,
+button.button--secondary,
+.button.button--secondary {
+  background-color: transparent;
+  color: hsla(var(--button-hsl), 1);
+  border-width: var(--button-border-width, 1px);
+  border-style: var(--button-border-style, solid);
+  border-color: hsla(var(--button-hsl), 1);
+
+  &:hover,
+  &:focus { background-image: linear-gradient(hsla(var(--button-hsl), 0.15), hsla(var(--button-hsl), 0.15)); }
+}
+
+input[type="button"].button--unstyled,
+input[type="submit"].button--unstyled,
+input[type="reset"].button--unstyled,
+button.button--unstyled,
+.button.button--unstyled { 
+  color: hsla(var(--button-color), 1); 
+  border-width: var(--button-border-width, 1px);
+  border-style: var(--button-border-style, solid);
+  border-color: transparent;
+}
+

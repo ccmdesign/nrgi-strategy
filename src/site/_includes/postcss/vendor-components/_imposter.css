@@ -1,0 +1,29 @@
+/*
+========
+Imposter
+========
+
+<div style="position: relative">
+  <p>Static content</p>
+  <div class="imposter">
+    <p>Superimposed content</p>
+  </div>
+</div>
+
+https://absolutely.every-layout.dev/layouts/imposter/
+*/
+
+.imposter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imposter.contain {
+  --margin: 0px;
+  overflow: auto;
+  max-width: calc(100% - (var(--margin) * 2));
+  max-height: calc(100% - (var(--margin) * 2));
+}
+  

@@ -1,0 +1,38 @@
+/* elements */
+
+* { box-sizing: border-box; }
+
+body { 
+  margin: 0; 
+  font-family: var(--body-font);
+  font-size: var(--font-size-base);
+  font-weight: var(--form-font-weight);
+  line-height: 1.62;
+}
+
+img { max-width: 100%; }
+
+p, h1, h2, h3, h4, h5, h6, li, figcaption { max-width: var(--measure); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--display-font); }
+
+h1, h2, h3 { line-height: 1.4; }
+
+/* Styling basic lists that don't have a class on them */
+ul:not([class]), 
+ol:not([class]) { padding-left: 1rem; }
+
+/* Styling basic links that don't have a class on them */
+a:not([class]) { 
+  text-decoration: none; 
+  color: var(--accent-color);
+}
+
+a:not([class]):hover { text-decoration: underline; }
+
+mark {
+  background-color: hsla(var(--accent-hsl), .16);
+  margin-left: -2px;
+  padding-left: 2px;
+  margin-right: -2px;
+  padding-right: 2px;
+}

@@ -1,0 +1,22 @@
+<li class="base-card {{ card.class | d('') }}">
+  <div class="base-card__content">
+    <h2><a href="#" aria-describedby="{{ card.heading | slug }}">{{ card.heading }}</a></h2>
+    
+    {% if card.subheading %}
+    <h3>{{ card.subheading }}</h3>
+    {% endif %}
+
+    <p>{{ card.text }}</p>
+    
+    {% if card.author.name %}
+    <small><a href="{{ card.author.url }}">By {{ card.author.name }}</a></small>
+    {% endif %}
+    
+    <span class="button {{ card.button.class | d('') }}" aria-hidden="true" id="{{ card.heading | slug }}">
+      {{ card.button.label | d('Read More', true) }}
+    </span>
+  </div>
+  <div class="base-card__img">
+    <img src="{{ card.image.url }}" alt="{{ card.image.description }}">
+  </div>
+</li>  

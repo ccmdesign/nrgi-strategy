@@ -1,0 +1,71 @@
+/* utilities */
+
+.max-width\:measure { max-width: var(--measure); }
+.max-width\:measure\/2 { max-width: calc(var(--measure) / 2); }
+
+/* Text Align */
+.text-align\:center { text-align: center; }
+.text-align\:right  { text-align: right; }
+.text-align\:left   { text-align: left; }
+
+/* Color Utilities */
+.color\:white     { color: var(--white-color); }
+.color\:black     { color: var(--black-color); }
+
+.color\:fail      { color: var(--red-color); }
+.color\:success   { color: var(--green-color); }
+.color\:warning   { color: var(--yellow-color); }
+
+.color\:base      { color: var(--base-color); }
+.color\:accent    { color: var(--accent-color); }
+.color\:primary   { color: var(--primary-color); }
+.color\:secondary { color: var(--secondary-color); }
+
+/* Background-color Utilities */
+.bg\:white        { background-color: var(--white-color); }
+.bg\:black        { background-color: var(--black-color); }
+
+.bg\:fail         { background-color: var(--red-color); }
+.bg\:success      { background-color: var(--green-color); }
+.bg\:warning      { background-color: var(--yellow-color); }
+
+.bg\:base         { background-color: var(--base-color); }
+.bg\:accent       { background-color: var(--accent-color); }
+.bg\:primary      { background-color: var(--primary-color); }
+.bg\:secondary    { background-color: var(--secondary-color); }
+
+
+
+@mixin material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons { @include material-icons; }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}

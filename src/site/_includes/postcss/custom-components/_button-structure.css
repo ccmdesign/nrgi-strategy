@@ -1,0 +1,60 @@
+/* 
+  This file contains the structural rules for the button system. 
+  Any visual configuration should be made on the button-visuals.css file.
+  It is very unlikely that anyone will need to edits file for customization purposes. 
+*/
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+  /* Structure */
+  display: inline-block;
+  zoom: 1;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  user-select: none;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: inherit;
+  text-decoration: none;
+
+  &:focus { outline: 0; }
+
+  /* Firefox: Get rid of the inner focus border */
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+.button[disabled],
+.button[disabled]:hover,
+.button[disabled]:focus,
+.button[disabled]:active,
+.button--disabled,
+.button--disabled:hover,
+.button--disabled:focus,
+.button--disabled:active {
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.button--hidden { display: none; }
+
+input[type="button"].button--unstyled,
+input[type="submit"].button--unstyled,
+input[type="reset"].button--unstyled,
+button.button--unstyled,
+.button.button--unstyled {
+  background-color: transparent;
+  border: 0;
+}

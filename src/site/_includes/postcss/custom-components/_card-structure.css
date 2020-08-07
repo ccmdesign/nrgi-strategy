@@ -1,0 +1,54 @@
+/* Structure */
+/* It is very unlikely we will need to work on any of the styles below */
+.base-card {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.base-card, 
+.base-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.base-card__content {
+  order: 1;
+  flex-grow: 1;
+  max-width: var(--measure);
+}
+
+.base-card__content :last-child { margin-top: auto; }
+.base-card__content :nth-last-child(2) { margin-bottom: var(--s-1); }
+.base-card__img { margin-bottom: 0; }
+
+.base-card__img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.base-card small a {
+  position: relative;
+  padding: var(--s-2) var(--s-2) var(--s-2) 0;
+}
+
+/* Accessibility styles for tab navigation */
+.base-card h2 a:focus { text-decoration: underline; }
+.base-card h2:focus-within ~ .button { box-shadow: 0 0 0 0.125rem hsla(var(--accent-hsl), 1); }
+.base-card:focus-within h2 a:focus { text-decoration: none; }
+
+/* Progressive Enhancement   */
+/* Apply Grid when supported */
+@supports (display: grid) {
+  .card-grid > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: var(--grid-gap);
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .base-card + .base-card { margin-top: 0; }
+}
+
+@media (max-width: 400px) { .card-grid > ul { grid-gap: var(--grid-gap); } }

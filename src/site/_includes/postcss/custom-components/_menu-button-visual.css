@@ -1,0 +1,33 @@
+[data-inclusive-menu] {
+  /*--menu-bg-color: var(--white-color);*/
+  --menu-boder-radius: 0px;
+}
+
+[data-inclusive-menu-opens],
+[data-inclusive-menu] [role^="menuitem"] {
+
+}
+
+[data-inclusive-menu] [role="menu"] {
+
+}
+
+[data-inclusive-menu-opens] {
+  margin-right: calc(var(--button-border-width)* -1);
+}
+
+[data-inclusive-menu] [data-inclusive-menu-from="right"] {
+
+}
+
+[data-inclusive-menu] [role^="menuitem"] {
+  margin-top: calc(var(--button-border-width)* -1);
+}
+
+[data-inclusive-menu] button {
+  --button-border-radius: var(--menu-boder-radius);
+}
+
+[data-inclusive-menu] [role^="menuitem"][aria-checked="true"]::before {
+  content: '\2713\0020';
+}

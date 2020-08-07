@@ -1,0 +1,60 @@
+.tabs {
+  /* 
+  Here we set all the visual variables as NULL, to have as little styling as possible. 
+  Important to notice we keep --base-color and --active-color for minimum user feedback.
+  */
+  --tabs-padding: 0;
+  --tabs-border: 0;
+  --tabs-bg-color: 0;
+  --tabs-shadow: none;
+  --tabs-color: var(--base-color);
+  --tabs-active-color: var(--accent-color);
+}
+
+.tabs.tabs--styled {
+  /* Here we set the tabs local variables to pull from teh global ones, 
+     and set the base visual styles for the tabs */
+  --tabs-padding: var(--base-padding);
+  --tabs-border: var(--base-border);
+  --tabs-bg-color: var(--white-color);
+  --tabs-shadow: var(--base-shadow);
+}
+
+
+ .tabs {
+  [role="tablist"] a {
+    text-decoration: none;
+    color: var(--tabs-color);
+    padding: calc(var(--tabs-padding)/2) var(--tabs-padding);
+  }
+
+  [role="tablist"] [aria-selected] {
+    border: var(--tabs-border);
+    background: var(--tabs-bg-color);
+    border-bottom-color: transparent;
+    color: var(--tabs-active-color);
+  }
+
+  [role="tabpanel"] {
+    border: var(--tabs-border);
+    padding: var(--tabs-padding);
+    background: var(--tabs-bg-color);
+  }
+
+  [role="tabpanel"] * + * {
+    margin-top: calc(var(--tabs-padding)/2);
+  }
+
+  *:focus {
+    outline: none;
+    box-shadow: var(--tabs-shadow);
+  }
+
+  @media (max-width: 550px) {
+    [role="tablist"] a { border: var(--tabs-border) !important; }
+    [role="tablist"] [aria-selected]::after { 
+      /* content: '\0020⬅'; This adds an icon to the active element in small screens */
+      color: var(--tabs-active-color);
+    }
+  }
+}

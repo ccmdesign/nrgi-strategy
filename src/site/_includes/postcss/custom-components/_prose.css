@@ -1,0 +1,116 @@
+/* block level
+dl, dt, dd
+details > summary
+
+/* Inline level
+abbr, cite
+*/
+
+
+.prose {
+  * + * { margin-top: var(--s0); }
+}
+
+.prose {
+  /* Compensates the line-height for larger font-sizes. */
+  h1 { line-height: calc(var(--line-height)* 0.76); }
+  h2 { line-height: calc(var(--line-height)* 0.86); }
+  h3 { line-height: calc(var(--line-height)* 0.9); }
+
+  /* Adds large spaces before and after the blockquote */
+  table:not([class]),
+  audio:not([class]),
+  video:not([class]),
+  embed:not([class]),
+  iframe:not([class]),
+  object:not([class]),
+  picture:not([class]),
+  canvas:not([class]),
+  figure:not([class]),
+  blockquote:not([class]) { 
+    margin-top: var(--s2); 
+    margin-bottom: var(--s2);
+  }
+
+  /* Makes the higher heading not wrap on floated images */
+  h1, h2, h3 { clear: both; }
+
+  /* Adds a smaller margin between the items of the same list or hgroup */
+  hgroup >  * + *,
+  ul > * + *,
+  ol > * + * { margin-top: var(--s-1); }
+}
+
+.prose {
+  /* Suggested scale/hierarchy styles for headings */
+  h1 { 
+    font-size: 2.64rem; 
+    font-weight: 100;
+  }
+  h2 { font-size: 1.62rem; }
+  h3 { font-size: 1.31rem; }
+  h4 { 
+    font-size: 1rem; 
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  h5 { 
+    font-size: 1rem; 
+    font-weight: bold;
+  }
+  h6 { 
+    font-size: 1rem; 
+    text-decoration: underline;
+  }
+}
+
+
+
+/* Suggested Colors */
+.prose {
+  color: var(--base-color);
+
+  h1 { color: var(--primary-color); }
+  h2 { color: var(--base-color); }
+  h3 { color: var(--accent-color); }
+  h4 { color: var(--primary-color); }
+  h5, h6 { color: var(--base-color); }
+
+  hr { 
+    border-top-width: var(--form-border-width);
+    border-color: transparent;
+    border-top-color: hsla(var(--primary-hsl), .4);
+  }
+
+  pre {
+    background-color: hsla(var(--primary-hsl), .05);
+    padding: var(--s1);
+  }
+  
+  figcaption { 
+    font-size: 75%;
+    max-width: none;
+  }
+}
+
+/* 
+Extra Utilities for Prose 
+This has a conflict between the float and the margin-top from * + *
+
+*/
+
+.float\:left,
+.float\:right { max-width: 50%; }
+
+.float\:left { 
+  float: left; 
+  margin-right: var(--s1);
+}
+.float\:right { 
+  float: right; 
+  margin-left: var(--s1);
+}
+
+
+

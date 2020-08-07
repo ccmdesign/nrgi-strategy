@@ -1,0 +1,30 @@
+---
+layout: layouts/base-styleguide.njk
+---
+
+<div class="center">
+  <div class="stack">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+    
+    {% include 'collapse.njk' %}
+    {% include 'tabs.njk' %}
+    
+    <div>
+    {% include 'menu-button.njk' %}
+    </div>
+
+    <div>
+      <!-- this attribute needs to match the dialog contains ID in dialog.njk -->
+      <button type="button" data-a11y-dialog-show="dialog-example">Open the dialog</button>
+    </div>
+
+    <div class="card-grid">
+      <ul>
+        {% for card in cards %}
+        {% set card = card %}
+        {% include 'card.njk' %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

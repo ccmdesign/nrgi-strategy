@@ -1,0 +1,22 @@
+.tabs {
+  [role="tablist"] { padding: 0; }
+
+  [role="tablist"] li, 
+  [role="tablist"] a { display: inline-block; }
+
+  [role="tablist"] [aria-selected] {
+    position: relative;
+    /*top: 2px;*/
+  }
+
+  @media (max-width: 550px) {
+    [role="tablist"] li, [role="tablist"] a {
+      display: block;
+      position: static;
+    }
+    
+    [role="tablist"] [aria-selected] { position: static; }
+    [role="tablist"] li + li a { border-top: 0 !important; }
+    [role="tabpanel"] { border-top: 0; }
+  }
+}

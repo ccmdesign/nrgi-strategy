@@ -1,0 +1,96 @@
+/* breakpoints for media queries */
+$narrow: 400px;
+$mid: 740px;
+$wide: 1200px;
+
+/* colours */
+$page-color: #2424bb;
+$text-color: #fff;
+$accent-color: #27a4de;
+$dark-color: #000;
+
+
+/* 
+Variables to customize for each Project 
+
+- Main Variable file
+- button-visuals
+- form-visuals
+
+*/
+
+:root {
+    /* ↓ Now (almost) all elements display a sans-serif font */
+  --display-font: 'Open Sans', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  --font-size-base: 1rem;
+  --line-height: var(--ratio);
+}
+
+:root {
+  --measure: 80ch;
+  --wrapper: 1280px;
+  --narrow: 700px;
+  --scroll-height: 0; /* Accepts a string in VH ex: "70vh" */
+
+  /* baseline colors */
+  --white-hsl: 0, 0%, 95%;  
+  --white-color: hsla(var(--white-hsl), 1);  
+  --black-hsl: 215, 50%, 23%;  
+  --black-color: hsla(var(--black-hsl), 1);
+  --red-hsl: 347, 58%, 46%;  
+  --red-color: hsla(var(--red-hsl), 1);  
+  --green-hsl: 174, 62%, 47%;
+  --green-color: hsla(var(--green-hsl), 1);
+  --yellow-hsl: 37, 98%, 53%;
+  --yellow-color: hsla(var(--yellow-hsl), 1);
+  
+  /* theme colors */
+  --primary-hsl: 207, 31%, 35%;
+  --primary-color: hsla(var(--primary-hsl), 1);
+  
+  --secondary-hsl: 210, 4%, 91%;
+  --secondary-color: hsla(var(--secondary-hsl), 1);
+  
+  --accent-hsl: 9, 100%, 61%;
+  --accent-color: hsla(var(--accent-hsl), 1);
+  
+  --base-hsl: 207, 31%, 35%;
+  --base-color: hsla(var(--base-hsl), 1);  
+
+  
+  --base-border-width: 1px;
+  
+  /* These are the base visual configurations */
+  --base-gap: var(--s1);
+  --base-border: var(--base-border-width) solid hsla(var(--base-hsl), 1);
+  --base-shadow: 2px 2px 8px hsla(var(--base-hsl), .15);
+  --base-border-radius: 0;
+  --base-padding: var(--s1);
+
+  /* These are the main form configurations */
+  --form-hsl: var(--primary-hsl);
+  --form-text-hsl: var(--base-hsl);
+  --form-font-weight: 200;
+  --form-border-width: var(--base-border-width); /* This variable only accepts one value. ToDo: make it accept multiple values ex: 0px 0px 2px 0 */
+}
+
+
+
+
+
+/* Modular Scale */
+:root {
+  --ratio: 1.62;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+}

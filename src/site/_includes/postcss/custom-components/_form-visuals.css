@@ -1,0 +1,195 @@
+/* Config Variables */
+:root {
+  --form-color:    hsla(var(--form-hsl), 1);
+  /* Status Colors */
+  --focus-color:   hsla(var(--primary-hsl), .5);
+  --active-color:  hsla(0, 0%, 100%, 1);
+
+  /* Validation Colors */
+  --invalid-color: hsla(var(--red-hsl), 1);
+  --valid-color:   hsla(var(--green-hsl), 1);
+
+  /* More color options - inherits --form-color */
+  --form-icon-color:    hsla(var(--form-hsl), 1);
+  --form-text-color:    hsla(var(--form-text-hsl), 1);
+  --form-shadow-color:  hsla(var(--base-hsl), 1);
+  --form-border-radius: var(--base-border-radius);
+  --form-shadow: var(--base-shadow);
+
+  /* Visual Variables */
+  --form-border-style: solid;
+  --form-border-color: var(--form-color);
+  --form-padding: var(--s-2) var(--s0); /* This is sort of a magic number. Right now it matches the var(--s-1) var(--s0) from button */
+
+  /* This effect is overitter by a hard outline on High Contrast Mode*/
+  --focus-effect: 0 0 calc(var(--form-border-width) * 2) calc(var(--form-border-width) * 2) var(--focus-color);
+}
+
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+
+::-webkit-input-placeholder { color: hsla(var(--form-text-hsl), .4); }
+::-moz-placeholder          { color: hsla(var(--form-text-hsl), .4); }
+:-ms-input-placeholder      { color: hsla(var(--form-text-hsl), .4); }
+:-moz-placeholder           { color: hsla(var(--form-text-hsl), .4); }
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input[type="text"] {
+  border-width:  var(--form-border-width);  /* This variable only accepts one value. ToDo: make it accept multiple values ex: 0px 0px 2px 0 */
+  border-style:  var(--form-border-style, solid);
+  border-color:  var(--form-border-color); /* This should accept a fallback variable like --base-color */
+  border-radius: var(--form-border-radius, 0);
+  font-weight:   var(--form-font-weight, 400);
+  padding:       var(--form-padding);
+}
+
+input[type="checkbox"]:after,
+input[type="radio"]:after { 
+  color:   var(--form-icon-color);
+  padding: var(--s-2);
+}
+
+.select {
+  select {
+    background-color: transparent;
+    padding-top:    var(--s-2);
+    padding-bottom: var(--s-2);
+    padding-left:   var(--s0);
+    padding-right:  var(--s2);
+    border-radius:  var(--form-border-radius);
+    border:         var(--form-border-width) var(--form-border-style) var(--form-border-color);
+    box-shadow:     var(--form-shadow);
+    border-radius:  var(--form-border-radius);
+    font-weight:    var(--form-font-weight);
+    color:          var(--form-text-color);
+  }
+
+  &::after {
+    content: "keyboard_arrow_down";
+    padding: var(--s-2);
+    color:   var(--form-color);
+  }
+}
+
+textarea {
+  padding:        var(--s0) var(--s1);
+  border-radius:  var(--form-border-radius);
+  border:         var(--form-border-width) var(--form-border-style) var(--form-border-color);
+  box-shadow:     var(--form-shadow);
+  border-radius:  var(--form-border-radius);
+  font-weight:    var(--form-font-weight);
+  color:          var(--form-text-color);
+}
+
+/*
+We want to create a best possible experience 
+with these validation styles. Further research needed
+
+input[type="text"]:valid,
+input[type="password"]:valid,
+input[type="email"]:valid,
+input[type="url"]:valid,
+input[type="date"]:valid,
+input[type="month"]:valid,
+input[type="time"]:valid,
+input[type="datetime"]:valid,
+input[type="datetime-local"]:valid,
+input[type="week"]:valid,
+input[type="number"]:valid,
+input[type="search"]:valid,
+input[type="tel"]:valid,
+input[type="color"]:valid,
+input[type="text"]:valid,
+input[type="checkbox"]:valid,
+input[type="radio"]:valid,
+select:valid { border-color: var(--valid-color); }
+
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+input[type="url"]:invalid,
+input[type="date"]:invalid,
+input[type="month"]:invalid,
+input[type="time"]:invalid,
+input[type="datetime"]:invalid,
+input[type="datetime-local"]:invalid,
+input[type="week"]:invalid,
+input[type="number"]:invalid,
+input[type="search"]:invalid,
+input[type="tel"]:invalid,
+input[type="color"]:invalid,
+input[type="text"]:invalid,
+input[type="checkbox"]:invalid,
+input[type="radio"]:invalid,
+select:invalid { border-color: var(--invalid-color); }
+
+
+Essa pode ser uma solução bem legal
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid { border-color: hsla(var(--invalid-color), .7); }
+
+input:focus:valid,
+textarea:focus:valid,
+select:focus:valid { border-color: hsla(var(--valid-color), 1); }
+
+*/
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="text"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+select:focus { box-shadow: var(--focus-effect); }
+
+
+
+} /* closes the @support condition */
+
+/* All high contrast styling rules */
+@media screen and (-ms-high-contrast: active) {
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  input[type="text"]:focus,
+  select:focus { outline: calc(var(--form-border-width) * 2) var(--form-border-color); }
+}
+
+

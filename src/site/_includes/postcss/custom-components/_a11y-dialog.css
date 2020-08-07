@@ -1,0 +1,38 @@
+dialog {
+  --dialog-padding: var(--base-padding);
+  --dialog-border: var(--base-border);
+  --dialog-wrapper: var(--wrapper);
+}
+
+dialog {
+  padding: var(--dialog-padding);
+  border: var(--dialog-border);
+  max-width: var(--dialog-wrapper);
+}
+
+dialog .dialog__close {
+  position: absolute;
+  right: var(--dialog-padding);
+}
+
+dialog::backdrop, 
+dialog .overlay {
+  /* We can style the Overlay here */
+}
+
+
+/* Dialog Structure and Functionality */
+[data-a11y-dialog-native] > .overlay { display: none; }
+
+/**/
+dialog[open] { display: block; }
+
+/**
+ * When the native `<dialog>` element is not supported, the script toggles the
+ * `aria-hidden` attribute on the container. If `aria-hidden` is set to `true`,
+ * the container should be hidden entirely.
+ *
+ * Feel free to replace `.dialog-container` with the container selector you
+ * prefer.
+ */
+.dialog-container[aria-hidden='true'] { display: none; }

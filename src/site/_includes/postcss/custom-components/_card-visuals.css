@@ -1,0 +1,44 @@
+/* This file has deeper configurations for the card */
+
+.card-grid {
+   --grid-gap: var(--base-gap); 
+}
+
+.base-card {
+  --card-border: var(--base-border);
+  --card-shadow: var(--base-shadow);
+  --card-border-radius: var(--base-border-radius);
+  --card-padding: var(--base-padding);
+}
+
+/* Selectors for the innter element of the card */
+.base-card {
+  h2 {  }
+  h2 a {  }
+  h3 {  }
+  p {  }
+  p a {  }
+  small {  }
+  small a {  }
+}
+
+/*  Uses the grid-gap as the unit to separate the cards, 
+    even if not using the Grid Layout.
+    This is overwritten by @supports (display: grid) down below */
+.base-card + .base-card { margin-top: var(--grid-gap); }
+
+.base-card { 
+/* Internal styling for the card. Using the fallback from --base variables */
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-border-radius);
+}
+
+/* Hover Effect for the Card*/
+.base-card:hover { box-shadow: var(--card-shadow); }
+
+/* Internal padding for the card__content */
+.base-card__content { padding: var(--card-padding); }
+
+/* vertical spacing (stack) */
+.base-card__content > * + * { margin-top: var(--s-1); }
