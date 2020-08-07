@@ -1,0 +1,49 @@
+ /*Esse arquivo são os fixes dos componentes */
+
+/* Center */
+/* Vamos deixar o center com o --wrapper, ao inves do --measure */
+/* Adicionei um padding para telas menores que o --wrapper*/
+.center { 
+  max-width: var(--wrapper); 
+  @media (max-width: 1320px) { 
+    padding-right: var(--s0); 
+    padding-left: var(--s0); 
+  }
+}
+
+.center--narrow { max-width: var(--narrow); }
+.center--measure { max-width: var(--measure); }
+
+/* Button */
+/* Adicionei essa cor, e precisei editar o MOD para fazer a a cor do texto funcionar */
+.button--white-color { 
+  --button-hsl: var(--white-hsl);
+  --button-text-color: var(--white-color);
+}
+
+/* Precisei consertar essas UTILS*/
+/* Color Utilities */
+/*.color\:white     { color: var(--white-color); }
+.color\:black     { color: var(--black-color); }
+
+.color\:fail      { color: var(--red-color); }
+.color\:success   { color: var(--green-color); }
+.color\:warning   { color: var(--yellow-color); }
+
+.color\:base      { color: var(--base-color); }
+.color\:accent    { color: var(--accent-color); }
+.color\:primary   { color: var(--primary-color); }
+.color\:secondary { color: var(--secondary-color); }
+
+/* Background-color Utilities */
+/*.bg\:white        { background-color: var(--white-color); }
+.bg\:black        { background-color: var(--black-color); }
+
+.bg\:fail         { background-color: var(--red-color); }
+.bg\:success      { background-color: var(--green-color); }
+.bg\:warning      { background-color: var(--yellow-color); }
+
+.bg\:base         { background-color: var(--base-color); }
+.bg\:accent       { background-color: var(--accent-color); }
+.bg\:primary      { background-color: var(--primary-color); }
+.bg\:secondary    { background-color: var(--secondary-color); }*/
