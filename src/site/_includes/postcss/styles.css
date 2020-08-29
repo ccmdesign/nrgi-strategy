@@ -21,6 +21,7 @@
 @import 'vendor-components/_stack.css';
 @import 'vendor-components/_switcher.css';
 
+@import 'connected-cards-components/_connected-cards.css';
 
 /* Boilerplate Components */
 @import 'custom-components/_prose.css';
