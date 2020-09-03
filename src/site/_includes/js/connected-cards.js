@@ -9,14 +9,16 @@ function onCardsHover(elements) {
 }
 
 function toggleLinesOpacity(card, hover) {
-    let lines
-    if (!card.id) card = card.parentElement
+    let lines;
+    const text = document.querySelector('.between-lines-text');
+
+    if (!card.id) card = card.parentElement;
 
     card.id.includes('top-right') || card.id.includes('bottom-right')
         ? lines = document.querySelectorAll('.line-bottom-left, .line-top-right, .line-right')
         : lines = document.querySelectorAll('.line-top-left, .line-bottom-right, .line-left');
 
     hover
-        ? lines.forEach((line) => {line.style.opacity = '1'})
-        : lines.forEach((line) => {line.style.opacity = '.1'})
+        ? lines.forEach((line) => { line.style.opacity = '1'; text.style.opacity = '0' })
+        : lines.forEach((line) => { line.style.opacity = '.1'; text.style.opacity = '1' });
 }

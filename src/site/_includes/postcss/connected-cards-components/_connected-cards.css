@@ -193,7 +193,7 @@
     height: 200px;
     position: absolute;
     top: 260px;
-    transition: .2s ease-out;
+    transition: .4s ease-out;
 }
 
 .line-left {
@@ -203,4 +203,21 @@
 .line-right {
     right: 0;
     opacity: .1;
+}
+
+.between-lines-text {
+    position: absolute;
+    width: calc(100% - 105px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 453%);
+    transition: .5s ease-out;
+}
+
+.between-lines-text h1 {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    color: #4c4c4c;
 }
