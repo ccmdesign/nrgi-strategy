@@ -23,6 +23,29 @@
     border: 4px solid #e75036d1;
 }
 
+.margin-top-multiple {
+    margin-top: 100px!important;
+}
+
+.margin-top-national {
+    margin-top: 75px!important;
+}
+
+.learn-more-maximization {
+    margin-top: 123px!important;
+}
+
+.base-cards {
+    border: solid white!important;
+    width: 800px!important;
+    height: 415px!important;
+    margin: 0 50px 0 0!important;
+}
+
+.margin-cards-top {
+    margin-top: 65px!important;
+}
+
 .base-card__body {
     position: relative;
     border: solid #e75036d1;
