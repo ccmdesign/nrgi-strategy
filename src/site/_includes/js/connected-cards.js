@@ -14,7 +14,9 @@ function toggleLinesOpacity(card, hover) {
 
     if (!card.id) card = card.parentElement;
 
-    card.id.includes('top-right') || card.id.includes('bottom-right')
+    card.classList.remove('pulse');
+
+    card.id.includes('top-right')
         ? lines = document.querySelectorAll('.line-bottom-left, .line-top-right, .line-right')
         : lines = document.querySelectorAll('.line-top-left, .line-bottom-right, .line-left');
 

@@ -23,6 +23,11 @@
     height: 120px;
     margin: 0 auto;
     border: 4px solid rgba(231,80,54,.81961);
+    transition: .2s ease-out;
+}
+
+.connected-cards-img__wrapper.pulse {
+    animation: pulse 2s infinite;
 }
 
 .connected-cards-img__wrapper img {
@@ -220,4 +225,21 @@
     font-style: italic;
     text-align: center;
     color: #4c4c4c;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.98);
+        box-shadow: 0 0 0 0 rgb(233 103 71);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.98);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
 }

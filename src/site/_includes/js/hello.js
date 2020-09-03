@@ -11,9 +11,7 @@ collapseSections('.collapse');
 cardsInit('.base-card');
 
 onCardsHover('#connected-cards-hover-top-left,' +
-    '#connected-cards-hover-top-right, ' +
-    '#connected-cards-hover-bottom-left, ' +
-    '#connected-cards-hover-bottom-right')
+    '#connected-cards-hover-top-right')
 
 tabs('.tabs');
 
