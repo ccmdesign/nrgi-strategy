@@ -23,6 +23,8 @@
 
 @import 'connected-cards-components/_connected-cards.css';
 
+@import 'modals-cards-component/_modal-cards.css';
+
 /* Boilerplate Components */
 @import 'custom-components/_prose.css';
 
