@@ -2,25 +2,35 @@
     position: relative;
 }
 
-.connected-cards__img-top {
+.connected-cards-img-top__container {
     position: absolute;
     bottom: -60px;
     right: 0;
     left: 0;
 }
-.connected-cards__img-bottom {
+.connected-cards-img-bottom__container {
     position: absolute;
     top: -60px;
     right: 0;
     left: 0;
 }
 
-.connected-cards__img-top img, .connected-cards__img-bottom img {
+.connected-cards-img__wrapper {
+    position: relative;
     border-radius: 50%;
+    background-color: white;
     width: 120px;
     height: 120px;
     margin: 0 auto;
-    border: 4px solid #e75036d1;
+    border: 4px solid rgba(231,80,54,.81961);
+}
+
+.connected-cards-img__wrapper img {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .margin-top-multiple {
@@ -120,7 +130,8 @@
 }
 
 .nrgi-impact-tag.custom-tag {
-    margin-top: 30px;
+    position: absolute;
+    bottom: 90px;
 }
 
 .nrgi-impact-tag.custom-tag p {

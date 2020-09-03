@@ -10,6 +10,7 @@ function onCardsHover(elements) {
 
 function toggleLinesOpacity(card, hover) {
     let lines
+    if (!card.id) card = card.parentElement
 
     card.id.includes('top-right') || card.id.includes('bottom-right')
         ? lines = document.querySelectorAll('.line-bottom-left, .line-top-right, .line-right')
