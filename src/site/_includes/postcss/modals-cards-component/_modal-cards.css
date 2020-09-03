@@ -97,3 +97,25 @@ input[id*="modal_"]:checked + div.modal .modal-content {
     -ms-transition-delay: 0.5s;
     transition-delay: 0.5s;
 }
+
+.learn-more-tag {
+    position: absolute;
+    bottom: 50px;
+}
+
+.learn-more-tag label {
+    font-size: 1.2em;
+}
+
+.cards__section .nrgi-impact-tag.custom-tag {
+    bottom: 145px;
+}
+
+.cards__section .base-card__paragraph {
+    margin-top: 20px;
+}
+
+.cards__section .base-card__body {
+    box-shadow: 0 10px 35px -15px rgb(0 0 0 / 16%);
+    border: none !important;
+}
