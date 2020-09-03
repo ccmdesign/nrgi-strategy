@@ -1,23 +1,26 @@
+.connected-cards__section {
+    position: relative;
+}
 
 .connected-cards__img-bottom {
     position: absolute;
-    bottom: -50px;
+    bottom: -60px;
     right: 0;
     left: 0;
 }
 .connected-cards__img-top {
     position: absolute;
-    top: -50px;
+    top: -60px;
     right: 0;
     left: 0;
 }
 
 .connected-cards__img-top img, .connected-cards__img-bottom img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto;
-    border: 6px solid #e75036d1;
+    border: 4px solid #e75036d1;
 }
 
 .base-card__body {
@@ -45,7 +48,7 @@
 }
 
 .margin-top {
-    margin-top: 200px;
+    margin-top: 235px;
 }
 
 .pull-up {
@@ -100,4 +103,61 @@
 .nrgi-impact-tag.custom-tag p {
     font-size: .9rem;
     font-weight: normal;
+}
+
+.line-top-left {
+    border-radius: 0 0 0 30px;
+    border: solid #e96747;
+    border-width: 0 0 20px 20px;
+}
+
+.line-top-right {
+    border-radius: 0 0 30px 0;
+    border: solid #e96747;
+    border-width: 0 20px 20px 0;
+}
+
+.line-bottom-left {
+    border-radius: 30px 0 0 0;
+    border: solid #e96747;
+    border-width: 20px 0 0 20px;
+    margin-top: -20px;
+}
+
+.line-bottom-right {
+    border-radius: 0 30px 0 0;
+    border: solid #e96747;
+    border-width: 20px 20px 0 0;
+    margin-top: -20px;
+}
+
+.connected-lines {
+    width: 50%;
+    height: 400px;
+    float: left;
+    opacity: .1;
+}
+
+.connected-lines__wrapper {
+    position: relative;
+    width: 758px;
+    margin: 245px auto 0;
+}
+
+.connected-lines__container {
+    position: absolute;
+    width: 100%;
+}
+
+.connected-lines-straight {
+    border: solid #e96747;
+    border-width: 0 0 0 20px;
+    height: 200px;
+    position: absolute;
+    top: 260px;
+    opacity: .1;
+}
+
+.connected-lines-straight.float-right {
+    right: 0;
 }
