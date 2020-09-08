@@ -1,14 +1,15 @@
-// Function to light up the paths when the cards are hovered
-function onCardsHover(elements) {
+// Function to add hover listener to connected cards
+function addHoverListener(elements) {
     const cards = document.querySelectorAll(elements);
 
     cards.forEach((card) => {
-        card.addEventListener("mouseover", function(event){ toggleLinesOpacity(event.target, true) });
-        card.addEventListener("mouseout", function(event){ toggleLinesOpacity(event.target, false) });
+        card.addEventListener("mouseover", function(event){ onCardHover(event.target, true) });
+        card.addEventListener("mouseout", function(event){ onCardHover(event.target, false) });
     })
 }
 
-function toggleLinesOpacity(card, hover) {
+// Function to toggle lines opacity when cards are hovered
+function onCardHover(card, hover) {
     let lines;
     const text = document.querySelector('.between-lines-text');
 
