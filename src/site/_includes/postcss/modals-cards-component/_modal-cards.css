@@ -18,10 +18,9 @@
 }
 
 .modal-content {
-    padding: 30px;
-    max-width: 860px;
-    min-width: 360px;
-    max-height: 85%;
+    padding: 130px 150px 180px;
+    width: fit-content;
+    max-width: 1050px;
     overflow: auto;
     position: absolute;
     top: 5%;
@@ -30,12 +29,14 @@
     opacity: 0;
     border-radius: 3px;
     background: #fff;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    box-shadow: grey 0 0 26px -11px;
+    transform: translate(-50%);
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 35px -15px #8080807a;
+}
+
+.modal-content label {
+    font-size: 3em;
+    color: #ff5638;
 }
 
 .modal-content img {
@@ -44,9 +45,11 @@
     margin: 10px 0 0;
 }
 
-.modal-content p {
+.modal-content > p {
     padding-top: 10px;
     text-align: justify;
+    font-size: 1.3em;
+    color: #646464;
 }
 
 .modal-close {
@@ -61,7 +64,7 @@
 .modal-close:after {
     content: "X";
     float: right;
-    margin: 5px 5px 0 0;
+    margin: 10px 10px 0 0;
     width: 30px;
     height: 30px;
     position: relative;
@@ -69,9 +72,8 @@
     text-align: center;
     line-height: 30px;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.8);
+    font-size: 2em;
     border-radius: 20px;
-    box-shadow: 0 0 3px #000;
 }
 
 input[id*="modal_"] {
@@ -96,4 +98,34 @@ input[id*="modal_"]:checked + div.modal .modal-content {
     -webkit-transition-delay: 0.5s;
     -ms-transition-delay: 0.5s;
     transition-delay: 0.5s;
+}
+
+.learn-more-tag {
+    position: absolute;
+    bottom: 50px;
+}
+
+.learn-more-tag label {
+    font-size: 1.2em;
+}
+
+.cards__section .nrgi-impact-tag.custom-tag {
+    bottom: 145px;
+}
+
+.cards__section .base-card__paragraph {
+    margin-top: 20px;
+}
+
+.cards__section .base-card__body {
+    box-shadow: 0 10px 35px -15px rgb(0 0 0 / 16%);
+    border: none !important;
+}
+
+.modal-content .nrgi-impact-tag.custom-tag {
+    bottom: 75px;
+}
+
+.cards__section .base-cards {
+    margin: -15px 18px !important
 }

@@ -49,6 +49,9 @@ layout: layouts/base.njk
 
   <div class="connected-lines__container">
     <div class="connected-lines__wrapper">
+      <div class="between-lines-text">
+        <h1>Across these two areas, we will also address particular aspects of the energy transition and of corruption and "state capture".</h1>
+      </div>
       <div class="connected-lines-straight line-right"></div>
       <div class="connected-lines-straight line-left"></div>
       <div class="connected-lines line-top-left"></div>
@@ -64,7 +67,7 @@ layout: layouts/base.njk
 
       <h3 class="base-card__subtitle">objective</h3>
 
-      <p class="base-card__paragraph">The industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p class="base-card__paragraph">Licensing and fiscal systems are transparent, fair and help countries maximize the revenues available for development spending.</p>
 
       <div class="base-card__cluster">
         <div class="cluster-box">Laws, regulations and contracts</div>
@@ -79,8 +82,10 @@ layout: layouts/base.njk
         <p>Contract transparency in Mexico</p>
       </div>
 
-      <div class="connected-cards__img-top">
-        <img id="connected-cards-hover-top-left" src="images/bring-change.jpg" alt="a">
+      <div class="connected-cards-img-top__container">
+        <div id="connected-cards-hover-top-left" class="connected-cards-img__wrapper pulse">
+          <img src="/images/deal-icon.svg" alt="deal-icon">
+        </div>
       </div>
     </div>
     <div class="base-card__body">
@@ -88,7 +93,7 @@ layout: layouts/base.njk
 
       <h3 class="base-card__subtitle">objective</h3>
 
-      <p class="base-card__paragraph">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p class="base-card__paragraph">Extractive sector revenues are managed in ways that serve long-term public interest and the economic sustainability of public finances, rather than short-term political or private agendas.</p>
 
       <div class="base-card__cluster">
         <div class="cluster-box">Fiscal rules</div>
@@ -100,43 +105,50 @@ layout: layouts/base.njk
         <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
         <p>Contract transparency in Mexico</p>
       </div>
-      <div class="connected-cards__img-top">
-        <img id="connected-cards-hover-top-right" src="images/bring-change.jpg" alt="a">
+
+      <div class="connected-cards-img-top__container">
+        <div id="connected-cards-hover-top-right" class="connected-cards-img__wrapper pulse">
+          <img src="/images/revenues-icon.svg" alt="revenues-icon">
+        </div>
       </div>
     </div>
   </div>
   <div class="connected-cards__container margin-top">
 
-    <div class="base-card__body padding-top">
-      <h2 class="base-card__title"><a>getting a good deal</a></h2>
+    <div class="base-card__body bottom-card">
+      <h2 class="base-card__title"><a>navigating the energy transition</a></h2>
 
       <h3 class="base-card__subtitle">objective</h3>
 
-      <p class="base-card__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p class="base-card__paragraph">Resource-rich countries advance rather than hinder the transition to cleaner energy. Countries rich in strategic minerals do not replicate mis-governance in that subsector.</p>
 
       <div class="base-card__cluster">
         <div class="cluster-box">Strategic minerals</div>
         <div class="cluster-box">"Stranded assets"</div>
       </div>
 
-
-      <div class="connected-cards__img-bottom">
-        <img id="connected-cards-hover-bottom-left" src="images/bring-change.jpg" alt="a">
+      <div class="connected-cards-img-bottom__container">
+        <div id="connected-cards-hover-bottom-left" class="connected-cards-img__wrapper">
+          <img src="/images/energy-transition-icon.svg" alt="energy-transition-icon">
+        </div>
       </div>
     </div>
-    <div class="base-card__body padding-top">
-      <h2 class="base-card__title"><a>getting a good deal</a></h2>
+    <div class="base-card__body bottom-card">
+      <h2 class="base-card__title"><a>addressing corruption and "state capture"</a></h2>
 
       <h3 class="base-card__subtitle">objective</h3>
 
-      <p class="base-card__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p class="base-card__paragraph">Governments and companies conduct sector operations in ways that reduce opportunities for corruption and capture, and anticorruption actors tackle extractive sector corruption more effectively.</p>
 
       <div class="base-card__cluster">
         <div class="cluster-box">"Corruption Risks"</div>
         <div class="cluster-box">"State capture by elites"</div>
       </div>
-      <div class="connected-cards__img-bottom">
-        <img id="connected-cards-hover-bottom-right" src="images/bring-change.jpg" alt="a">
+
+      <div class="connected-cards-img-bottom__container">
+        <div id="connected-cards-hover-bottom-right" class="connected-cards-img__wrapper">
+          <img src="/images/corruption-icon.svg" alt="corruption-icon">
+        </div>
       </div>
     </div>
   </div>
@@ -156,14 +168,14 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="base-section">
+<section class="base-section cards__section">
 
   <input type="checkbox" id="modal_multiple"/>
 
   <div class="modal">
     <div class="modal-content">
 
-      <label style="color: #ff5638; font-size: 30px">Multiple modes of engagement</label>
+      <label>Multiple modes of engagement</label>
 
       <p>NRGI is one many actors working in concert to advence natural resource governance. NGRI delivers applied research, data and analysis, policy advocacy, capacity development, and technical assistance, and serves as a convener of actors working toward reform.</p>
       <p>We focus those intervetions on specific areas of the extractive industries decision chain. Other actors undertake complementary work in development, rule of law and governance, and on other aspects of the  decision chain; their work suports and reinforces our  own.</p>
@@ -182,7 +194,7 @@ layout: layouts/base.njk
   <div class="modal">
     <div class="modal-content">
 
-      <label style="color: #ff5638; font-size: 30px">National players</label>
+      <label>National players</label>
 
       <p>At the national, NRGI partners with agents of change who are best placed to work in alliance to effect particular policy reforms.</p>
       <p>we address asymmetries of information, acess and capacity, and build trust between actors.</p>
@@ -203,7 +215,7 @@ layout: layouts/base.njk
   <div class="modal">
     <div class="modal-content">
 
-      <label style="color: #ff5638; font-size: 30px">International players</label>
+      <label>International players</label>
 
       <p>At the international level, NRGI engages external influencers which are predisposed to receive and adopt NRGI's evidence-based messaging.</p>
       <p>We work with influential states, regional bodies, multilateral organizations, multi-stakeholder iniatives, and industry actors to develop international norms and standards.</p>
@@ -223,7 +235,7 @@ layout: layouts/base.njk
   <div class="modal">
     <div class="modal-content">
 
-      <label style="color: #ff5638; font-size: 30px">Maximization of benefits, reduction of harms</label>
+      <label>Maximization of benefits, reduction of harms</label>
 
       <p>Governments that implement policies in line with good practice and citizen prioritie will likely increase benefits and reduce harms from the sector.</p>
       <p>Benefits include the availability of revenues for public services and social spending, helping to lift citizens out of poverty, as well increased dialogue and accountability. Harms include the direct impacts of extraction (e.g., corruption, conflict and social and environmental effects), growing inequality, and negative gender-differentiated impacts.</p>
@@ -249,7 +261,7 @@ layout: layouts/base.njk
         <p>Resource Governance Index drives reform</p>
       </div>
 
-      <div class="nrgi-impact-tag custom-tag">
+      <div class="learn-more-tag">
         <label class="highlights-button" for="modal_multiple" style="color: #ff5638;">LEARN MORE</label>
       </div>
     </div>
@@ -265,7 +277,7 @@ layout: layouts/base.njk
         <p>Guinea's road improved mining governance</p>
       </div>
 
-      <div class="nrgi-impact-tag custom-tag">
+      <div class="learn-more-tag">
         <label class="highlights-button" for="modal_national" style="color: #ff5638;">LEARN MORE</label>
       </div>
 
@@ -284,7 +296,7 @@ layout: layouts/base.njk
         <p>A strengthened EITI standard</p>
       </div>
 
-      <div class="nrgi-impact-tag custom-tag">
+      <div class="learn-more-tag">
         <label class="highlights-button" for="modal_international" style="color: #ff5638;">LEARN MORE</label>
       </div>
 
@@ -295,7 +307,7 @@ layout: layouts/base.njk
 
       <p class="base-card__paragraph">Governments that, implement polices in line with good pratice and citizen priorities will likely increase benefits and reduce harms from the sector.</p>
 
-      <div class="nrgi-impact-tag custom-tag learn-more-maximization">
+      <div class="learn-more-tag">
         <label class="highlights-button" for="modal_maximization" style="color: #ff5638;">LEARN MORE</label>
       </div>
 
@@ -316,48 +328,79 @@ layout: layouts/base.njk
 </section>
 
 <section class="base-section">
-  <div class="center">
+  <div class="center map-focus__container">
     <img src="/images/nrgi-worldmap-where-we-work.svg" alt="nrgi-worlmap">
-  </div>
-</section>
 
-<section class="text-section">
-  <div class="center center--narrow">
-    <p><strong>We have more influence in the early stages of the development of natural resources than when trying to address weaknesses or gaps in countries that have decades-old extractive sectors.</strong></p>
-    <p>However, NRGI balances its engagement across countries where there is openness to reform and the possibility of significant short-term change, with more challenging contexts where the likelihood of immediate success is lower but NRGI’s contribution is potentially more game-changing and the impact for citizens more significant over the long term.</p>
-  </div>
-</section>
-
-<section class="base-section text-align:center shadow-section" style="--padding: var(--s1)">
-  <a href="#" class="button button--primary button--accent-color">Download full strategy</a>
-</section>
-
-<section class="text-section shadow-section quote-section">
-  <div class="center center--narrow">
-    <blockquote>
-      <p>NRGI recognizes that the mining industry is critical to modern life but that there are changes that the industry can make that will help to reduce its negative impacts. NRGI also gives the impression that it is open to learning from industry in a way that other NGOs do not. This builds trust and makes for a more open conversation.”</p>
-      <p><small>Quotations taken from respondents to anonymous stakeholder surveys and independent evaluations</small></p>
-    </blockquote>
-  </div>
-</section>
-
-<footer class="footer base-section">
-  <div class="center center--wrapper">
-    <div>
-      <form class="subscribe-form" action=""><input type="text" placeholder="Sign up to receive updates"><input type="submit" value="Subscribe"></form>
-      <div class="social-media">
-        <a href="#">{% include 'icons/facebook.njk' %}</a>
-        <a href="#">{% include 'icons/linkedin.njk' %}</a>
-        <a href="#">{% include 'icons/twitter.njk' %}</a>
-        <a href="#">{% include 'icons/youtube.njk' %}</a>
+  <div class="map-focus__wrapper">
+    <div class="focus-countries__container">
+      <div class="map-focus__title">
+        <h1>Focus countries</h1>
       </div>
-      <a href="#" class="color:white">resourcegovernance.org</a>
+      <div class="focus-countries-cluster__container">
+        <div class="map-cluster__btns">Colombia</div>
+        <div class="map-cluster__btns">Dem. Rep. of Congo</div>
+        <div class="map-cluster__btns">Ghana</div>
+        <div class="map-cluster__btns">Guinea</div>
+        <div class="map-cluster__btns">Mexico</div>
+        <div class="map-cluster__btns">Mongolia</div>
+        <div class="map-cluster__btns">Myanmar</div>
+        <div class="map-cluster__btns">Nigeria</div>
+        <div class="map-cluster__btns">Peru</div>
+        <div class="map-cluster__btns">Senegal</div>
+        <div class="map-cluster__btns">Tanzania</div>
+        <div class="map-cluster__btns">Uganda</div>
+      </div>
+    </div>
+    <div class="focus-regions__container">
+      <div class="map-focus__title">
+        <h1>Focus regions</h1>
+      </div>
+      <div class="focus-regions-cluster__container">
+        <div class="map-cluster__btns">Eurasia</div>
+        <div class="map-cluster__btns">Middle East & North Africa</div>
+      </div>
+    </div>
     </div>
   </div>
-</footer>
-<div class="by-line">
-  <div class="center">
-    <a href="https://ccm.design">by ccm.design</a>
+  </section>
+
+  <section class="text-section">
+    <div class="center center--narrow">
+      <p><strong>We have more influence in the early stages of the development of natural resources than when trying to address weaknesses or gaps in countries that have decades-old extractive sectors.</strong></p>
+      <p>However, NRGI balances its engagement across countries where there is openness to reform and the possibility of significant short-term change, with more challenging contexts where the likelihood of immediate success is lower but NRGI’s contribution is potentially more game-changing and the impact for citizens more significant over the long term.</p>
+    </div>
+  </section>
+
+  <section class="base-section text-align:center shadow-section" style="--padding: var(--s1)">
+    <a href="#" class="button button--primary button--accent-color">Download full strategy</a>
+  </section>
+
+  <section class="text-section shadow-section quote-section">
+    <div class="center center--narrow">
+      <blockquote>
+        <p>NRGI recognizes that the mining industry is critical to modern life but that there are changes that the industry can make that will help to reduce its negative impacts. NRGI also gives the impression that it is open to learning from industry in a way that other NGOs do not. This builds trust and makes for a more open conversation.”</p>
+        <p><small>Quotations taken from respondents to anonymous stakeholder surveys and independent evaluations</small></p>
+      </blockquote>
+    </div>
+  </section>
+
+  <footer class="footer base-section">
+    <div class="center center--wrapper">
+      <div>
+        <form class="subscribe-form" action=""><input type="text" placeholder="Sign up to receive updates"><input type="submit" value="Subscribe"></form>
+        <div class="social-media">
+          <a href="#">{% include 'icons/facebook.njk' %}</a>
+          <a href="#">{% include 'icons/linkedin.njk' %}</a>
+          <a href="#">{% include 'icons/twitter.njk' %}</a>
+          <a href="#">{% include 'icons/youtube.njk' %}</a>
+        </div>
+        <a href="#" class="color:white">resourcegovernance.org</a>
+      </div>
+    </div>
+  </footer>
+  <div class="by-line">
+    <div class="center">
+      <a href="https://ccm.design">by ccm.design</a>
+    </div>
   </div>
-</div>
 

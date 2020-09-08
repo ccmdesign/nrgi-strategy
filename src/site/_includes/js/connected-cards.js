@@ -9,13 +9,18 @@ function onCardsHover(elements) {
 }
 
 function toggleLinesOpacity(card, hover) {
-    let lines
+    let lines;
+    const text = document.querySelector('.between-lines-text');
 
-    card.id.includes('top-right') || card.id.includes('bottom-right')
+    if (!card.id) card = card.parentElement;
+
+    card.classList.remove('pulse');
+
+    card.id.includes('top-right')
         ? lines = document.querySelectorAll('.line-bottom-left, .line-top-right, .line-right')
         : lines = document.querySelectorAll('.line-top-left, .line-bottom-right, .line-left');
 
     hover
-        ? lines.forEach((line) => {line.style.opacity = '1'})
-        : lines.forEach((line) => {line.style.opacity = '.1'})
+        ? lines.forEach((line) => { line.style.opacity = '1'; text.style.opacity = '0' })
+        : lines.forEach((line) => { line.style.opacity = '.1'; text.style.opacity = '1' });
 }

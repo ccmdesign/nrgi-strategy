@@ -22,8 +22,8 @@
 @import 'vendor-components/_switcher.css';
 
 @import 'connected-cards-components/_connected-cards.css';
-
 @import 'modals-cards-component/_modal-cards.css';
+@import 'worlmap-components/_worlmap.css';
 
 /* Boilerplate Components */
 @import 'custom-components/_prose.css';
