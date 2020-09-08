@@ -21,9 +21,17 @@
 @import 'vendor-components/_stack.css';
 @import 'vendor-components/_switcher.css';
 
+/* Connected cards Components */
 @import 'connected-cards-components/_connected-cards.css';
+
+/* Modal cards Components */
 @import 'modals-cards-component/_modal-cards.css';
-@import 'worlmap-components/_worlmap.css';
+
+/* World map Components */
+@import 'worldmap-components/_worldmap.css';
+
+/* Scrollbar Components */
+@import 'scrollbar-components/_scrollbar.css';
 
 /* Boilerplate Components */
 @import 'custom-components/_prose.css';
