@@ -3,107 +3,7 @@
 Contains all modal cards css
 
 */
-.highlights-button {
-    display: inline-block;
-    cursor: pointer;
-    -webkit-transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
-}
-.modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.5s 0.5s ease-in-out;
-    transition: all 0.5s 0.5s ease-in-out;
-}
 
-.modal-content {
-    padding: 130px 150px 180px;
-    width: fit-content;
-    max-width: 1050px;
-    overflow: auto;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    z-index: 2;
-    opacity: 0;
-    border-radius: 3px;
-    background: #fff;
-    transform: translate(-50%);
-    transition: all .5s ease-in-out;
-    box-shadow: 0 0 35px -15px #8080807a;
-}
-
-.modal-content label {
-    font-size: 3em;
-    color: #ff5638;
-}
-
-.modal-content img {
-    display: block;
-    width: 100%;
-    margin: 10px 0 0;
-}
-
-.modal-content > p {
-    padding-top: 10px;
-    text-align: justify;
-    font-size: 1.3em;
-    color: #646464;
-}
-
-.modal-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.89);
-}
-
-.modal-close:after {
-    content: "X";
-    float: right;
-    margin: 10px 10px 0 0;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    line-height: 30px;
-    cursor: pointer;
-    font-size: 2em;
-    border-radius: 20px;
-}
-
-input[id*="modal_"] {
-    position: fixed;
-    left: -9999px;
-    top: 50%;
-    opacity: 0;
-}
-input[id*="modal_"]:checked + div.modal {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition-delay: 0s;
-    -ms-transition-delay: 0s;
-    transition-delay: 0s;
-}
-
-input[id*="modal_"]:checked + div.modal .modal-content {
-    opacity: 1;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    -webkit-transition-delay: 0.5s;
-    -ms-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-}
 
 .learn-more-tag {
     position: absolute;
@@ -114,23 +14,91 @@ input[id*="modal_"]:checked + div.modal .modal-content {
     font-size: 1.2em;
 }
 
-.cards__section .nrgi-impact-tag.custom-tag {
-    bottom: 145px;
+.cards__section .base-card {
+    margin: 0 auto;
+    max-width: 75ch;
+    border: none;
 }
 
-.cards__section .base-card__paragraph {
-    margin-top: 20px;
+.cards__section .base-card__content {
+    position: relative;
 }
 
-.cards__section .base-card__body {
-    box-shadow: 0 10px 35px -15px rgb(0 0 0 / 16%);
-    border: none !important;
+.cards__section .base-card__content :nth-last-child(2) {
+    margin: 0;
 }
 
-.modal-content .nrgi-impact-tag.custom-tag {
-    bottom: 75px;
+.cards__section .base-card__content :last-child {
+    margin: 0;
 }
 
-.cards__section .base-cards {
-    margin: -15px 18px !important
+.cards__section .base-card__content a:hover {
+    text-decoration: none;
+}
+
+.cards__section .base-card__content p {
+    margin-bottom: 100px;
+}
+
+.cards__section .nrgi-impact-tag {
+    margin: 0 !important;
+    position: absolute;
+    bottom: 60px;
+    width: 90%;
+}
+
+.cards__section .nrgi-impact-tag p {
+    margin: 0 0 0 1rem !important;
+    font-weight: 500;
+}
+
+.cards__section .nrgi-impact-tag .nrgi-impact-tag__tag {
+    color: white;
+    font-weight: 500;
+}
+
+.cards__section .dialog-content {
+    border: none;
+    padding: 100px 120px
+}
+
+.cards__section .dialog-content .dialog-close {
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 25px;
+    box-shadow: none;
+}
+
+.cards__section .grid {
+    grid-template-columns: repeat(auto-fit,minmax(min(500px,100%),1fr));
+}
+
+.learn-more-btn {
+    border: none;
+    max-width: fit-content;
+    padding: 0;
+    color: var(--accent-color);
+    position: absolute;
+    bottom: 20px;
+}
+
+.learn-more-btn:hover {
+    background-image: none;
+}
+
+.dialog-content p {
+    margin-bottom: 10px;
+}
+
+.dialog-content h2 {
+    margin-bottom: 20px;
+}
+
+.base-card__content p {
+    margin-top: var(--s-1) !important;
 }

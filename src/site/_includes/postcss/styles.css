@@ -25,7 +25,7 @@
 @import 'connected-cards-components/_connected-cards.css';
 
 /* Modal cards Components */
-@import 'modals-cards-component/_modal-cards.css';
+@import 'modal-cards-component/_modal-cards.css';
 
 /* World map Components */
 @import 'worldmap-components/_worldmap.css';
@@ -66,5 +66,4 @@
 @import 'sections/_title-section.css';
 @import 'sections/_hero-section.css';
 @import 'sections/_sections.css';
-
 
