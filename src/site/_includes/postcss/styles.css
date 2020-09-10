@@ -24,6 +24,7 @@
 
 /* Boilerplate Components */
 @import 'custom-components/_prose.css';
+@import 'custom-components/_center-custom.css';
 
 /* Import order is relevant */
 @import 'custom-components/_button-structure.css';
