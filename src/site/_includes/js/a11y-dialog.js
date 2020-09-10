@@ -2,7 +2,6 @@
 
 (function(global) {
   'use strict';
-
   var FOCUSABLE_ELEMENTS = [
     'a[href]:not([tabindex^="-"]):not([inert])',
     'area[href]:not([tabindex^="-"]):not([inert])',
@@ -27,6 +26,55 @@
    * @param {Element} node
    * @param {(NodeList | Element | string)} targets
    */
+
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      var dialogEl = document.getElementById('card-dialog-1');
+      var mainEl = document.getElementById('main');
+      var dialog = new window.A11yDialog(dialogEl, mainEl);
+
+      dialog.on('show', function (dialogEl, triggerEl) {
+        console.log(dialogEl);
+        console.log(triggerEl);
+      });
+    });
+  }());
+
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      var dialogEl = document.getElementById('card-dialog-2');
+      var mainEl = document.getElementById('main');
+      var dialog = new window.A11yDialog(dialogEl, mainEl);
+
+      dialog.on('show', function (dialogEl, triggerEl) {
+      });
+    });
+  }());
+
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      var dialogEl = document.getElementById('card-dialog-3');
+      var mainEl = document.getElementById('main');
+      var dialog = new window.A11yDialog(dialogEl, mainEl);
+
+      dialog.on('show', function (dialogEl, triggerEl) {
+      });
+    });
+  }());
+
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      var dialogEl = document.getElementById('card-dialog-4');
+      var mainEl = document.getElementById('main');
+      var dialog = new window.A11yDialog(dialogEl, mainEl);
+
+      dialog.on('show', function (dialogEl, triggerEl) {
+        console.log(dialogEl);
+        console.log(triggerEl);
+      });
+    });
+  }());
+
   function A11yDialog(node, targets) {
     // Prebind the functions that will be bound in addEventListener and
     // removeEventListener to avoid losing references
@@ -40,8 +88,8 @@
     this.dialog = node.querySelector('dialog, [role="dialog"], [role="alertdialog"]');
     this.role = this.dialog.getAttribute('role') || 'dialog';
     this.useDialog = (
-      'show' in document.createElement('dialog') &&
-      this.dialog.nodeName === 'DIALOG'
+        'show' in document.createElement('dialog') &&
+        this.dialog.nodeName === 'DIALOG'
     );
 
     // Keep an object of listener types mapped to callback functions
@@ -60,7 +108,7 @@
   A11yDialog.prototype.create = function(targets) {
     // Keep a collection of nodes to disable/enable when toggling the dialog
     this._targets =
-      this._targets || collect(targets) || getSiblings(this.container);
+        this._targets || collect(targets) || getSiblings(this.container);
 
     // Set the `shown` property to match the status from the DOM
     this.shown = this.dialog.hasAttribute('open');
@@ -84,20 +132,20 @@
     // event listener to open the dialog
     this._openers = $$('[data-a11y-dialog-show="' + this.container.id + '"]');
     this._openers.forEach(
-      function(opener) {
-        opener.addEventListener('click', this._show);
-      }.bind(this)
+        function(opener) {
+          opener.addEventListener('click', this._show);
+        }.bind(this)
     );
 
     // Keep a collection of dialog closers, each of which will be bound a click
     // event listener to close the dialog
     this._closers = $$('[data-a11y-dialog-hide]', this.container).concat(
-      $$('[data-a11y-dialog-hide="' + this.container.id + '"]')
+        $$('[data-a11y-dialog-hide="' + this.container.id + '"]')
     );
     this._closers.forEach(
-      function(closer) {
-        closer.addEventListener('click', this._hide);
-      }.bind(this)
+        function(closer) {
+          closer.addEventListener('click', this._hide);
+        }.bind(this)
     );
 
     // Execute all callbacks registered for the `create` event
@@ -213,16 +261,16 @@
 
     // Remove the click event listener from all dialog openers
     this._openers.forEach(
-      function(opener) {
-        opener.removeEventListener('click', this._show);
-      }.bind(this)
+        function(opener) {
+          opener.removeEventListener('click', this._show);
+        }.bind(this)
     );
 
     // Remove the click event listener from all dialog closers
     this._closers.forEach(
-      function(closer) {
-        closer.removeEventListener('click', this._hide);
-      }.bind(this)
+        function(closer) {
+          closer.removeEventListener('click', this._hide);
+        }.bind(this)
     );
 
     // Execute all callbacks registered for the `destroy` event
@@ -278,9 +326,9 @@
     var listeners = this._listeners[type] || [];
 
     listeners.forEach(
-      function(listener) {
-        listener(this.container, event);
-      }.bind(this)
+        function(listener) {
+          listener(this.container, event);
+        }.bind(this)
     );
   };
 
@@ -389,9 +437,9 @@
   function getFocusableChildren(node) {
     return $$(FOCUSABLE_ELEMENTS.join(','), node).filter(function(child) {
       return !!(
-        child.offsetWidth ||
-        child.offsetHeight ||
-        child.getClientRects().length
+          child.offsetWidth ||
+          child.offsetHeight ||
+          child.getClientRects().length
       );
     });
   }
@@ -416,8 +464,8 @@
       // focused item is the last one, move the focus to the first focusable item
       // from the dialog element
     } else if (
-      !event.shiftKey &&
-      focusedItemIndex === focusableChildren.length - 1
+        !event.shiftKey &&
+        focusedItemIndex === focusableChildren.length - 1
     ) {
       focusableChildren[0].focus();
       event.preventDefault();
