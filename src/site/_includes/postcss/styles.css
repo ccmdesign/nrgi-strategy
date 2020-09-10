@@ -49,12 +49,12 @@
 /* a11y-dialog */
 @import 'custom-components/_a11y-dialog.css';
 
+/* Project Components */
+@import 'project-components/_title-section.css';
+@import 'project-components/_hero-section.css';
+@import 'project-components/_sections.css';
+
 /* Custom Components */
 @import '_custom-component.css';
-
-/* Sections */
-@import 'sections/_title-section.css';
-@import 'sections/_hero-section.css';
-@import 'sections/_sections.css';
 
 
