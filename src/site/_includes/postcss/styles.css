@@ -53,6 +53,10 @@
 @import 'project-components/_title-section.css';
 @import 'project-components/_hero-section.css';
 @import 'project-components/_sections.css';
+@import 'project-components/_connected-cards-section.css';
+@import 'project-components/_modal-cards-section.css';
+@import 'project-components/_scrollbar.css';
+@import 'project-components/_worldmap-section.css';
 
 /* Custom Components */
 @import '_custom-component.css';

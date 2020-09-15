@@ -10,6 +10,10 @@ collapseSections('.collapse');
 
 cardsInit('.base-card');
 
+// Add hover listener to connected cards on init
+addHoverListener('#connected-cards-hover-top-left,' +
+    '#connected-cards-hover-top-right')
+
 tabs('.tabs');
 
 menuItems('[data-inclusive-menu-opens]');

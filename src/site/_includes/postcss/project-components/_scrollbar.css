@@ -1,0 +1,33 @@
+/*
+
+Contains all scrollbar css
+
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 32px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a2a2a285;
+    border-radius: 32px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #80808085;
+}
+
+* {
+    scrollbar-width: thin !important;
+    scrollbar-color: light !important;
+}
