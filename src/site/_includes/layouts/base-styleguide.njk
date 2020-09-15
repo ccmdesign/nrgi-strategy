@@ -9,12 +9,12 @@
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
     <div id="main" class="container">
-      {% include "header.njk" %}
+      {% include "base-components/header.njk" %}
       {{ content | safe }}
-      {% include "footer.njk" %}
+      {% include "base-components/footer.njk" %}
     </div>
 
-      {% include "a11y-dialog.njk" %}
+      {% include "base-components/a11y-dialog.njk" %}
     
       {% include "scripts.njk" %}
 
