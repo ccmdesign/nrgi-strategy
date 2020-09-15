@@ -51,10 +51,6 @@ button,
 .button--secondary-color { --button-hsl: var(--secondary-hsl); }
 .button--accent-color    { --button-hsl: var(--accent-hsl); }
 .button--base-color      { --button-hsl: var(--base-hsl); }
-.button--white-color { 
-  --button-hsl: var(--white-hsl);
-  --button-text-color: var(--white-color);
-}
 .button--success         { --button-hsl: var(--green-hsl); }
 .button--cancel          { --button-hsl: var(--red-hsl); }
 .button--warning         { --button-hsl: var(--yellow-hsl); }

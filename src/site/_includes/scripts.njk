@@ -16,4 +16,4 @@
   {% include "js/hello.js" %}
 {% endset %}
 
-<script>{{ js | safe }}</script>
+<script>{{ js | jsmin | safe }}</script>

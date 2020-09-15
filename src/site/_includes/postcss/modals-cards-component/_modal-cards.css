@@ -1,0 +1,104 @@
+/*
+
+Contains all modal cards css
+
+*/
+
+
+.learn-more-tag {
+    position: absolute;
+    bottom: 50px;
+}
+
+.learn-more-tag label {
+    font-size: 1.2em;
+}
+
+.cards__section .base-card {
+    margin: 0 auto;
+    max-width: 75ch;
+    border: none;
+}
+
+.cards__section .base-card__content {
+    position: relative;
+}
+
+.cards__section .base-card__content :nth-last-child(2) {
+    margin: 0;
+}
+
+.cards__section .base-card__content :last-child {
+    margin: 0;
+}
+
+.cards__section .base-card__content a:hover {
+    text-decoration: none;
+}
+
+.cards__section .base-card__content p {
+    margin-bottom: 100px;
+}
+
+.cards__section .nrgi-impact-tag {
+    margin: 0 !important;
+    position: absolute;
+    bottom: 60px;
+    width: 90%;
+}
+
+.cards__section .nrgi-impact-tag p {
+    margin: 0 0 0 1rem !important;
+    font-weight: 500;
+}
+
+.cards__section .nrgi-impact-tag .nrgi-impact-tag__tag {
+    color: white;
+    font-weight: 500;
+}
+
+.cards__section .dialog-content {
+    border: none;
+    padding: 100px 120px
+}
+
+.cards__section .dialog-content .dialog-close {
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 25px;
+    box-shadow: none;
+}
+
+.cards__section .grid {
+    grid-template-columns: repeat(auto-fit,minmax(min(500px,100%),1fr));
+}
+
+.learn-more-btn {
+    border: none;
+    max-width: fit-content;
+    padding: 0;
+    color: var(--accent-color);
+    position: absolute;
+    bottom: 20px;
+}
+
+.learn-more-btn:hover {
+    background-image: none;
+}
+
+.dialog-content p {
+    margin-bottom: 10px;
+}
+
+.dialog-content h2 {
+    margin-bottom: 20px;
+}
+
+.base-card__content p {
+    margin-top: var(--s-1) !important;
+}
