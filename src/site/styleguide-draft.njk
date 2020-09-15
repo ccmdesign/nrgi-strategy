@@ -6,11 +6,11 @@ layout: layouts/base-styleguide.njk
   <div class="stack">
     <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
     
-    {% include 'collapse.njk' %}
-    {% include 'tabs.njk' %}
+    {% include 'base-components/collapse.njk' %}
+    {% include 'base-components/tabs.njk' %}
     
     <div>
-    {% include 'menu-button.njk' %}
+    {% include 'base-components/menu-button.njk' %}
     </div>
 
     <div>
@@ -22,7 +22,7 @@ layout: layouts/base-styleguide.njk
       <ul>
         {% for card in cards %}
         {% set card = card %}
-        {% include 'card.njk' %}
+        {% include 'base-components/card.njk' %}
         {% endfor %}
       </ul>
     </div>

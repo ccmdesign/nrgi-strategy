@@ -21,20 +21,10 @@
 @import 'vendor-components/_stack.css';
 @import 'vendor-components/_switcher.css';
 
-/* Connected cards Components */
-@import 'connected-cards-components/_connected-cards.css';
-
-/* Modal cards Components */
-@import 'modal-cards-component/_modal-cards.css';
-
-/* World map Components */
-@import 'worldmap-components/_worldmap.css';
-
-/* Scrollbar Components */
-@import 'scrollbar-components/_scrollbar.css';
 
 /* Boilerplate Components */
 @import 'custom-components/_prose.css';
+@import 'custom-components/_center-custom.css';
 
 /* Import order is relevant */
 @import 'custom-components/_button-structure.css';
@@ -59,11 +49,12 @@
 /* a11y-dialog */
 @import 'custom-components/_a11y-dialog.css';
 
+/* Project Components */
+@import 'project-components/_title-section.css';
+@import 'project-components/_hero-section.css';
+@import 'project-components/_sections.css';
+
 /* Custom Components */
 @import '_custom-component.css';
 
-/* Sections */
-@import 'sections/_title-section.css';
-@import 'sections/_hero-section.css';
-@import 'sections/_sections.css';
 
