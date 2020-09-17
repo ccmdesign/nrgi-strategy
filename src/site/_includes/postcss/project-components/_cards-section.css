@@ -1,0 +1,79 @@
+ /*
+
+Contains all modal cards css
+
+*/
+
+.cards-section {
+
+    .base-card {
+        margin: 20px;
+        max-width: 75ch;
+        border: none;
+    }
+
+    .base-card__content {
+        position: relative;
+    }
+
+    .base-card__content span {
+        margin: 0;
+    }
+
+    .base-card__content a:hover {
+        text-decoration: none;
+    }
+
+    .base-card__content p {
+        margin-bottom: 100px;
+        margin-top: var(--s-1);
+    }
+
+    .nrgi-impact-tag {
+        margin: 0;
+        position: absolute;
+        bottom: 60px;
+        width: 90%;
+    }
+
+    .nrgi-impact-tag p {
+        margin: 0 0 0 1rem;
+        font-weight: 500;
+    }
+
+    .nrgi-impact-tag__tag {
+        color: white;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .dialog-content {
+        border: none;
+        padding: 100px 120px
+    }
+
+    .dialog-content p {
+        margin-bottom: 10px;
+    }
+
+    .dialog-content h2 {
+        margin-bottom: 20px;
+    }
+
+    .dialog-close {
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        font-size: 25px;
+        box-shadow: none;
+        outline: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit,minmax(min(500px,100%),1fr));
+    }
+}

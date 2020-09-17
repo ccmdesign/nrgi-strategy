@@ -27,6 +27,19 @@
   width: 100%;
 }
 
+.base-card__button {
+    border: none;
+    max-width: fit-content;
+    padding: 0;
+    color: var(--accent-color);
+    position: absolute;
+    bottom: 20px;
+}
+
+.base-card__button:hover {
+    background-image: none;
+}
+
 .base-card small a {
   position: relative;
   padding: var(--s-2) var(--s-2) var(--s-2) 0;
