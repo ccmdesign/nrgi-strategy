@@ -42,6 +42,8 @@
 @import 'custom-components/_tabs-visuals.css';
 @import 'custom-components/_tabs-structure.css';
 
+@import 'custom-components/_cluster-visuals.css';
+
 /* Inclusive Menu */
 @import 'custom-components/_menu-button-structure.css';
 @import 'custom-components/_menu-button-visual.css';
@@ -55,8 +57,8 @@
 @import 'project-components/_sections.css';
 @import 'project-components/_connected-cards-section.css';
 @import 'project-components/_modal-cards-section.css';
-@import 'project-components/_worldmap-section.css';
 @import 'project-components/_scrollbar.css';
+@import 'project-components/map/map.css';
 
 /* Custom Components */
 @import '_custom-component.css';

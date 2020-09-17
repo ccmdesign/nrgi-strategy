@@ -1,0 +1,8 @@
+/* This component extends the Vendor-Component from "EveryLayout" */
+
+
+.cluster > * > * {
+    border: 1px solid rgba(0,0,0,.09);
+    color: #6b6b6b;
+    padding: 4px 13px;
+}
