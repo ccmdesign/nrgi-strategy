@@ -1,0 +1,13 @@
+.card {
+  min-height: 320px;
+}
+
+.card .button {
+  align-self: flex-start;
+  color: var(--accent-color);
+  font-size: 120%;
+}
+
+.card--change {
+
+}
