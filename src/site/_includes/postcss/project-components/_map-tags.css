@@ -1,0 +1,34 @@
+.map {
+  margin-bottom: -4rem;
+}
+
+.map-tags {
+  display: flex;
+  justify-content: space-between;
+
+  h4 {
+    font-weight: normal;
+    color: hsla(var(--primary-hsl), .6);
+    margin-bottom: var(--s0);
+  }
+
+  &.center { --measure: 960px; }
+  .cluster { --space: var(--s-2); }
+  
+}
+
+.map-tags__countries { max-width: 500px; }
+
+.map-tags__regions {
+  max-width: 300px;
+  text-align: right;
+  .cluster > * { justify-content: flex-end; }
+  .map-tags__tag { white-space: nowrap; }
+
+
+}
+
+.map-tags__tag {
+  padding: var(--s-3) var(--s0);
+  border: 1px solid hsla(var(--primary-hsl), .2);
+}
