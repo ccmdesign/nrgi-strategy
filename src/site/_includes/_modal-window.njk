@@ -1,0 +1,20 @@
+<div id="card-{{ loop.index }}" class="dialog-window">
+  <div class="overlay" tabindex="-1" data-a11y-dialog-hide></div>
+  <dialog class="modal-window" aria-labelledby="{{card.heading}}">
+    <button class="dialog__close" type="button" data-a11y-dialog-hide aria-label="Close this dialog window">
+      <i class="material-icons">close</i>
+    </button>
+    <div class="modal-window__container stack prose">
+      <h1 id="{{card.heading}}">{{card.heading}}</h1>
+      {{ card.extra | safe }}
+    </div>
+    <footer class="stack">
+      {% if card.tag_label %}
+      <div class="nrgi-impact-tag">
+      <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
+      <p>{{ card.tag_label }}</p>
+      </div>
+      {% endif %}
+    </footer>
+  </dialog>
+</div>
