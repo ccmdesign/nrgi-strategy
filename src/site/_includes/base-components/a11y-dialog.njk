@@ -16,7 +16,7 @@
   - It can have a different id than `dialog-example`, but it needs an `id`
   anyway.
 -->
-<div id="dialog-example" class="dialog-window">
+<div id="card-{{ loop.index }}" class="dialog-window">
 
   <!--
     Overlay related notes:
@@ -32,7 +32,7 @@
     - It doesn’t have to be a `<dialog>` element, it can be a `<div>` element with the `dialog` or `alertdialog` role (e.g. `<div role="dialog">`).
     - It doesn’t have to have the `aria-labelledby` attribute however this is recommended. It should match the `id` of the dialog title.
   -->
-  <dialog aria-labelledby="dialog-title">
+  <dialog aria-labelledby="{{card.heading}}">
     <!--
       Closing button related notes:
       - It does have to have the `type="button"` attribute.
@@ -48,11 +48,20 @@
       - It should have a different content than `Dialog Title`.
       - It can have a different id than `dialog-title`.
     -->
-    <h1 id="dialog-title">Dialog Title</h1>
+    <h1 id="{{card.heading}}">{{card.heading}}</h1>
 
     <!--
       Here lives the main content of the dialog.
     -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe soluta nihil, animi sequi deleniti labore modi esse, dicta dignissimos. Quam vitae, magni repudiandae facilis assumenda aliquam corrupti nam obcaecati ut!</p>
+    {{card.extra | safe}}
+
+    <footer class="stack">
+      {% if card.tag_label %}
+      <div class="nrgi-impact-tag">
+      <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
+      <p>{{ card.tag_label }}</p>
+      </div>
+      {% endif %}
+    </footer>
   </dialog>
 </div>
