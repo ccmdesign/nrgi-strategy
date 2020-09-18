@@ -50,6 +50,7 @@ Contains all modal cards css
 
     .dialog-content {
         border: none;
+        position: fixed;
         padding: 100px 120px
     }
 
