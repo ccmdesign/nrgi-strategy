@@ -1,8 +1,8 @@
-.map {
-  margin-bottom: -4rem;
-}
+.map { margin-bottom: -4rem; }
 
 .map-tags {
+  --measure: 960px; /* limits the width of the .center component*/
+  --space: var(--s-2);
   display: flex;
   justify-content: space-between;
 
@@ -12,23 +12,21 @@
     margin-bottom: var(--s0);
   }
 
-  &.center { --measure: 960px; }
-  .cluster { --space: var(--s-2); }
-  
+  .cluster { --space: var(--s-2); } /* sets the spacing between the tags */
 }
 
 .map-tags__countries { max-width: 500px; }
 
 .map-tags__regions {
   max-width: 300px;
+  /* aligns the regions to the right */
   text-align: right;
-  .cluster > * { justify-content: flex-end; }
-  .map-tags__tag { white-space: nowrap; }
-
-
+  .cluster > * { justify-content: flex-end; } 
 }
 
 .map-tags__tag {
   padding: var(--s-3) var(--s0);
   border: 1px solid hsla(var(--primary-hsl), .2);
+  background-color: hsla(360, 100%, 100%, .8);
+  white-space: nowrap; /* avoids line breaks for the tags */
 }
