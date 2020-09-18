@@ -1,3 +1,15 @@
 .map {
-    position: relative;
+	position: relative;
+}
+
+@media(max-width: 768px) {
+	.map .cluster > * > * {
+		font-size: 12px;
+	}
+}
+
+@media(max-width: 425px) {
+	.map .cluster > * > * {
+		font-size: 10px;
+	}
 }
