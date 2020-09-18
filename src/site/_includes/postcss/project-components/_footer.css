@@ -1,0 +1,19 @@
+.footer {
+  --padding: var(--s1);
+  background-color: var(--base-color);
+  
+  .center > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 850px) {  flex-direction: column; }
+  }
+
+  .social-media {
+    @media (max-width: 850px) {  margin: var(--s0) 0 }
+  }
+
+  a { text-decoration: none; }
+}
