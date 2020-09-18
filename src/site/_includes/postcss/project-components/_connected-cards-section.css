@@ -125,6 +125,7 @@ Contains all connected cards css
 .nrgi-impact-tag.custom-tag {
     position: absolute;
     bottom: 90px;
+    padding-right: 5px;
 }
 
 .nrgi-impact-tag.custom-tag p {
@@ -173,11 +174,10 @@ Contains all connected cards css
 
 .connected-lines__wrapper {
     position: relative;
-    width: 51.5%;
+    width: 52.5%;
     margin: 0 auto;
-}
-
-.connected-lines__container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .connected-lines-straight {
@@ -201,9 +201,10 @@ Contains all connected cards css
     position: absolute;
     width: calc(100% - 105px);
     left: 50%;
-    top: 40px;
-    transform: translate(-50%);
+    top: 33%;
+    transform: translate(-50%, -50%);
     transition: .5s ease-out;
+    font-size: 12px;
 }
 
 .between-lines-text h1 {
@@ -244,6 +245,10 @@ Contains all connected cards css
 
     .base-card__body {
         padding: 40px 25px 145px;
+    }
+
+    .between-lines-text {
+        font-size: 10px;
     }
 }
 
