@@ -5,6 +5,7 @@ Contains all modal cards css
 */
 
 .cards-section {
+    padding: 20px;
 
     .base-card {
         margin: 20px;
@@ -76,4 +77,8 @@ Contains all modal cards css
     .grid {
         grid-template-columns: repeat(auto-fit,minmax(min(500px,100%),1fr));
     }
+}
+
+.cards-section.center {
+    max-width: 160ch;
 }
