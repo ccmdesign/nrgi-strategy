@@ -3,6 +3,7 @@
 Contains all connected cards css
 
 */
+
 .connected-cards__section {
     position: relative;
 }
@@ -43,25 +44,6 @@ Contains all connected cards css
     transform: translate(-50%, -50%);
 }
 
-.margin-top-multiple {
-    margin-top: 100px!important;
-}
-
-.margin-top-national {
-    margin-top: 75px!important;
-}
-
-.learn-more-maximization {
-    margin-top: 123px!important;
-}
-
-.base-cards {
-    border: solid white!important;
-    width: 800px!important;
-    height: 415px!important;
-    margin: 0 50px 0 0!important;
-}
-
 .margin-cards-top {
     margin-top: 65px!important;
 }
@@ -71,21 +53,17 @@ Contains all connected cards css
     border: solid var(--accent-color);
     border-width: 6px 0 6px 0;
     box-shadow: grey 0 0 26px -11px;
-    width: 570px;
-    height: 600px;
-    padding: 50px;
+    padding: 40px 40px 145px;
     z-index: 1;
     background-color: #fff;
-    margin: 0 90px;
 }
 
 .connected-cards__section .base-card__body.bottom-card {
     padding-top: 90px;
-    height: 530px;
+    padding-bottom: 80px;
 }
 
 .connected-cards__container {
-    display: flex;
     width: 100%;
     justify-content: center;
     margin: 0 auto;
@@ -105,17 +83,16 @@ Contains all connected cards css
 
 .base-card__subtitle {
     margin-top: 20px;
-    font-size: .9em;
+    margin-bottom: 5px; 
+    font-size: 0.83em;
     color: #646464;
 }
 
 .base-card__title {
-    font-size: 1.18em;
 }
 
 .base-card__paragraph {
     margin-top: 5px;
-    font-size: 1.2em;
     color: #646464;
 }
 
@@ -125,19 +102,17 @@ Contains all connected cards css
 
 .cluster-box {
     border: 1px solid rgb(0 0 0 / 7%);
-    font-size: 20px;
     padding: 5px 20px;
-    margin: 20px 20px 0 0;
+    margin: 15px 15px 0 0;
     box-shadow: 0 0 19px -11px #808080c4;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     float: left;
     color: #646464;
 }
 
 .nrgi-impact-tag.custom-tag .nrgi-impact-tag__tag span {
-    font-size: 1.4rem;
     text-transform: uppercase;
     line-height: 1;
 }
@@ -153,7 +128,6 @@ Contains all connected cards css
 }
 
 .nrgi-impact-tag.custom-tag p {
-    font-size: .9rem;
     font-weight: normal;
 }
 
@@ -162,6 +136,7 @@ Contains all connected cards css
     border: solid var(--accent-color);
     border-width: 0 0 20px 20px;
     opacity: .1;
+    height: 140px;
 }
 
 .line-top-right {
@@ -169,6 +144,7 @@ Contains all connected cards css
     border: solid var(--accent-color);
     border-width: 0 20px 20px 0;
     opacity: .1;
+    height: 140px;
 }
 
 .line-bottom-left {
@@ -177,6 +153,7 @@ Contains all connected cards css
     border-width: 20px 0 0 20px;
     margin-top: -20px;
     opacity: .1;
+    height: 100px;
 }
 
 .line-bottom-right {
@@ -185,11 +162,11 @@ Contains all connected cards css
     border-width: 20px 20px 0 0;
     margin-top: -20px;
     opacity: .1;
+    height: 100px;
 }
 
 .connected-lines {
     width: 50%;
-    height: 400px;
     float: left;
     transition: .2s ease-out;
 }
@@ -197,12 +174,10 @@ Contains all connected cards css
 .connected-lines__wrapper {
     position: relative;
     width: 51.5%;
-    margin: 257px auto 0;
+    margin: 0 auto;
 }
 
 .connected-lines__container {
-    position: absolute;
-    width: 100%;
 }
 
 .connected-lines-straight {
@@ -210,7 +185,6 @@ Contains all connected cards css
     border-width: 0 0 0 20px;
     height: 200px;
     position: absolute;
-    top: 260px;
     transition: .4s ease-out;
 }
 
@@ -226,18 +200,23 @@ Contains all connected cards css
 .between-lines-text {
     position: absolute;
     width: calc(100% - 105px);
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, 453%);
+    top: 40px;
+    transform: translate(-50%);
     transition: .5s ease-out;
 }
 
 .between-lines-text h1 {
-    font-size: 1.5em;
     font-weight: 100;
     font-style: italic;
     text-align: center;
     color: #4c4c4c;
+}
+
+.connected-cards__container.grid {
+    grid-gap: 140px;
+    grid-template-columns: repeat(auto-fit,minmax(min(320px,100%),1fr));
+    padding: 0 60px;
 }
 
 @keyframes pulse {
@@ -254,5 +233,51 @@ Contains all connected cards css
     100% {
         transform: scale(0.98);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@media(max-width: 1024px) {
+    .connected-cards__container.grid {
+        grid-gap: 50px;
+        padding: 0 20px;
+    }
+
+    .base-card__body {
+        padding: 40px 25px 145px;
+    }
+}
+
+@media(max-width: 768px) {
+    .cluster-box {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .connected-lines__container {
+        display: none;
+    }
+
+    .connected-cards__container.grid {
+        grid-gap: 100px;
+    }
+
+    .connected-cards__container--position_bottom {
+        margin-top: 150px;
+    }
+}
+
+@media(max-width: 425px) {
+    .connected-cards__container.grid {
+        padding: 0;
+    }
+    .base-card__body {
+        padding: 30px 20px 145px;
+    }
+}
+
+@media(max-width: 375px) {
+    .nrgi-impact-tag.custom-tag p {
+        font-size: 10px;
     }
 }
