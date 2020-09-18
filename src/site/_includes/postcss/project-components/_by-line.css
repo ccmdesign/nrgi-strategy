@@ -1,0 +1,8 @@
+.by-line {
+  background-color: hsla(207, 31%, 45%, 1);
+  padding: var(--s-2) var(--s0);
+  text-align: right;
+  font-size: .75rem;
+  a { color: hsla(var(--white-hsl), .4); }
+  a:hover { color: white; }
+}

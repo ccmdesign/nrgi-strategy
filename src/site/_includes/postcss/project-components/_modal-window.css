@@ -1,0 +1,28 @@
+.modal-window[open] {
+  display: flex;
+  position: fixed;
+}
+
+.modal-window { 
+  --dialog-padding: var(--s3);
+  height: 60vh; 
+  box-shadow: var(--base-shadow);
+  flex-direction: column;
+}
+
+.modal-window .dialog__close {
+  right: 0;
+  top: 0;
+  padding: var(--s0);
+}
+
+.modal-window footer { margin-top: auto; }
+
+.modal-window h1 {
+  color: var(--accent-color);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: var(--s2);
+}
+
+.modal-window strong { font-weight: 600; }

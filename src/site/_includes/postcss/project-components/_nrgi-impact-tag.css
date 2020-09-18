@@ -1,0 +1,29 @@
+.nrgi-impact-tag {
+  display: flex;
+  align-items: center;
+
+  > * + * { margin-left: var(--s0); }
+  
+  p {
+    font-size: .8rem;
+    font-style: italic;
+    opacity: .5;
+    font-weight: 300;
+    letter-spacing: .4px;
+  }
+}
+
+.nrgi-impact-tag__tag {
+  display: flex;
+  span { 
+    display: block; 
+    padding: var(--s-2) var(--s-1) calc(var(--s-2) + 1px); /* Correção visual para o texto */
+    background-color: var(--base-color);
+    font-size: .8rem;
+    line-height: 1;
+    color: var(--white-color);
+    font-weight: 600;
+  }
+
+  span:last-child { background-color: var(--accent-color); }
+}

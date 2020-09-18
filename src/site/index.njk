@@ -31,14 +31,14 @@ layout: layouts/base.njk
 </header>
 
 <section class="mission-section text-section">
-  <div class="center center--measure">
+  <div class="center">
     <p><strong>NRGI’s mission is ensuring that:</strong></p>
     <p>Countries rich in oil, gas and minerals achieve sustainable, inclusive development. </p>
     <p>People receive lasting benefits from the extractive sector and experience reduced harms.</p>
   </div>
 </section>
 
-<section class="area-focus-section title-section">
+<section class="title-section--area-focus title-section">
   <div class="center stack">
     <h1>Areas of focus</h1>
     <p>NRGI works expressly on the extractives sector, guided by the intellectual framework of the <strong class="color:accent">Natural Resource Charter</strong>. From now until 2025, NRGI will focus on two areas of the extractive industry decision chain: <strong>getting a good deal</strong> and <strong>revenue management</strong>.</p>
@@ -58,21 +58,22 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="bring-change-section title-section">
+<section class="title-section title-section--bring-change">
   <div class="center stack">
     <h1>How we bring about change</h1>
     <p>In concert with other actors in the resource governance space, NRGI’s works with influential actors at the country and global levels to inform policy change and see it through to implementation.</p>
   </div>
 </section>
 
-<section class="base-section">
-  <div class="center center--wrapper">
-    <h1 class="text-align:center">Cards</h1>
+<section class="base-section change-cards">
+  <div class="center center--wrapper grid card-grid">
+    {% for card in cards %}
+    {% include 'base-components/card.njk' %}
+    {% endfor %}
   </div>
 </section>
 
-
-<section class="where-we-work-section title-section">
+<section class="title-section--where-we-work title-section">
   <div class="center stack">
     <h1>Where we work</h1>
     <p>NRGI targets countries where government actors are open to reform and where there are accountability actors to inform and/or support their efforts.</p>
@@ -85,7 +86,29 @@ layout: layouts/base.njk
 
 <section class="base-section">
   <div class="center center--wrapper">
-    <h1 class="text-align:center">Map</h1>
+    <img class="map" src="/images/nrgi-worldmap-where-we-work.svg" alt="">
+    <div class="map-tags center">
+      <div class="map-tags__countries">
+        <h4>Focus Countries</h4>
+        <div class="cluster">
+          <div>
+            {% for country in countries %}
+              <span class="map-tags__tag">{{ country }}</span>
+            {% endfor %}
+          </div>
+        </div>  
+      </div>
+      <div class="map-tags__regions">
+        <h4>Focus Regions</h4>
+        <div class="cluster">
+          <div>
+            <span class="map-tags__tag">Eurasia</span>
+            <span class="map-tags__tag">Middle East & North Africa</span>
+          </div>
+        </div>  
+      </div>
+    </div>
+    
   </div>
 </section>
 
@@ -124,8 +147,10 @@ layout: layouts/base.njk
   </div>
 </footer>
 <div class="by-line">
-  <div class="center">
     <a href="https://ccm.design">by ccm.design</a>
-  </div>
 </div>
+
+{% for card in cards %}
+{% include '_modal-window.njk' %}
+{% endfor %}
 

@@ -1,7 +1,7 @@
 /* This file has deeper configurations for the card */
 
 .card-grid {
-   --grid-gap: var(--base-gap); 
+   
 }
 
 .base-card {

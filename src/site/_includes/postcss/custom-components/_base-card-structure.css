@@ -17,8 +17,8 @@
   max-width: var(--measure);
 }
 
-.base-card__content :last-child { margin-top: auto; }
-.base-card__content :nth-last-child(2) { margin-bottom: var(--s-1); }
+.base-card__content > :last-child { margin-top: auto; }
+.base-card__content > :nth-last-child(2) { margin-bottom: var(--s-1); }
 .base-card__img { margin-bottom: 0; }
 
 .base-card__img img {

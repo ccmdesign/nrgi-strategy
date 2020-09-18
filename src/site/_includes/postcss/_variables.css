@@ -59,14 +59,14 @@ Variables to customize for each Project
   --base-color: hsla(var(--base-hsl), 1);  
 
   
-  --base-border-width: 1px;
+  --base-border-width: 0;
   
   /* These are the base visual configurations */
-  --base-gap: var(--s1);
+  --base-gap: var(--s3);
   --base-border: var(--base-border-width) solid hsla(var(--base-hsl), 1);
-  --base-shadow: 2px 2px 8px hsla(var(--base-hsl), .15);
+  --base-shadow: 0 2px 16px hsla(var(--base-hsl), .15);
   --base-border-radius: 0;
-  --base-padding: var(--s1);
+  --base-padding: var(--s2);
 
   /* These are the main form configurations */
   --form-hsl: var(--primary-hsl);

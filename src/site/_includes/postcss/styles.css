@@ -35,8 +35,8 @@
 @import 'custom-components/_form-visuals.css';
 
 /* Import order is relevant */
-@import 'custom-components/_card-visuals.css';
-@import 'custom-components/_card-structure.css';
+@import 'custom-components/_base-card-visuals.css';
+@import 'custom-components/_base-card-structure.css';
 
 /* Import order is relevant */
 @import 'custom-components/_tabs-visuals.css';
@@ -50,9 +50,17 @@
 @import 'custom-components/_a11y-dialog.css';
 
 /* Project Components */
+@import 'project-components/_map-tags.css';
+@import 'project-components/_card.css';
+@import 'project-components/_social-media.css';
+@import 'project-components/_footer.css';
+@import 'project-components/_by-line.css';
 @import 'project-components/_title-section.css';
 @import 'project-components/_hero-section.css';
 @import 'project-components/_sections.css';
+@import 'project-components/_nrgi-impact-tag.css';
+@import 'project-components/_subscribe-form.css';
+@import 'project-components/_modal-window.css';
 
 /* Custom Components */
 @import '_custom-component.css';

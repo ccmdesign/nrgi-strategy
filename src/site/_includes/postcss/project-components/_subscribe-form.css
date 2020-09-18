@@ -1,0 +1,23 @@
+.subscribe-form {
+  display: flex;
+  width: 400px;
+
+  input[type="text"] { 
+    background-color: rgba(255, 255, 255, .2); 
+    flex: 1;
+    
+    &::-webkit-input-placeholder { color: white; }
+    &:-moz-placeholder { color: white; }
+    &::-moz-placeholder { color: white; }
+    &:-ms-input-placeholder { color: white; }
+  }
+
+  input[type="submit"] {
+    background-color: var(--accent-color); 
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: .4px;
+  }
+}
