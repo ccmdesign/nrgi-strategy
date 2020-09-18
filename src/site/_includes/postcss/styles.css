@@ -58,7 +58,14 @@
 @import 'project-components/_connected-cards-section.css';
 @import 'project-components/_cards-section.css';
 @import 'project-components/_scrollbar.css';
+
+/* Map Components */
 @import 'project-components/map/map.css';
+@import 'project-components/map/__cluster-container/map__cluster-container.css';
+@import 'project-components/map/__cluster-title/map__cluster-title.css';
+@import 'project-components/map/__countries-container/map__countries-container.css';
+@import 'project-components/map/__image/map__image.css';
+@import 'project-components/map/__regions-container/map__regions-container.css';
 
 /* Custom Components */
 @import '_custom-component.css';

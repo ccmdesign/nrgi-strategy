@@ -1,9 +1,3 @@
 .map {
     position: relative;
 }
-
-
-@import '__cluster-container/map__cluster-container.css';
-@import '__countries-container/map__countries-container.css';
-@import '__cluster-title/map__cluster-title.css';
-@import '__regions-container/map__regions-container.css';
