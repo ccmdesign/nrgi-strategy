@@ -1,0 +1,6 @@
+.card__tag {
+  padding: var(--s-3) var(--s0);
+  border: 1px solid hsla(var(--primary-hsl), .2);
+  background-color: hsla(360, 100%, 100%, .8);
+  white-space: nowrap; /* avoids line breaks for the tags */
+}
