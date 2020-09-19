@@ -52,6 +52,7 @@
 /* Project Components */
 @import 'project-components/_map-tags.css';
 @import 'project-components/_card.css';
+@import 'project-components/_connected-card.css';
 @import 'project-components/_social-media.css';
 @import 'project-components/_footer.css';
 @import 'project-components/_by-line.css';
