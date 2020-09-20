@@ -1,6 +1,0 @@
-/* This component extends the Vendor-Component from "EveryLayout" */
-
-.grid--card {
-	grid-gap: var(--s5);
-	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-}

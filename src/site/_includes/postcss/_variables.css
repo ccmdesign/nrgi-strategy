@@ -62,7 +62,15 @@ Variables to customize for each Project
   --base-border-width: 1px;
   
   --card-border-width: var(--s-3);
+
   --cluster-box-shadow:  0 2px 10px -3px rgba(62,92,117,.15);
+
+  --lines-border-radius: var(--s1);
+  --lines-border-width: calc(var(--s1) - var(--s-1));
+
+
+
+
   
   /* These are the base visual configurations */
   --base-gap: var(--s3);

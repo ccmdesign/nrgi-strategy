@@ -5,8 +5,8 @@ layout: layouts/base.njk
 <header class="hero-section title-section">
   <div class="hero-section__top-bar">
     <div class="center">
-      <img src="/images/nrgi-logo-white.svg" alt="Natural Resource Governance Institute">
-      <a class="button button--primary button--accent-color">Download Full Strategy</a>
+      <img class="hero-section__image" src="/images/nrgi-logo-white.svg" alt="Natural Resource Governance Institute">
+      <a class="hero-section__download-btn button button--primary button--accent-color">Download Full Strategy</a>
     </div>
   </div>
 
@@ -46,7 +46,7 @@ layout: layouts/base.njk
 </section>
 
 <section class="base-section center center--wrapper connected-cards-section">
-  <div class="grid grid--card">
+  <div class="grid">
     {% for card in connectedCards.slice(0, 2) %}
     {% include 'base-components/connected-card.njk' %}
     {% endfor %}
@@ -66,7 +66,7 @@ layout: layouts/base.njk
     </div>
   </div>
 
-  <div class="grid grid--card">
+  <div class="grid">
     {% for card in connectedCards.slice(2, 4) %}
     {% include 'base-components/connected-card.njk' %}
     {% endfor %}
