@@ -5,7 +5,7 @@
 
 .modal-window { 
   --dialog-padding: var(--s3);
-  height: 60vh; 
+  max-height: 90vh;
   box-shadow: var(--base-shadow);
   flex-direction: column;
   overflow: auto;    
