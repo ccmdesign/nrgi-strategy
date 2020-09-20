@@ -9,8 +9,9 @@
   box-shadow: var(--base-shadow);
   flex-direction: column;
   overflow: auto;    
-  max-width: 100%;
+  max-width: 95%;
   border: none;
+  margin: 0 auto;
 }
 
 .modal-window .dialog__close {
