@@ -77,8 +77,12 @@
     z-index: 1;
 }
 
+.connected-card__icon.pulse {
+    animation: pulse 2s infinite;
+}
+
 .connected-card--top {
-	padding-bottom:  calc((var(--s4) + var(--card-border-width))/2 + var(--s3));
+	padding-bottom:  calc((var(--s4) + var(--card-border-width)) / 2 + var(--s3));
 
 	.connected-card__icon {
 		bottom: calc((var(--s4) + var(--card-border-width)) / 2 * -1);
@@ -89,4 +93,16 @@
 	.connected-card__icon {
 		top: calc((var(--s4) + var(--card-border-width)) / 2 * -1);
 	}
+}
+
+@keyframes pulse {
+    0% {
+        /*transform: scale(0.98);*/
+        box-shadow: 0 0 0 0 rgb(233 103 71);
+    }
+
+    100% {
+        /*transform: scale(1);*/
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
 }

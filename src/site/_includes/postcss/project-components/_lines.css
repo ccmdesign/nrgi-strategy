@@ -12,7 +12,6 @@
     left: 50%;
     top: 33%;
     transform: translate(-50%, -50%);
-    transition: .5s ease-out;
     font-size: 12px;
 }
 
@@ -21,13 +20,14 @@
     font-style: italic;
     text-align: center;
     color: #4c4c4c;
+    transition: .5s ease-out;
 }
 
 .lines__line,
 .lines__straight-line {
     border: solid var(--accent-color);
     opacity: .1;
-    transition: .2s ease-out;
+    transition: .4s ease-out;
 }
 
 .lines__line {

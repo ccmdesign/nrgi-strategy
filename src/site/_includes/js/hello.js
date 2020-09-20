@@ -14,7 +14,6 @@
 
 // menuItems('[data-inclusive-menu-opens]');
 
-
 // Get the dialog element (with the accessor method you want)
 const el1 = document.getElementById('card-1');
 // Instantiate a new A11yDialog module
@@ -34,3 +33,6 @@ const dialog3 = new A11yDialog(el3);
 const el4 = document.getElementById('card-4');
 // Instantiate a new A11yDialog module
 const dialog4 = new A11yDialog(el4);
+
+// Add hover listener to connected cards on init
+addHoverListener('.pulse')

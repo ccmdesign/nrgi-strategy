@@ -5,7 +5,7 @@
     "text": "Licensing and fiscal systems are transparent, fair and help countries maximize the revenues available for development spending.",
     "cluster_labels": ["Laws, regulations and contracts", "Award of licenses", "Economic linkages", "State-owned enterprises", "Tax systems"],
     "tag_label": "Contract transparency in Mexico",
-    "icon": "connected-card__icon--deal"
+    "icon": "connected-card__icon--deal pulse"
   },
   {
     "class": "connected-card--top",
@@ -13,7 +13,7 @@
     "text": "Extractive sector revenues are managed in ways that serve long-term public interest and the economic sustainability of public finances, rather than short-term political or private agendas.",
     "cluster_labels": ["Fiscal rules", "Dept", "State-owned enterprises"],
     "tag_label": "Contract transparency in Mexico",
-    "icon": "connected-card__icon--revenues"
+    "icon": "connected-card__icon--revenues pulse"
   },
   {
     "class": "connected-card--bottom",
