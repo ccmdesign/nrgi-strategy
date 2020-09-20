@@ -59,7 +59,7 @@ Variables to customize for each Project
   --base-color: hsla(var(--base-hsl), 1);  
 
   
-  --base-border-width: 0;
+  --base-border-width: 1px;
   
   --card-border-width: var(--s-3);
   --cluster-box-shadow:  0 2px 10px -3px rgba(62,92,117,.15);
