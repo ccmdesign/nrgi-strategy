@@ -25,6 +25,7 @@
 /* Boilerplate Components */
 @import 'custom-components/_prose.css';
 @import 'custom-components/_center-custom.css';
+@import 'custom-components/_grid-custom.css';
 
 /* Import order is relevant */
 @import 'custom-components/_button-structure.css';
@@ -53,6 +54,7 @@
 @import 'project-components/_map-tags.css';
 @import 'project-components/_card.css';
 @import 'project-components/_connected-card.css';
+@import 'project-components/_lines.css';
 @import 'project-components/_social-media.css';
 @import 'project-components/_footer.css';
 @import 'project-components/_by-line.css';

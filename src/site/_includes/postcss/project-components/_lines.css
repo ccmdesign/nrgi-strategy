@@ -1,0 +1,74 @@
+.lines__wrapper {
+    position: relative;
+    width: calc((var(--s3) * 2) + var(--s5) + 26.5%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lines__text-wrapper {
+    position: absolute;
+    width: calc(100% - var(--s3));
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease-out;
+    font-size: 12px;
+}
+
+.lines__text {
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    color: #4c4c4c;
+}
+
+.lines__line,
+.lines__straight-line {
+    border: solid var(--accent-color);
+    opacity: .1;
+    transition: .2s ease-out;
+}
+
+.lines__line {
+    width: 50%;
+    float: left;
+}
+
+.lines__line--top-left {
+    border-radius: 0 0 0 var(--s2);
+    border-width: 0 0 var(--s1) var(--s1);
+    height: 140px;
+}
+
+.lines__line--top-right {
+    border-radius: 0 0 var(--s2) 0;
+    border-width: 0 var(--s1) var(--s1) 0;
+    height: 140px;
+}
+
+.lines__line--bottom-right,
+.lines__line--bottom-left {
+    margin-top: calc(var(--s1) * -1);
+    height: 100px;
+}
+
+.lines__line--bottom-left {
+    border-radius: var(--s2) 0 0 0;
+    border-width: var(--s1) 0 0 var(--s1);
+}
+
+.lines__line--bottom-right {
+    border-radius: 0 var(--s2) 0 0;
+    border-width: var(--s1) var(--s1) 0 0;
+}
+
+.lines__straight-line {
+    border-width: 0 0 0 var(--s1);
+    height: var(--s5);
+    position: absolute;
+}
+
+.lines__straight-line--right {
+    right: 0;
+}

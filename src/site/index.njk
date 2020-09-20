@@ -45,10 +45,30 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="base-section change-cards">
-  <div class="center center--wrapper grid card-grid">
-    {% for card in connectedCards %}
-      {% include 'base-components/connected-card.njk' %}
+<section class="base-section center center--wrapper connected-cards-section">
+  <div class="grid grid--card">
+    {% for card in connectedCards.slice(0, 2) %}
+    {% include 'base-components/connected-card.njk' %}
+    {% endfor %}
+  </div>
+
+  <div class="lines">
+    <div class="lines__wrapper">
+      <div class="lines__text-wrapper">
+        <h1 class="lines__text">Across these two areas, we will also address particular aspects of the energy transition and of corruption and "state capture".</h1>
+      </div>
+      <div class="lines__straight-line lines__straight-line--right"></div>
+      <div class="lines__straight-line lines__straight-line--left"></div>
+      <div class="lines__line lines__line--top-left"></div>
+      <div class="lines__line lines__line--top-right"></div>
+      <div class="lines__line lines__line--bottom-left"></div>
+      <div class="lines__line lines__line--bottom-right"></div>
+    </div>
+  </div>
+
+  <div class="grid grid--card">
+    {% for card in connectedCards.slice(2, 4) %}
+    {% include 'base-components/connected-card.njk' %}
     {% endfor %}
   </div>
 </section>
@@ -70,7 +90,7 @@ layout: layouts/base.njk
 <section class="base-section change-cards">
   <div class="center center--wrapper grid card-grid">
     {% for card in cards %}
-      {% include 'base-components/card.njk' %}
+    {% include 'base-components/card.njk' %}
     {% endfor %}
   </div>
 </section>
@@ -95,7 +115,7 @@ layout: layouts/base.njk
         <div class="cluster">
           <div>
             {% for country in countries %}
-              <span class="map-tags__tag">{{ country }}</span>
+            <span class="map-tags__tag">{{ country }}</span>
             {% endfor %}
           </div>
         </div>  
@@ -149,7 +169,7 @@ layout: layouts/base.njk
   </div>
 </footer>
 <div class="by-line">
-    <a href="https://ccm.design">by ccm.design</a>
+  <a href="https://ccm.design">by ccm.design</a>
 </div>
 
 {% for card in cards %}
