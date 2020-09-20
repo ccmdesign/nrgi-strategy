@@ -8,6 +8,9 @@
   height: 60vh; 
   box-shadow: var(--base-shadow);
   flex-direction: column;
+  overflow: auto;    
+  max-width: 100%;
+  border: none;
 }
 
 .modal-window .dialog__close {

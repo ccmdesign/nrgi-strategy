@@ -64,6 +64,7 @@
 @import 'project-components/_nrgi-impact-tag.css';
 @import 'project-components/_subscribe-form.css';
 @import 'project-components/_modal-window.css';
+@import 'project-components/_scrollbar.css';
 
 /* Custom Components */
 @import '_custom-component.css';

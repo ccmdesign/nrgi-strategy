@@ -20,7 +20,7 @@ Variables to customize for each Project
 */
 
 :root {
-    /* ↓ Now (almost) all elements display a sans-serif font */
+  /* ↓ Now (almost) all elements display a sans-serif font */
   --display-font: 'Open Sans', sans-serif;
   --body-font: 'Open Sans', sans-serif;
   --font-size-base: 1rem;
@@ -67,6 +67,26 @@ Variables to customize for each Project
 
   --lines-border-radius: var(--s1);
   --lines-border-width: calc(var(--s1) - var(--s-1));
+
+  --connected-cards-grid-padding: var(--s3);
+  --connected-cards-grid-gap: var(--s5);
+
+  --lines-wrapper-width-ratio: 49.5%;
+
+  @media(max-width: 1024px) {
+    --connected-cards-grid-padding: var(--s2);
+    --connected-cards-grid-gap: var(--s3);
+    --lines-wrapper-width-ratio: 53%;
+  }
+
+  @media(max-width: 768px) {
+    --connected-cards-grid-padding: var(--s1);
+    --connected-cards-grid-gap: calc(var(--s4) + var(--s1));
+  }
+
+  @media(max-width: 425px) {
+    --connected-cards-grid-padding: var(--s-7);
+  }
 
 
 

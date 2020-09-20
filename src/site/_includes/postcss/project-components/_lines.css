@@ -1,6 +1,6 @@
 .lines__wrapper {
     position: relative;
-    width: calc(var(--s5) - var(--s3) * 2 + 49.5%);
+    width: calc(var(--connected-cards-grid-gap) - var(--connected-cards-grid-padding) * 2 + var(--lines-wrapper-width-ratio));
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;

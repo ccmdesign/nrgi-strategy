@@ -30,6 +30,10 @@
   flex-direction: row;
 }
 
+.title-section--area-focus p, .title-section--bring-change p {
+  margin-bottom: var(--s1);
+}
+
 .change-cards {
   .grid { 
     grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr)); 
