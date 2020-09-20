@@ -1,25 +1,28 @@
-<li class="base-card card">
-  <div class="base-card__content">
+<li class="connected-card {{ card.class }}">
+  <div class="connected-card__content">
+
+    <div class="connected-card__icon {{ card.icon }}"></div>
+
     <h2><a href="#" aria-describedby="{{ card.heading | slug }}">{{ card.heading }}</a></h2>
 
-    <p>{{ card.text }}</p>
+    <h5 class="connected-card__subheading">Objective</h5>
+
+    <p class="connected-card__text">{{ card.text }}</p>
 
     <div class="cluster">
       <div>  
         {% for label in card.cluster_labels %}
-        <div class="card__tag">{{ label }}</div>
+        <div class="connected-card__tag">{{ label }}</div>
         {% endfor %}
       </div>
     </div>
     
-    <footer class="stack">
-      {% if card.tag_label %}
-      <div class="nrgi-impact-tag">
-        <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
-        <p>{{ card.tag_label }}</p>
-      </div>
-      {% endif %}
-    </footer>
+    {% if card.tag_label %}
+    <div class="nrgi-impact-tag">
+      <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
+      <p>{{ card.tag_label }}</p>
+    </div>
+    {% endif %}
   </div>
 </li>
 

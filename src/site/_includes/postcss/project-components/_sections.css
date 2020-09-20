@@ -17,14 +17,21 @@
 
 .title-section--area-focus {
   background-image: url('/images/area-of-focus.png');
+  flex-direction: row;
 }
 
 .title-section--bring-change {
   background-image: url('/images/bring-change.jpg');
+  flex-direction: row;
 }
 
 .title-section--where-we-work {
   background-image: url('/images/where-we-work.jpg');
+  flex-direction: row;
+}
+
+.title-section--area-focus p, .title-section--bring-change p {
+  margin-bottom: var(--s1);
 }
 
 .change-cards {

@@ -15,8 +15,6 @@
     font-weight: 700;
     color: var(--accent-color);
   }
-
-  
 }
 
 .hero-section__top-bar img { max-width: 8rem; }
@@ -25,6 +23,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 500px) { 
+    flex-direction: column;
+    align-items: unset;
+
+    .hero-section__download-btn {
+      margin-top: var(--s-1);
+    }
+  }
 }
 
 .hero-section__content > .center > * + * { margin-top: var(--s1); }

@@ -1,5 +1,8 @@
 .card {
   min-height: 320px;
+  --card-border: 0;
+  background-color: var(--active-color);
+  z-index: 1;
 }
 
 .card .button {
@@ -8,6 +11,6 @@
   font-size: 120%;
 }
 
-.card--change {
-
+.change-cards {    
+	margin-top: calc(var(--s4) * -1);
 }
