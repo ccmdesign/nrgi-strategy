@@ -1,5 +1,6 @@
 .card {
   min-height: 320px;
+  --card-border: 0;
 }
 
 .card .button {

@@ -1,8 +1,9 @@
 .nrgi-impact-tag {
-  display: flex;
   align-items: center;
 
-  > * + * { margin-left: var(--s0); }
+  @media (min-width: 450px) { display: flex; }
+
+  > :first-child { margin-right: var(--s0); }
   
   p {
     font-size: .8rem;
@@ -15,6 +16,7 @@
 
 .nrgi-impact-tag__tag {
   display: flex;
+
   span { 
     display: block; 
     padding: var(--s-2) var(--s-1) calc(var(--s-2) + 1px); /* Correção visual para o texto */
@@ -26,4 +28,6 @@
   }
 
   span:last-child { background-color: var(--accent-color); }
+
+  @media (max-width: 450px) { margin-bottom: var(--s-1); }
 }

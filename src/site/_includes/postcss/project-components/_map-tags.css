@@ -5,6 +5,7 @@
   --space: var(--s-2);
   display: flex;
   justify-content: space-between;
+  @media (max-width: 400px) { flex-direction: column; }
 
   h4 {
     font-weight: normal;
@@ -20,8 +21,12 @@
 .map-tags__regions {
   max-width: 300px;
   /* aligns the regions to the right */
-  text-align: right;
-  .cluster > * { justify-content: flex-end; } 
+  @media (min-width: 400px) { 
+    text-align: right; 
+    .cluster > * { justify-content: flex-end; } 
+  }
+
+  @media (max-width: 400px) { margin-top: var(--s1); }
 }
 
 .map-tags__tag {
