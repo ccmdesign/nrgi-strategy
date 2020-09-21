@@ -3,9 +3,10 @@
 
 	.grid {
 		padding: 0 var(--connected-cards-grid-padding);
-		justify-content: center;
 		grid-gap: var(--connected-cards-grid-gap);
 		grid-template-columns: repeat(auto-fit, minmax(min(284px, 100%), 1fr));
+		justify-content: center;
+		
 	}
 
 	@media(max-width: 768px) {
@@ -18,9 +19,9 @@
 .connected-card {
 	list-style: none;
 	box-shadow: var(--base-shadow);
-	position: relative;
 	border: solid var(--accent-color);
 	border-width: var(--card-border-width) 0 var(--card-border-width) 0;
+	position: relative;
 	max-width: var(--s7);
 	margin: 0 auto;
 	background-color: var(--active-color);
