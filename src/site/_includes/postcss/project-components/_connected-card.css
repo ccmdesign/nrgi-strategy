@@ -41,7 +41,7 @@
 
 	.nrgi-impact-tag {
 		position: absolute;
-		bottom: calc((var(--s4) + var(--card-border-width)) / 2 + var(--s1));
+		bottom: var(--s3);
 		padding-right: var(--s-1);
 	}
 }
