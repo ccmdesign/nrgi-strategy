@@ -19,7 +19,8 @@
 
   > .center { 
     width: 100%;
-    max-width: var(--wrapper); 
+    max-width: var(--wrapper);
+    justify-content: center;
   }
 }
 
