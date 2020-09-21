@@ -3,6 +3,10 @@
   position: fixed;
 }
 
+.modal-window:not([open]) {
+  display: none;
+}
+
 .modal-window { 
   --dialog-padding: var(--s3) var(--s2);
   max-height: 90vh;
