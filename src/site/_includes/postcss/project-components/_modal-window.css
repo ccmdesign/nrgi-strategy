@@ -4,7 +4,7 @@
 }
 
 .modal-window { 
-  --dialog-padding: var(--s3);
+  --dialog-padding: var(--s3) var(--s2);
   max-height: 90vh;
   box-shadow: var(--base-shadow);
   flex-direction: column;
@@ -30,3 +30,13 @@
 }
 
 .modal-window strong { font-weight: 600; }
+
+@media(max-width: 425px) {
+  .modal-window .dialog__close {
+    zoom: .6;
+  }
+
+  .modal-window { 
+    --dialog-padding: var(--s2) var(--s1);
+  }
+}
