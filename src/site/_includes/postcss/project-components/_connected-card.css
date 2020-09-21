@@ -36,7 +36,7 @@
 	}
 
 	.cluster > * > * {
-		margin: calc(var(--s1) / 3) calc(var(--s1) / 2) 0 0;
+		margin: var(--s-2) var(--s-1) 0 0;
 	}
 
 	.nrgi-impact-tag {
