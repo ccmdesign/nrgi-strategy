@@ -22,6 +22,12 @@
   right: 0;
   top: 0;
   padding: var(--s0);
+  border: none;
+  box-shadow: none;
+}
+
+.modal-window .dialog__close:focus {
+    background-color: hsla(var(--button-hsl),.05);
 }
 
 .modal-window footer { margin-top: auto; }

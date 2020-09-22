@@ -9,6 +9,11 @@
   align-self: flex-start;
   color: var(--accent-color);
   font-size: 80%;
+  box-shadow: none;
+}
+
+.card .button:focus {
+    background-color: hsla(var(--button-hsl),.05);
 }
 
 .change-cards {    
