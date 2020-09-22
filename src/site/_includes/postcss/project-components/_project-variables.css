@@ -19,7 +19,7 @@
 
   @media(max-width: 768px) {
     --connected-cards-grid-padding: var(--s1);
-    --connected-cards-grid-gap: calc(var(--s4) + var(--s1));
+    --connected-cards-grid-gap: var(--s4);
   }
 
   @media(max-width: 425px) {
