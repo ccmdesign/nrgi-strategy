@@ -47,16 +47,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  @media (max-width: 500px) { 
-    flex-direction: column;
-    align-items: unset;
-
-    .hero-section__download-btn {
-      margin-top: var(--s-1);
-    }
-  }
+.hero-section__content {
+  margin-top: var(--s4);
 }
 
 .hero-section__content > .center > * + * { margin-top: var(--s1); }
 .hero-section__content .center > *:last-child { padding-top: var(--s2); }
+.hero-section__content .center > section { max-width: calc(var(--s7) + var(--s5)); }
+
+@media (max-width: 500px) { 
+  .hero-section { padding-bottom: var(--s4); }
+
+  .hero-section__top-bar>.center .hero-section__download-btn {
+    position: absolute;
+    bottom: var(--s1);
+    right: var(--s1);
+    left: var(--s1);
+  }
+}
