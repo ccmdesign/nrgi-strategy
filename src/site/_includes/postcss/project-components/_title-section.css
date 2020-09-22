@@ -1,13 +1,12 @@
 .title-section {
   --bg-color: #111;
   --gradient-width: 10vw;
-
+  --padding: var(--s3);
+  
   background-color: var(--bg-color);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: top right;
   color: var(--white-color);
-  padding: var(--s2) var(--s1);
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -21,26 +20,6 @@
     width: 100%;
     max-width: var(--wrapper);
     justify-content: center;
-  }
-}
-
-.title-section:after {
-  content:"";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-
-  @media (max-width: 850px) {
-    left: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.5);
-  }
-
-  @media (min-width: 850px) {
-    right: calc(50% - var(--gradient-width));
-    background-image: linear-gradient(to right, var(--bg-color), transparent);
-    width: var(--gradient-width);
   }
 }
 

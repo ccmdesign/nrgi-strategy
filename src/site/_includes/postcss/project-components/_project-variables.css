@@ -1,0 +1,28 @@
+:root {
+  --card-border-width: var(--s-3);
+
+  --cluster-box-shadow: 0 2px 10px -3px rgba(62,92,117,.15);
+
+  --lines-border-radius: var(--s1);
+  --lines-border-width: calc(var(--s1) - var(--s-1));
+  --lines-wrapper-width-ratio: 49.5%;
+
+  --connected-cards-grid-padding: var(--s3);
+  --connected-cards-grid-gap: var(--s5);
+
+
+  @media(max-width: 1024px) {
+    --connected-cards-grid-padding: var(--s2);
+    --connected-cards-grid-gap: var(--s3);
+    --lines-wrapper-width-ratio: 53%;
+  }
+
+  @media(max-width: 768px) {
+    --connected-cards-grid-padding: var(--s1);
+    --connected-cards-grid-gap: calc(var(--s4) + var(--s1));
+  }
+
+  @media(max-width: 425px) {
+    --connected-cards-grid-padding: var(--s-7);
+  }  
+}
