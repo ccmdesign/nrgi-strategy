@@ -8,6 +8,8 @@
 .text-section {
   font-weight: 300;
   color: var(--base-color);
+  padding-right: var(--s1);
+  padding-left: var(--s1);
 }
 
 .shadow-section {
