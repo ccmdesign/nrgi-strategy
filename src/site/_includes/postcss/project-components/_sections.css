@@ -15,19 +15,45 @@
   background-color: white;
 }
 
-.title-section--area-focus {
-  background-image: url('/images/area-of-focus.png');
+.title-section--area-focus:after,
+.title-section--where-we-work:after,
+.title-section--bring-change:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
   flex-direction: row;
+  z-index: -1;
+
+
+  @media (max-width: 850px) {
+    width: 100%;
+    background-blend-mode: unset;
+    opacity: .4;
+  }
 }
 
+.title-section--area-focus,
+.title-section--where-we-work,
 .title-section--bring-change {
-  background-image: url('/images/bring-change.jpg');
   flex-direction: row;
 }
 
-.title-section--where-we-work {
-  background-image: url('/images/where-we-work.jpg');
-  flex-direction: row;
+.title-section--area-focus:after {
+  background-image: url(/images/area-of-focus.png), linear-gradient(to right, var(--bg-color), transparent);
+}
+
+.title-section--where-we-work:after {
+  background-image: url(/images/where-we-work.jpg), linear-gradient(to right, var(--bg-color), transparent);
+}
+
+.title-section--bring-change:after {
+  background-image: url('/images/bring-change.jpg'), linear-gradient(to right, var(--bg-color), transparent);
 }
 
 .title-section--area-focus p, .title-section--bring-change p {

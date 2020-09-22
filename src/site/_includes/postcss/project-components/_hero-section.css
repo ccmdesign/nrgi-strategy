@@ -1,5 +1,4 @@
 .hero-section {
-  background-image: url('/images/hero-image.jpg');
   min-height: 70vh;
   justify-content: space-between;
 
@@ -15,6 +14,30 @@
     font-weight: 700;
     color: var(--accent-color);
   }
+}
+
+.hero-section:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  flex-direction: row;
+  z-index: -1;
+
+
+  @media (max-width: 850px) {
+    width: 100%;
+    background-blend-mode: unset;
+  }
+}
+
+.hero-section:after {
+  background-image: url('/images/hero-image.jpg'), linear-gradient(to right, var(--bg-color), transparent);
 }
 
 .hero-section__top-bar img { max-width: 8rem; }
