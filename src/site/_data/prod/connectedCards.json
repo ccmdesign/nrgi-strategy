@@ -1,0 +1,32 @@
+[
+  {
+    "class": "connected-card--top",
+    "heading": "GETTING A GOOD DEAL",
+    "text": "Licensing and fiscal systems are transparent, fair and help countries maximize the revenues available for development spending.",
+    "cluster_labels": ["Laws, regulations and contracts", "Award of licenses", "Economic linkages", "State-owned enterprises", "Tax systems"],
+    "tag_label": "Contract transparency in Mexico",
+    "icon": "connected-card__icon--deal pulse"
+  },
+  {
+    "class": "connected-card--top",
+    "heading": "MANAGING REVENUES",
+    "text": "Extractive sector revenues are managed in ways that serve long-term public interest and the economic sustainability of public finances, rather than short-term political or private agendas.",
+    "cluster_labels": ["Fiscal rules", "Dept", "State-owned enterprises"],
+    "tag_label": "Contract transparency in Mexico",
+    "icon": "connected-card__icon--revenues pulse"
+  },
+  {
+    "class": "connected-card--bottom",
+    "heading": "NAVIGATING THE ENERGY TRANSITION",
+    "text": "Resource-rich countries advance rather than hinder the transition to cleaner energy. Countries rich in strategic minerals do not replicate mis-governance in that subsector.",
+    "cluster_labels": ["Strategic minerals", "\"Stranded assets\""],
+    "icon": "connected-card__icon--energy-transition"
+  },
+  {
+    "class": "connected-card--bottom",
+    "heading": "ADDRESSING CORRUPTION AND \"STATE CAPTURE\"",
+    "text": "Governments and companies conduct sector operations in ways that reduce opportunities for corruption and capture, and anticorruption actors tackle extractive sector corruption more effectively.",
+    "cluster_labels": ["\"Corruption Risks\"", "\"State capture by elites\""],
+    "icon": "connected-card__icon--corruption"
+  }
+]

@@ -20,7 +20,7 @@ Variables to customize for each Project
 */
 
 :root {
-    /* ↓ Now (almost) all elements display a sans-serif font */
+  /* ↓ Now (almost) all elements display a sans-serif font */
   --display-font: 'Open Sans', sans-serif;
   --body-font: 'Open Sans', sans-serif;
   --font-size-base: 1rem;
@@ -60,6 +60,7 @@ Variables to customize for each Project
 
   
   --base-border-width: 1px;
+
   
   /* These are the base visual configurations */
   --base-gap: var(--s3);
@@ -81,7 +82,9 @@ Variables to customize for each Project
 
 /* Modular Scale */
 :root {
-  --ratio: 1.62;
+  --ratio: 1.6180339887498948482;
+  --s-7: calc(var(--s-6) / var(--ratio));
+  --s-6: calc(var(--s-5) / var(--ratio));
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
   --s-3: calc(var(--s-2) / var(--ratio));
@@ -93,4 +96,6 @@ Variables to customize for each Project
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
+  --s6: calc(var(--s5) * var(--ratio));
+  --s7: calc(var(--s6) * var(--ratio));
 }

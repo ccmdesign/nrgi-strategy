@@ -53,6 +53,8 @@
 @import 'project-components/_project-configs.css';
 @import 'project-components/_map-tags.css';
 @import 'project-components/_card.css';
+@import 'project-components/_connected-card.css';
+@import 'project-components/_lines.css';
 @import 'project-components/_social-media.css';
 @import 'project-components/_footer.css';
 @import 'project-components/_by-line.css';
@@ -62,6 +64,8 @@
 @import 'project-components/_nrgi-impact-tag.css';
 @import 'project-components/_subscribe-form.css';
 @import 'project-components/_modal-window.css';
+@import 'project-components/_scrollbar.css';
+@import 'project-components/_project-variables.css';
 
 /* Custom Components */
 @import '_custom-component.css';

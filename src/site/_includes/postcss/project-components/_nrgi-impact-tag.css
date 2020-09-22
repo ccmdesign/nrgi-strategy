@@ -1,5 +1,6 @@
 .nrgi-impact-tag {
   align-items: center;
+  margin-top: var(--s1);
 
   @media (min-width: 450px) { display: flex; }
 
