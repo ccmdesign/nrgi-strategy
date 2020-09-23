@@ -43,6 +43,10 @@
 		position: absolute;
 		bottom: var(--s3);
 		padding-right: var(--s-1);
+
+		@media(max-width: 768px) {
+			bottom: var(--s2);
+		}
 	}
 }
 
@@ -102,12 +106,18 @@
 
 	.connected-card__icon {
 		bottom: calc((var(--s4) + var(--card-border-width)) / 2 * -1);
+
+
+
+		@media(max-width: 768px) {
+			top: calc((var(--s4) + var(--card-border-width)) / 2 * -1);
+		}
 	}
 
 	@media(max-width: 768px) {
-		padding: var(--s2) 
-		var(--s1) 
-		calc((var(--s4) + var(--card-border-width)) / 2 + var(--s3));
+		padding: var(--s3)
+				 var(--s1)
+				 var(--s4)
 	}
 }
 
@@ -122,8 +132,8 @@
 
 	@media(max-width: 768px) {
 		padding: calc(var(--s2) + var(--s1))
-		var(--s1)
-		var(--s1);
+				 var(--s1)
+				 var(--s1);
 	}
 }
 

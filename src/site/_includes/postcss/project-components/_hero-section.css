@@ -63,7 +63,7 @@
   .hero-section__top-bar>.center .hero-section__download-btn {
     position: absolute;
     bottom: var(--s1);
-    right: var(--s1);
-    left: var(--s1);
+    right: var(--s0);
+    left: var(--s0);
   }
 }
