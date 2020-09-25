@@ -19,6 +19,7 @@
 
 .title-section--area-focus:after,
 .title-section--where-we-work:after,
+.title-section--why-nrgi:after,
 .title-section--bring-change:after {
   content: "";
   background-repeat: no-repeat;
@@ -32,7 +33,6 @@
   flex-direction: row;
   z-index: -1;
 
-
   @media (max-width: 850px) {
     width: 100%;
     background-blend-mode: unset;
@@ -42,9 +42,7 @@
 
 .title-section--area-focus,
 .title-section--where-we-work,
-.title-section--bring-change {
-  flex-direction: row;
-}
+.title-section--bring-change { flex-direction: row; }
 
 .title-section--area-focus:after {
   background-image: url(/images/area-of-focus.png), linear-gradient(to right, var(--bg-color), transparent);
@@ -61,6 +59,15 @@
 .title-section--area-focus p, .title-section--bring-change p {
   margin-bottom: var(--s1);
 }
+
+.title-section--who-we-are {
+  background-size: cover;
+  background-image: url('/images/nrgi-staff.png'), linear-gradient(var(--bg-color) 0%, var(--bg-color) 50%, transparent 100%); 
+  min-height: 260px;
+}
+
+.title-section--why-nrgi { min-height: 260px; }
+.title-section--why-nrgi:after { background-image: url('/images/why-nrgi.png'), linear-gradient(to right, var(--bg-color), transparent); }
 
 .change-cards {
   .grid { 
