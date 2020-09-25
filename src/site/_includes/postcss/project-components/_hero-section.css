@@ -1,8 +1,6 @@
 .hero-section {
-  background-image: url('/images/hero-image.jpg');
-  height: 70vh;
-  max-height: 500px;
   justify-content: space-between;
+  @media (min-width: 960px) { max-height: 600px; }
 
   h1 {
     font-size: 1.8rem;
@@ -31,7 +29,6 @@
   flex-direction: row;
   z-index: -1;
 
-
   @media (max-width: 850px) {
     width: 100%;
     background-blend-mode: unset;
@@ -55,11 +52,22 @@
   margin-top: var(--s4);
 }
 
+
+/* 
+TODO:
+Essas customizações vão contra as best practices.
+Com certeza temos outras maneiras de implementar isso, 
+sem manipular a essencia de como funcionam os "vendor_components"
+*/
 .hero-section__content > .center > * + * { margin-top: var(--s1); }
 .hero-section__content .center > *:last-child { padding-top: var(--s2); }
 .hero-section__content .center > section { max-width: calc(var(--s7) + var(--s5)); }
 
 @media (max-width: 500px) { 
+  /* TODO:
+  Veja como implementei o mediaquery na linha 3
+  A maneira que eu implementei é considerada uma "best practice" */
+  
   .hero-section { padding-bottom: var(--s4); }
 
   .hero-section__top-bar>.center .hero-section__download-btn {
