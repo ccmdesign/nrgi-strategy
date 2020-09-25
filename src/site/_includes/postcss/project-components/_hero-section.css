@@ -1,5 +1,7 @@
 .hero-section {
-  min-height: 70vh;
+  background-image: url('/images/hero-image.jpg');
+  height: 70vh;
+  max-height: 500px;
   justify-content: space-between;
 
   h1 {
