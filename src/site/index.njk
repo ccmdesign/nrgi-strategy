@@ -38,6 +38,22 @@ layout: layouts/base.njk
   </div>
 </section>
 
+<section class="title-section--who-we-are title-section">
+  <h1 class="text-align:center">Who we are</h1>
+</section>
+
+<section class="mission-section text-section">
+  <div class="center stack">
+    <p>For over a decade NRGI has worked to lift countries out of poverty by acting as a knowledge generator, convener of change-makers, trusted broker and capacity builder. We seize opportunities during moments of political openness to advance and sustain policy reform. </p>
+    <p>We believe in rigorous, evidence-driven, dialogue-based decision-making. Our work with in-country reformers and engagement with international influencers inform and reinforce one another.</p>
+    <div class="nrgi-impact-tag">
+        <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
+        <p>Click on these icons to learn about related achievements in NRGI’s last strategy period</p>
+      </div>
+  </div>
+</section>
+
+
 <section class="title-section--area-focus title-section">
   <div class="center stack">
     <h1>Areas of focus</h1>
@@ -77,21 +93,6 @@ layout: layouts/base.njk
   <div class="center center--narrow">
     <p><strong>NRGI will continue to apply our expertise in activities like licensing and revenue sharing.</strong></p>
     <p>Our work will also range from improving the governance of state companies, to analyzing the critical role played by China; from identifying obligations and opportunities for private companies, to what advising governments of resource-rich countries about how to navigate the coming shift to renewable energy.</p>
-  </div>
-</section>
-
-<section class="title-section title-section--bring-change">
-  <div class="center stack">
-    <h1>How we bring about change</h1>
-    <p>In concert with other actors in the resource governance space, NRGI’s works with influential actors at the country and global levels to inform policy change and see it through to implementation.</p>
-  </div>
-</section>
-
-<section class="base-section change-cards">
-  <div class="center center--wrapper grid card-grid">
-    {% for card in cards %}
-    {% include 'base-components/card.njk' %}
-    {% endfor %}
   </div>
 </section>
 
@@ -141,18 +142,43 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="base-section text-align:center shadow-section" style="--padding: var(--s1)">
-  <a href="#" class="button button--primary button--accent-color">Download full strategy</a>
+
+<section class="title-section title-section--bring-change">
+  <div class="center stack">
+    <h1>How we bring about change</h1>
+    <p>In concert with other actors in the resource governance space, NRGI’s works with influential actors at the country and global levels to inform policy change and see it through to implementation.</p>
+  </div>
+</section>
+
+<section class="base-section change-cards">
+  <div class="center center--wrapper grid card-grid">
+    {% for card in cards %}
+    {% include 'base-components/card.njk' %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="title-section--why-nrgi title-section">
+  <h1 class="text-align:center">Why NRGI</h1>
 </section>
 
 <section class="text-section shadow-section quote-section">
-  <div class="center center--narrow">
+  <div class="center center--narrow stack">
+    <p>NRGI blends a targeted focus on resource-rich countries with a responsive approach to seize reform opportunities. The challenges we seek to address are large and complex, so we work in partnership to amplify and leverage the work of others. To sustain reform beyond our interventions, we identify and empower change agents inside and outside of government. We have processes for learning and adaptation, to ensure our continued relevance, responsiveness and impact.</p>
+
+    <h3 class="color:accent">What people say about NRGI</h3>
+
     <blockquote>
       <p>NRGI recognizes that the mining industry is critical to modern life but that there are changes that the industry can make that will help to reduce its negative impacts. NRGI also gives the impression that it is open to learning from industry in a way that other NGOs do not. This builds trust and makes for a more open conversation.”</p>
       <p><small>Quotations taken from respondents to anonymous stakeholder surveys and independent evaluations</small></p>
     </blockquote>
   </div>
 </section>
+
+<section class="base-section text-align:center shadow-section" style="--padding: var(--s1)">
+  <a href="#" class="button button--primary button--accent-color">Download full strategy</a>
+</section>
+
 
 <footer class="footer base-section">
   <div class="center center--wrapper">
