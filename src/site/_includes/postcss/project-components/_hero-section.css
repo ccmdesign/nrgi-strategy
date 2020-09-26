@@ -2,6 +2,17 @@
   justify-content: space-between;
   @media (min-width: 960px) { max-height: 600px; }
 
+  @media (max-width: 500px) { 
+    padding-bottom: var(--s4);
+
+    .hero-section__download-btn {
+      position: absolute;
+      bottom: var(--s1);
+      right: var(--s0);
+      left: var(--s0);
+    }
+  }
+
   h1 {
     font-size: 1.8rem;
     line-height: 1.3;
@@ -62,18 +73,3 @@ sem manipular a essencia de como funcionam os "vendor_components"
 .hero-section__content > .center > * + * { margin-top: var(--s1); }
 .hero-section__content .center > *:last-child { padding-top: var(--s2); }
 .hero-section__content .center > section { max-width: calc(var(--s7) + var(--s5)); }
-
-@media (max-width: 500px) { 
-  /* TODO:
-  Veja como implementei o mediaquery na linha 3
-  A maneira que eu implementei é considerada uma "best practice" */
-  
-  .hero-section { padding-bottom: var(--s4); }
-
-  .hero-section__top-bar>.center .hero-section__download-btn {
-    position: absolute;
-    bottom: var(--s1);
-    right: var(--s0);
-    left: var(--s0);
-  }
-}

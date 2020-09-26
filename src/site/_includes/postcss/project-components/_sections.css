@@ -56,8 +56,10 @@
   background-image: url('/images/bring-change.jpg'), linear-gradient(to right, var(--bg-color), transparent);
 }
 
-.title-section--area-focus p, .title-section--bring-change p {
-  margin-bottom: var(--s1);
+.title-section--area-focus {
+    .nrgi-impact-tag {
+      margin-bottom: var(--s1);
+    }
 }
 
 .title-section--who-we-are {
