@@ -20,7 +20,8 @@
 .title-section--area-focus:after,
 .title-section--where-we-work:after,
 .title-section--why-nrgi:after,
-.title-section--bring-change:after {
+.title-section--bring-change:after,
+.title-section--who-we-are:after {
   content: "";
   background-repeat: no-repeat;
   background-blend-mode: saturation;
@@ -42,7 +43,8 @@
 
 .title-section--area-focus,
 .title-section--where-we-work,
-.title-section--bring-change { flex-direction: row; }
+.title-section--bring-change,
+.title-section--who-we-are { flex-direction: row; }
 
 .title-section--area-focus:after {
   background-image: url(/images/area-of-focus.png), linear-gradient(to right, var(--bg-color), transparent);
@@ -57,15 +59,20 @@
 }
 
 .title-section--area-focus {
-    .nrgi-impact-tag {
-      margin-bottom: var(--s1);
-    }
+  .nrgi-impact-tag {
+    margin-bottom: var(--s1);
+  }
+
+  p {
+    margin-bottom: var(--s2);
+  }
 }
 
 .title-section--who-we-are {
   background-size: cover;
   background-image: url('/images/nrgi-staff.png'), linear-gradient(var(--bg-color) 0%, var(--bg-color) 50%, transparent 100%); 
   min-height: 260px;
+  align-items: center;
 }
 
 .title-section--why-nrgi { min-height: 260px; }

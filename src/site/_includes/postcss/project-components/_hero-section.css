@@ -1,6 +1,5 @@
 .hero-section {
   justify-content: space-between;
-  @media (min-width: 960px) { max-height: 600px; }
 
   @media (max-width: 500px) { 
     padding-bottom: var(--s4);
