@@ -12,7 +12,9 @@
       </div>
       {% endif %}
       
-      <button class="button {{ card.button.class | d('') }}" aria-hidden="true" id="{{ card.heading | slug }}" type="button" data-a11y-dialog-show="card-{{ loop.index }}">{{ card.button.label | d('Read More', true) }}</button>
+      {% if card.button %}
+      <button class="button {{ card.button.class | d('') }}" aria-hidden="true" id="{{ card.heading | slug }}" type="button" data-a11y-dialog-show="{{ card.modal_id }}">{{ card.button.label | d('Read More', true) }}</button>
+      {% endif %}
     </footer>
   </div>
 </li>
