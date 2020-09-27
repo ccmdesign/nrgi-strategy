@@ -3,30 +3,46 @@
     "class": "connected-card--top",
     "heading": "GETTING A GOOD DEAL",
     "text": "Licensing and fiscal systems are transparent, fair and help countries maximize the revenues available for development spending.",
+    "extra": "<p>The extractive sector too often fails to produce returns for citizens. Licenses to extract often go to companies that are well connected but not well qualified. Governments sign contracts that will not deliver long-term returns and that undermine efforts to prevent social and environmental damage. State-owned enterprises fail to generate financial returns on states’ natural assets. Revenues that could fund economic development and social services go uncollected. Low capacity across these functions leads to suboptimal results.</p><p>Confronting these challenges is at the core of NRGI’s mission. In Nigeria, for example, we revealed how the government assigned lopsided oil trading contracts to a few favored companies, scrutiny thathelped prompt the government to change how it structures these contracts. In Canada and the European Union, our advocacy with partners led to the implementation of rigorous transparency regulations that have resulted in massive amounts of data entering thepublic domain.</p><p>To generate impactful outcomes in this area, we will focus on laws, regulations and contracts; the award of valuable licenses; tax systems;economic linkages; and the governance of state-owned enterprises.</p>",
     "cluster_labels": ["Laws, regulations and contracts", "Award of licenses", "Economic linkages", "State-owned enterprises", "Tax systems"],
     "tag_label": "Contract transparency in Mexico",
-    "icon": "connected-card__icon--deal pulse"
+    "icon": "connected-card__icon--deal pulse",
+    "button": {
+      "label": "Learn More"
+    }
   },
   {
     "class": "connected-card--top",
     "heading": "MANAGING REVENUES",
     "text": "Extractive sector revenues are managed in ways that serve long-term public interest and the economic sustainability of public finances, rather than short-term political or private agendas.",
+    "extra": "<p>The extractive sector too often fails to produce returns for citizens. Licenses to extract often go to companies that are well connected but not well qualified. Governments sign contracts that will not deliver long-term returns and that undermine efforts to prevent social and environmental damage. State-owned enterprises fail to generate financial returns on states’ natural assets. Revenues that could fund economic development and social services go uncollected. Low capacity across these functions leads to suboptimal results.</p><p>Confronting these challenges is at the core of NRGI’s mission. In Nigeria, for example, we revealed how the government assigned lopsided oil trading contracts to a few favored companies, scrutiny thathelped prompt the government to change how it structures these contracts. In Canada and the European Union, our advocacy with partners led to the implementation of rigorous transparency regulations that have resulted in massive amounts of data entering thepublic domain.</p><p>To generate impactful outcomes in this area, we will focus on laws, regulations and contracts; the award of valuable licenses; tax systems;economic linkages; and the governance of state-owned enterprises.</p>",
     "cluster_labels": ["Fiscal rules", "Dept", "State-owned enterprises"],
     "tag_label": "Contract transparency in Mexico",
-    "icon": "connected-card__icon--revenues pulse"
+    "icon": "connected-card__icon--revenues pulse",
+    "button": {
+      "label": "Learn More"
+    }
   },
   {
     "class": "connected-card--bottom",
     "heading": "NAVIGATING THE ENERGY TRANSITION",
     "text": "Resource-rich countries advance rather than hinder the transition to cleaner energy. Countries rich in strategic minerals do not replicate mis-governance in that subsector.",
+    "extra": "<p>The extractive sector too often fails to produce returns for citizens. Licenses to extract often go to companies that are well connected but not well qualified. Governments sign contracts that will not deliver long-term returns and that undermine efforts to prevent social and environmental damage. State-owned enterprises fail to generate financial returns on states’ natural assets. Revenues that could fund economic development and social services go uncollected. Low capacity across these functions leads to suboptimal results.</p><p>Confronting these challenges is at the core of NRGI’s mission. In Nigeria, for example, we revealed how the government assigned lopsided oil trading contracts to a few favored companies, scrutiny thathelped prompt the government to change how it structures these contracts. In Canada and the European Union, our advocacy with partners led to the implementation of rigorous transparency regulations that have resulted in massive amounts of data entering thepublic domain.</p><p>To generate impactful outcomes in this area, we will focus on laws, regulations and contracts; the award of valuable licenses; tax systems;economic linkages; and the governance of state-owned enterprises.</p>",
     "cluster_labels": ["Strategic minerals", "\"Stranded assets\""],
-    "icon": "connected-card__icon--energy-transition"
+    "icon": "connected-card__icon--energy-transition",
+    "button": {
+      "label": "Learn More"
+    }
   },
   {
     "class": "connected-card--bottom",
     "heading": "ADDRESSING CORRUPTION AND \"STATE CAPTURE\"",
     "text": "Governments and companies conduct sector operations in ways that reduce opportunities for corruption and capture, and anticorruption actors tackle extractive sector corruption more effectively.",
+    "extra": "<p>The extractive sector too often fails to produce returns for citizens. Licenses to extract often go to companies that are well connected but not well qualified. Governments sign contracts that will not deliver long-term returns and that undermine efforts to prevent social and environmental damage. State-owned enterprises fail to generate financial returns on states’ natural assets. Revenues that could fund economic development and social services go uncollected. Low capacity across these functions leads to suboptimal results.</p><p>Confronting these challenges is at the core of NRGI’s mission. In Nigeria, for example, we revealed how the government assigned lopsided oil trading contracts to a few favored companies, scrutiny thathelped prompt the government to change how it structures these contracts. In Canada and the European Union, our advocacy with partners led to the implementation of rigorous transparency regulations that have resulted in massive amounts of data entering thepublic domain.</p><p>To generate impactful outcomes in this area, we will focus on laws, regulations and contracts; the award of valuable licenses; tax systems;economic linkages; and the governance of state-owned enterprises.</p>",
     "cluster_labels": ["\"Corruption Risks\"", "\"State capture by elites\""],
-    "icon": "connected-card__icon--corruption"
+    "icon": "connected-card__icon--corruption",
+    "button": {
+      "label": "Learn More"
+    }
   }
 ]

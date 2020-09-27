@@ -16,6 +16,7 @@
         {% endfor %}
       </div>
     </div>
+    <footer class="stack">
     
     {% if card.tag_label %}
     <div class="nrgi-impact-tag">
@@ -23,6 +24,8 @@
       <p>{{ card.tag_label }}</p>
     </div>
     {% endif %}
-  </div>
-</li>
 
+    <button class="button connected-card__button" aria-hidden="true" id="{{ card.heading | slug }}" type="button" data-a11y-dialog-show="{{ loop.index }}">{{ card.button.label }}</button>
+  </div>
+    </footer>
+</li>
