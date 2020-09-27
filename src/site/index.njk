@@ -186,6 +186,10 @@ resources and that authorities manage revenue effectivelyand accountably. We wil
   <a href="https://ccm.design">by ccm.design</a>
 </div>
 
+{% for card in connectedCards %}
+{% include '_modal-window.njk' %}
+{% endfor %}
+
 {% for card in cards %}
 {% include '_modal-window.njk' %}
 {% endfor %}

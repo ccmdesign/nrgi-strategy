@@ -25,7 +25,7 @@
     </div>
     {% endif %}
 
-    <button class="button connected-card__button" aria-hidden="true" id="{{ card.heading | slug }}" type="button" data-a11y-dialog-show="{{ loop.index }}">{{ card.button.label }}</button>
+    <button class="button connected-card__button" aria-hidden="true" id="{{ card.heading | slug }}" type="button" data-a11y-dialog-show="{{ card.modal_id }}">{{ card.button.label }}</button>
   </div>
     </footer>
 </li>
