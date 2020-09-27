@@ -34,25 +34,5 @@ const el4 = document.getElementById('modal-card-4');
 // Instantiate a new A11yDialog module
 const dialog4 = new A11yDialog(el4);
 
-// Get the dialog element (with the accessor method you want)
-const el5 = document.getElementById('modal-card-5');
-// Instantiate a new A11yDialog module
-const dialog5 = new A11yDialog(el5);
-
-// Get the dialog element (with the accessor method you want)
-const el6 = document.getElementById('modal-card-6');
-// Instantiate a new A11yDialog module
-const dialog6 = new A11yDialog(el6);
-// Get the dialog element (with the accessor method you want)
-
-const el7 = document.getElementById('modal-card-7');
-// Instantiate a new A11yDialog module
-const dialog7 = new A11yDialog(el7);
-// Get the dialog element (with the accessor method you want)
-
-const el8 = document.getElementById('modal-card-8');
-// Instantiate a new A11yDialog module
-const dialog8 = new A11yDialog(el8);
-
 // Add hover listener to connected cards on init
 addHoverListener('.pulse')

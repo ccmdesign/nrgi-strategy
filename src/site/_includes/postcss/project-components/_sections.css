@@ -75,7 +75,10 @@
   align-items: center;
 }
 
-.title-section--why-nrgi { min-height: 260px; }
+.title-section--why-nrgi { 
+  min-height: 260px; 
+  align-items: center;
+}
 .title-section--why-nrgi:after { background-image: url('/images/why-nrgi.png'), linear-gradient(to right, var(--bg-color), transparent); }
 
 .change-cards {
