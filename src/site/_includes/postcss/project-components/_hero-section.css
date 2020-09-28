@@ -47,7 +47,7 @@
 }
 
 .hero-section:after {
-  background-image: url('/images/hero-image.jpg'), linear-gradient(to right, var(--bg-color), transparent);
+  background-image: url('/images/hero-image.jpg'), linear-gradient(to right, var(--bg-color), RGBA(255, 255, 255, 0));
 }
 
 .hero-section__top-bar img { max-width: 8rem; }

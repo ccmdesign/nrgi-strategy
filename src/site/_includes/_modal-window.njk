@@ -9,10 +9,10 @@
       {{ card.extra | safe }}
     </div>
     <footer class="stack">
-      {% if card.tag_label %}
+      {% if card.tag %}
       <div class="nrgi-impact-tag">
-      <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
-      <p>{{ card.tag_label }}</p>
+        <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
+        <p><a href="{{ card.tag.link }}">{{ card.tag.label }}</a></p>
       </div>
       {% endif %}
     </footer>
