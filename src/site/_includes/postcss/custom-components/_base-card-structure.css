@@ -1,7 +1,7 @@
 /* Structure */
 /* It is very unlikely we will need to work on any of the styles below */
 .base-card {
-  cursor: pointer;
+  /*cursor: pointer;*/
   overflow: hidden;
 }
 
