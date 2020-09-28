@@ -19,7 +19,9 @@
 
 .title-section--area-focus:after,
 .title-section--where-we-work:after,
-.title-section--bring-change:after {
+.title-section--why-nrgi:after,
+.title-section--bring-change:after,
+.title-section--who-we-are:after {
   content: "";
   background-repeat: no-repeat;
   background-blend-mode: saturation;
@@ -32,7 +34,6 @@
   flex-direction: row;
   z-index: -1;
 
-
   @media (max-width: 850px) {
     width: 100%;
     background-blend-mode: unset;
@@ -42,25 +43,46 @@
 
 .title-section--area-focus,
 .title-section--where-we-work,
-.title-section--bring-change {
-  flex-direction: row;
-}
+.title-section--bring-change,
+.title-section--who-we-are { flex-direction: row; }
 
 .title-section--area-focus:after {
-  background-image: url(/images/area-of-focus.png), linear-gradient(to right, var(--bg-color), transparent);
+  background-image: linear-gradient(to right, var(--bg-color), RGBA(255, 255, 255, 0)), url(/images/area-of-focus.png);
 }
 
 .title-section--where-we-work:after {
-  background-image: url(/images/where-we-work.jpg), linear-gradient(to right, var(--bg-color), transparent);
+  background-image: -webkit-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
+  background-image:    -moz-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
+  background-image:     -ms-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
+  background-image:      -o-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
 }
 
 .title-section--bring-change:after {
-  background-image: url('/images/bring-change.jpg'), linear-gradient(to right, var(--bg-color), transparent);
+  background-image: linear-gradient(to right, var(--bg-color), RGBA(255, 255, 255, 0)), url('/images/bring-change.jpg');
 }
 
-.title-section--area-focus p, .title-section--bring-change p {
-  margin-bottom: var(--s1);
+.title-section--area-focus {
+  .nrgi-impact-tag {
+    margin-bottom: var(--s1);
+  }
+
+  p {
+    margin-bottom: var(--s2);
+  }
 }
+
+.title-section--who-we-are {
+  background-size: cover;
+  background-image: url('/images/nrgi-staff.png'); 
+  min-height: 260px;
+  align-items: center;
+}
+
+.title-section--why-nrgi { 
+  min-height: 260px; 
+  align-items: center;
+}
+.title-section--why-nrgi:after { background-image: url('/images/why-nrgi.png'), linear-gradient(to right, var(--bg-color), transparent); }
 
 .change-cards {
   .grid { 

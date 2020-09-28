@@ -10,9 +10,13 @@
     position: absolute;
     width: calc(100% - var(--s3));
     left: 50%;
-    top: 33%;
+    top: 35%;
     transform: translate(-50%, -50%);
     font-size: 12px;
+
+    @media(max-width: 1024px) {
+        font-size: 10px;
+    }
 }
 
 .lines__text {

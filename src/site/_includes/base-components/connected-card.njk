@@ -16,13 +16,16 @@
         {% endfor %}
       </div>
     </div>
-    
-    {% if card.tag_label %}
-    <div class="nrgi-impact-tag">
-      <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
-      <p>{{ card.tag_label }}</p>
-    </div>
-    {% endif %}
-  </div>
-</li>
+    <footer class="stack">
+      
+      {% if card.tag %}
+      <div class="nrgi-impact-tag">
+        <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
+        <p><a target="_blank" href="{{ card.tag.link }}">{{ card.tag.label }}</a></p>
+      </div>
+      {% endif %}
 
+      <button class="button connected-card__button" aria-hidden="true" id="{{ card.heading | slug }}" type="button" data-a11y-dialog-show="{{ card.modal_id }}">{{ card.button.label }}</button>
+    </div>
+  </footer>
+</li>

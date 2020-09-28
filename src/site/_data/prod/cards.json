@@ -1,41 +1,31 @@
 [
   {
     "class": "card--change",
-    "heading": "Multiple modes of engagement",
-    "text": "NGRI delivers applied research, data and analysis, policy advocacy, capacity development, and technical assistance, and serves as a convener of actors working toward reform.",
-    "extra": "<p>NRGI is one many actors working in concert to advence natural resource governance. NGRI delivers applied research, data and analysis, policy advocacy, capacity development, and technical assistance, and serves as a convener of actors working toward reform.</p><p>We focus those intervetions on specific areas of the extractive industries decision chain. Other actors undertake complementary work in development, rule of law and governance, and on other aspects of the decision chain; their work suports and reinforces our own.</p>",
-    "tag_label": "Resource Governance Index drives reform",
-    "button": {
-      "label": "Learn More"
-    }    
-  },
-  {
-    "class": "card--change",
-    "heading": "National players",
-    "text": "We work with agents of change based on an analysis of which actors are best placed to work in alliance to effect particular policy reforms in a country. We address asymmetries of information, access and capacity, and build trust between actors",
-    "extra": 
-      "<p>We address asymmetries of information, acess and capacity, and build trust between actors.</p><p><strong>We emphasize the importance of building the credibility and resilience of civil society organizations, who inform policy reform by serving as intermediaries and amplifiers of citizens' voices and priorities. By building links between accountability actors, including civil society, oversight actors (e.g., parliamentary committees and supreme audit institutions) and the media, we furtherincentivize and sustain reform efforts.</strong></p><p>By building links between accountability actors, including civil society organizations, oversght actord (e.g., parliamentary committees and supreme audit institutions) and media, we further incentivize and sustain reform efforts</p>",
-    "tag_label": "Guinea's road improved mining governance",
-    "button": {
-      "label": "Learn More"
-    }
-  },{
-    "class": "card--change",
-    "heading": "International players",
-    "text": "We work with influential states, regional bodies, multilateral organizations, multi-stakeholder iniatives, and industry actors to develop international norms and standards.",
-    "extra": "<p>At the international level, NRGI engages external influencers which are predisposed to receive and adopt NRGI's evidence-based messaging.</p><p>We work with influential states, regional bodies, multilateral organizations, multi-stakeholder iniatives, and industry actors to develop international norms and standards.</p><p>Policymakers and companies respond to these international cues defining expected and deserable practice, and then signal their intentions and improve their reputations through their policies and commitments.<p>",
-    "tag_label": "A strengthened EITI standard",
-    "button": {
-      "label": "Learn More"
+    "modal_id": "modal-card-5",
+    "heading": "Empowering agents of change",
+    "text": "Collective action in resource-rich countries—when civil society actors, policymakers and media work collaboratively—is the key to achieving and sustaining policy reform. We help those who lack information, access and capacity, and we build trustbetween actors.",
+    "tag": {
+      "label": "DRC communities engage with mining companies",
+      "link": "https://resourcegovernance.org/analysis-tools/publications/drc-communities-engage-multinational-mining-companies"
     }
   },
   {
     "class": "card--change",
-    "heading": "Maximization of benefits, reduction of harms",
-    "text": "Governments that implement policies in line with good practice and citizen prioritie will likely increase benefits and reduce harms from the sector.",
-    "extra": "<p>Governments that implement policies in line with good practice and citizen prioritie will likely increase benefits and reduce harms from the sector.</p><p>Benefits include the availability of revenues for public services and social spending, helping to lift citizens out of poverty, as well increased dialogue and accountability. Harms include the direct impacts of extraction (e.g., corruption, conflict and social and environmental effects), growing inequality, and negative gender-differentiated impacts.</p><p>For direct interventions on sustainable and inclusive development polices, NRGI will rely on the broader ecosystem of actors working on governance and development.</p>",
-    "button": {
-      "label": "Learn More"
+    "modal_id": "modal-card-6",
+    "heading": "Leveraging international influencers",
+    "text": "NRGI multiplies its impact by working with influential states, regional bodies, multilateral organizations, multi-stakeholder initiatives and industry actors to develop international norms and governance standards.",
+    "tag": {
+      "label": "A strengthened EITI standard"
+    }
+  },
+  {
+    "class": "card--change",
+    "modal_id": "modal-card-7",
+    "heading": "Improving the lives of citizens",
+    "text": "When governments implement policy reforms in line with good practice and citizens’ priorities, they reduce poverty and corruption and citizens’ face a more sustainable and resilient future.",
+    "tag": {
+      "label": "Guinea’s road to improved mining governance",
+      "link": "https://resourcegovernance.org/analysis-tools/publications/nrgi-impact-guinea-mining-revenues-publishes-contracts"
     }
   }
 ]

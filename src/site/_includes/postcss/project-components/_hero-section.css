@@ -1,6 +1,16 @@
 .hero-section {
-  min-height: 70vh;
   justify-content: space-between;
+
+  @media (max-width: 500px) { 
+    padding-bottom: var(--s4);
+
+    .hero-section__download-btn {
+      position: absolute;
+      bottom: var(--s1);
+      right: var(--s0);
+      left: var(--s0);
+    }
+  }
 
   h1 {
     font-size: 1.8rem;
@@ -29,7 +39,6 @@
   flex-direction: row;
   z-index: -1;
 
-
   @media (max-width: 850px) {
     width: 100%;
     background-blend-mode: unset;
@@ -38,7 +47,7 @@
 }
 
 .hero-section:after {
-  background-image: url('/images/hero-image.jpg'), linear-gradient(to right, var(--bg-color), transparent);
+  background-image: url('/images/hero-image.jpg'), linear-gradient(to right, var(--bg-color), RGBA(255, 255, 255, 0));
 }
 
 .hero-section__top-bar img { max-width: 8rem; }
@@ -53,17 +62,13 @@
   margin-top: var(--s4);
 }
 
+
+/* 
+TODO:
+Essas customizações vão contra as best practices.
+Com certeza temos outras maneiras de implementar isso, 
+sem manipular a essencia de como funcionam os "vendor_components"
+*/
 .hero-section__content > .center > * + * { margin-top: var(--s1); }
 .hero-section__content .center > *:last-child { padding-top: var(--s2); }
 .hero-section__content .center > section { max-width: calc(var(--s7) + var(--s5)); }
-
-@media (max-width: 500px) { 
-  .hero-section { padding-bottom: var(--s4); }
-
-  .hero-section__top-bar>.center .hero-section__download-btn {
-    position: absolute;
-    bottom: var(--s1);
-    right: var(--s0);
-    left: var(--s0);
-  }
-}
