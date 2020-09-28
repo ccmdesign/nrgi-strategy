@@ -9,10 +9,12 @@
       <div class="nrgi-impact-tag">
         <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
 
-        {% if card.tag.link %} <p><a href="{{ card.tag.link }}">{{ card.tag.label }}</a></p>
-        {% else %} <p>{{ card.tag.label }}</p>
+        {% if card.tag.link %}
+          <p><a target="_blank" href="{{ card.tag.link }}">{{ card.tag.label }}</a></p>
+        {% else %}
+          <p>{{ card.tag.label }}</p>
         {% endif %}
-        
+
       </div>
       {% endif %}
       
