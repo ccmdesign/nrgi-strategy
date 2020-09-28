@@ -17,27 +17,44 @@
   background-color: white;
 }
 
-.title-section--area-focus:after,
-.title-section--where-we-work:after,
-.title-section--why-nrgi:after,
-.title-section--bring-change:after,
-.title-section--who-we-are:after {
-  content: "";
-  background-repeat: no-repeat;
-  background-blend-mode: saturation;
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-size: cover;
-  flex-direction: row;
-  z-index: -1;
+.title-section--area-focus:before,
+.title-section--where-we-work:before,
+.title-section--why-nrgi:before,
+.title-section--bring-change:before {
+    content: "";
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    flex-direction: row;
+    z-index: -2;
 
   @media (max-width: 850px) {
     width: 100%;
-    background-blend-mode: unset;
     opacity: .4;
+  }
+}
+
+.title-section--area-focus:after,
+.title-section--where-we-work:after,
+.title-section--why-nrgi:after,
+.title-section--bring-change:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50.1%;
+    background-image: linear-gradient(to right, var(--bg-color), transparent);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 100% 150%;
+    z-index: -1;
+
+  @media (max-width: 850px) {
+    display: none;
   }
 }
 
@@ -46,19 +63,15 @@
 .title-section--bring-change,
 .title-section--who-we-are { flex-direction: row; }
 
-.title-section--area-focus:after {
-  background-image: linear-gradient(to right, var(--bg-color), RGBA(255, 255, 255, 0)), url(/images/area-of-focus.png);
-}
-
-.title-section--where-we-work:after {
-  background-image: -webkit-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
-  background-image:    -moz-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
-  background-image:     -ms-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
-  background-image:      -o-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
-}
-
-.title-section--bring-change:after {
-  background-image: linear-gradient(to right, var(--bg-color), RGBA(255, 255, 255, 0)), url('/images/bring-change.jpg');
+.title-section--where-we-work:before { background-image: url(/images/where-we-work.jpg); }
+.title-section--bring-change:before { background-image: url('/images/bring-change.jpg'); }
+.title-section--why-nrgi:before { background-image: url('/images/why-nrgi.png'); }
+.title-section--area-focus:before {
+  background-image: url(/images/area-of-focus.png);
+ 
+  @media (max-width: 850px) {
+    background-position: top center;
+  }
 }
 
 .title-section--area-focus {
@@ -82,7 +95,6 @@
   min-height: 260px; 
   align-items: center;
 }
-.title-section--why-nrgi:after { background-image: url('/images/why-nrgi.png'), linear-gradient(to right, var(--bg-color), transparent); }
 
 .change-cards {
   .grid { 
