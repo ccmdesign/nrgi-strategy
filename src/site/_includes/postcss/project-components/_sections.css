@@ -51,10 +51,10 @@
 }
 
 .title-section--where-we-work:after {
-  background-image: -webkit-linear-gradient(to right, var(--bg-color), transparent, url(/images/where-we-work.jpg);
-  background-image:    -moz-linear-gradient(to right, var(--bg-color), transparent, url(/images/where-we-work.jpg);
-  background-image:     -ms-linear-gradient(to right, var(--bg-color), transparent, url(/images/where-we-work.jpg);
-  background-image:      -o-linear-gradient(to right, var(--bg-color), transparent, url(/images/where-we-work.jpg);
+  background-image: -webkit-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
+  background-image:    -moz-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
+  background-image:     -ms-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
+  background-image:      -o-linear-gradient(to right, var(--bg-color), transparent), url(/images/where-we-work.jpg);
 }
 
 .title-section--bring-change:after {
