@@ -27,27 +27,39 @@
 }
 
 .hero-section:after {
-  content: "";
-  background-repeat: no-repeat;
-  background-blend-mode: saturation;
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-size: cover;
-  flex-direction: row;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50.1%;
+    background-image: linear-gradient(to right, var(--bg-color), transparent);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 100% 150%;
+    z-index: -1;
 
   @media (max-width: 850px) {
-    width: 100%;
-    background-blend-mode: unset;
-    opacity: .4;
+    display: none;
   }
 }
 
-.hero-section:after {
-  background-image: url('/images/hero-image.jpg'), linear-gradient(to right, var(--bg-color), RGBA(255, 255, 255, 0));
+.hero-section:before {
+    content: "";
+    background-image: url('/images/hero-image.jpg');
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    flex-direction: row;
+    z-index: -2;
+
+  @media (max-width: 850px) {
+    width: 100%;
+    opacity: .4;
+  }
 }
 
 .hero-section__top-bar img { max-width: 8rem; }
