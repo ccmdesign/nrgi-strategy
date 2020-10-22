@@ -12,7 +12,7 @@
       "link": "https://resourcegovernance.org/analysis-tools/publications/nrgi-impact-improved-contract-transparency-practices-mexico"
     },
     "button": {
-      "label": "Learn More"
+      "label": "Learn more"
     }
   },
   {
@@ -21,38 +21,38 @@
     "heading": "MANAGING REVENUES",
     "text": "Extractive sector revenues are managed in ways that serve long-term public interest and the economic sustainability of public finances, rather than short-term political or private agendas.",
     "extra": "<p>Large, volatile and finite extractive revenues can lead to many problems. In some cases, Dutch disease—the negative consequences that can arise from a spike in the value of a nation’s currency—has stymied industrial development. In others, macroeconomic and budget volatility have contributed to poor private and public investment decisions. Some countries, driven by short-term thinking, instability and conflict, have also consumed excessive portions of resource revenues rather than invest them.</p><p>At NRGI we have leveraged our global research to inform country-specific programming, with our analysis driving technical assistance on <a target=\"_blank\" href=\"https://resourcegovernance.org/analysis-tools/publications/fiscal-sustainability-mongolia-2018\">Mongolia's fiscal sustainability</a>, <a target=\"_blank\" href=\"https://resourcegovernance.org/sites/default/files/documents/uganda_policypaper_web20140505.pdf\">Uganda's fiscal rules</a>, <a target=\"_blank\" href=\"https://resourcegovernance.org/analysis-tools/publications/natural-resource-revenue-sharing\">Indonesia's resource revenue sharing system</a> and <a target=\"_blank\" href=\"https://resourcegovernance.org/analysis-tools/publications/ghana-petroleum-revenue-management-act-back-basics\">Ghana's oil revenue management</a>. NRGI's evolving work on revenue management will focus on <a target=\"_blank\" href=\"https://www.youtube.com/watch?v=WKER4NLvbhQ\">the role of state-owned companies</a> and long-term macroeconomic management of resource-rich economies. This includes the design, evaluation and monitoring of fiscal rules and the strengthening of transparency and oversight of implicated institutions.</p>",
-    "cluster_labels": ["Fiscal rules", "Dept", "State-owned enterprises"],
+    "cluster_labels": ["Fiscal rules", "Debt", "State-owned enterprises"],
     "icon": "connected-card__icon--revenues pulse",
     "tag": {
       "label": "Myanmar’s state-owned companies",
       "link": "https://resourcegovernance.org/analysis-tools/publications/nrgi-impact-myanmar-opaque-proceeds-state-enterprises"
     },
     "button": {
-      "label": "Learn More"
+      "label": "Learn more"
     }
   },
   {
     "class": "connected-card--bottom",
     "modal_id": "modal-card-3",
     "heading": "NAVIGATING THE ENERGY TRANSITION",
-    "text": "Resource-rich countries advance rather than hinder the transition to cleaner energy. Countries rich in strategic minerals do not replicate mis-governance in that subsector.",
-    "extra": "<p>The <a target=\"_blank\" href=\"https://resourcegovernance.org/analysis-tools/collection/resource-governance-and-energy-transition-commentary-series\">transition from fossil fuels</a> to renewable energy is critical for the future of the planet and for resource-rich countries. The current crisis serves as a stark reminder for oil- and gas-producing countries of the volatility and limits of the market and of the need for resilient strategies less dependent on these commodities. Countries that remain dependent on fossil fuel exports could find their economies “stranded.” Those whose extractives sector policies and governance choices undermine the growth of renewables at home risk will face dirty, outmoded domestic energy systems that do not meet their own needs; they will miss out on the potential upsides of transition. In somemineral-producing countries, the energy transition can bring new economic opportunities: the world will increasingly demand the minerals needed to expand electric vehicle, wind and solar technologies. Without attention to good governance and strategy, these countries risk repeating the mistakes of past booms, amplifying corruption and local conflict, and creating bottlenecks to the expansionof clean technology globally.</p><p>We will:</p><p>Support the domestic energy transition in countries rich in fossil fuels.</p><p>Help mineral producing countries meet increased demand for critical minerals via policies that promote sustainable economic benefits for citizens, ensure public oversight and reduce risks of corruption.</p><p>Empower oil- and gas-rich countries to develop and implement extractive-sector policies that reduce dependence on fossil fuels,limit the exposure of citizens to negative economic shocks associated with energy transition, and enhance their prospects to prosper as the world evolves.</p>",
-    "cluster_labels": ["Strategic minerals", "\"Stranded assets\""],
+    "text": "Resource-rich countries advance rather than hinder the transition to cleaner energy. Countries rich in minerals critical to renewable energy do not replicate mis-governance in that subsector.",
+    "extra": "<p>The <a target=\"_blank\" href=\"https://resourcegovernance.org/analysis-tools/collection/resource-governance-and-energy-transition-commentary-series\">transition from fossil fuels</a> to renewable energy is critical for the future of the planet and for resource-rich countries. The current crisis serves as a stark reminder for oil- and gas-producing countries of the volatility and limits of the market and of the need for resilient strategies less dependent on these commodities. Countries that remain dependent on fossil fuel exports could find their economies “stranded.” Those whose extractives sector policies and governance choices undermine the growth of renewables at home risk will face dirty, outmoded domestic energy systems that do not meet their own needs; they will miss out on the potential upsides of transition. In somemineral-producing countries, the energy transition can bring new economic opportunities: the world will increasingly demand the minerals needed to expand electric vehicle, wind and solar technologies. Without attention to good governance and strategy, these countries risk repeating the mistakes of past booms, amplifying corruption and local conflict, and creating bottlenecks to the expansionof clean technology globally.</p><p>We will:</p><ul><li><p>Support the domestic energy transition in countries rich in fossil fuels.</p></li><li><p>Help mineral producing countries meet increased demand for critical minerals via policies that promote sustainable economic benefits for citizens, ensure public oversight and reduce risks of corruption.</p></li><li><p>Empower oil- and gas-rich countries to develop and implement extractive-sector policies that reduce dependence on fossil fuels,limit the exposure of citizens to negative economic shocks associated with energy transition, and enhance their prospects to prosper as the world evolves.</p></li></ul>",
+    "cluster_labels": ["Governance of critical minerals", "Stranded nations", "Domestic energy transition"],
     "icon": "connected-card__icon--energy-transition",
     "button": {
-      "label": "Learn More"
+      "label": "Learn more"
     }
   },
   {
     "class": "connected-card--bottom",
     "modal_id": "modal-card-4",
-    "heading": "ADDRESSING CORRUPTION AND \"STATE CAPTURE\"",
+    "heading": "ADDRESSING CORRUPTION AND STATE CAPTURE",
     "text": "Governments and companies conduct sector operations in ways that reduce opportunities for corruption and capture, and anticorruption actors tackle extractive sector corruption more effectively.",
     "extra": "<p>Resource-rich countries exhibit significantly higher levels of overall corruption, and the extractive sector has proven especially vulnerable. Powerful private sector players often “capture” and manipulate entire industries, institutions and processes by shaping regulations for their own benefit. State capture and corruption can devastate both extractive-sector and macroeconomic performance, causing investments to fail, revenues to disappear, and inequality and poverty to worsen. Citizens who don’t benefit from their countries’ resource endowments lose faith in their government; this undermines democracy and contributes to political fragility.</p><p>NRGI will address the extractive sector’s capture and corruption challenges. We will examine the wider national and international dynamics, and the political and economic forces at play. Rather than investigate specific cases of corruption, we will undertake evidence- and case-based analysis, and assess governance risk factors to help a range of players respond with precision.</p>",
-    "cluster_labels": ["\"Corruption Risks\"", "\"State capture by elites\""],
+    "cluster_labels": ["Corruption risks", "State capture by elites"],
     "icon": "connected-card__icon--corruption",
     "button": {
-      "label": "Learn More"
+      "label": "Learn more"
     }
   }
 ]

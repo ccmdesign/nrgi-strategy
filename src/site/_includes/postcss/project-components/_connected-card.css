@@ -30,7 +30,7 @@
 
 	.cluster {
 		overflow: visible;
-		margin: var(--s-1) 0 var(--s1);
+		margin: var(--s-1) 0 var(--s2);
 	}
 
 	.cluster > * {
