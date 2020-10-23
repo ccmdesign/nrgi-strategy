@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.your-class').slick({
+	$('.quotes-carousel').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
