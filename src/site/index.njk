@@ -154,7 +154,7 @@ layout: layouts/base.njk
 <section class="text-section shadow-section">
   <div class="center center--narrow stack">
     <p>NRGI blends a targeted focus on resource-rich countries with a responsive approach to seizing reform opportunities. The challenges we seek to address are large and complex, so we work in partnership to amplify and leverage the work of others. To sustain reform beyond our interventions, we identify and empower change agents inside and outside of government. We have processes for learning and adaptation, to ensure our continued relevance, responsiveness and impact.</p>
-    </div>
+  </div>
 </section>
 
 <section class="text-section quote-section">
@@ -162,7 +162,11 @@ layout: layouts/base.njk
     <h3 class="color:accent">What people say about NRGI</h3>
 
     <blockquote>
-      <p>NRGI recognizes that the mining industry is critical to modern life but that there are changes that the industry can make that will help to reduce its negative impacts. NRGI also gives the impression that it is open to learning from industry in a way that other NGOs do not. This builds trust and makes for a more open conversation.”</p>
+      <div class="quotes-carousel">
+        {% for quote in quotes %}
+        <p>{{ quote }}</p>
+        {% endfor %}
+      </div>
       <p><small>Quotations taken from respondents to anonymous stakeholder surveys and independent evaluations</small></p>
     </blockquote>
   </div>
