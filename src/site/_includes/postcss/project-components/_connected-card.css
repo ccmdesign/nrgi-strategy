@@ -133,21 +133,3 @@
 		var(--s2);
 	}
 }
-
-@media(min-width: 769px) {
-	.connected-card__icon.pulse {
-		animation: pulse 2s infinite;
-	}
-}
-
-@keyframes pulse {
-	0% {
-		/*transform: scale(0.98);*/
-		box-shadow: 0 0 0 0 rgb(233 103 71);
-	}
-
-	100% {
-		/*transform: scale(1);*/
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
-}

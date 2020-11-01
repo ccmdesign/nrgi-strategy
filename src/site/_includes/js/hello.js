@@ -35,4 +35,4 @@ const el4 = document.getElementById('modal-card-4');
 const dialog4 = new A11yDialog(el4);
 
 // Add hover listener to connected cards on init
-addHoverListener('.pulse')
+addHoverListener('.hover');
