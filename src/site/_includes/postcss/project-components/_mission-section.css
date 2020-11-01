@@ -1,3 +1,9 @@
+.mission-section {
+	.nrgi-impact-tag {
+		margin-top: var(--s3);
+	}
+}
+
 .mission-section__missions-container {
 	@media(min-width: 425px) {
 		display: flex;
@@ -6,7 +12,7 @@
 
 .mission-section__missions {
 	margin-top: var(--s1);
-	
+
 	@media(min-width: 425px) {
 		width: 50%;
 	}
