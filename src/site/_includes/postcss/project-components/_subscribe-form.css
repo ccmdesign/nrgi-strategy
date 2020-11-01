@@ -1,6 +1,6 @@
 .subscribe-form {
   display: flex;
-  margin-bottom: var(--s1);
+  flex-direction: column;
 
   @media (max-width: 500px) {
     width: 100%; 
@@ -21,11 +21,13 @@
   }
 
   input[type="submit"] {
+    margin-top: var(--s-1);
     background-color: var(--accent-color); 
     text-transform: uppercase;
     font-size: .8rem;
     font-weight: 500;
     color: white;
     letter-spacing: .4px;
+    border: none;
   }
 }

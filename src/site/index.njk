@@ -183,7 +183,7 @@ layout: layouts/base.njk
 <footer class="footer base-section">
   <div class="center center--wrapper">
     <div>
-      <form class="subscribe-form" action=""><input type="text" placeholder="Sign up to receive updates"><input type="submit" value="Subscribe"></form>
+      <button class="footer__subscribe-button" data-a11y-dialog-show="subscribe">Subscribe</button>
       <div class="social-media">
         <a href="https://www.facebook.com/OpenNorth.NordOuvert" target="_blank">{% include 'icons/facebook.njk' %}</a>
         <a href="https://www.linkedin.com/company/open-north/" target="_blank">{% include 'icons/linkedin.njk' %}</a>
@@ -204,4 +204,14 @@ layout: layouts/base.njk
 {% for card in cards %}
 {% include '_modal-window.njk' %}
 {% endfor %}
+
+<div id="subscribe" class="dialog-window">
+  <div class="overlay" tabindex="-1" data-a11y-dialog-hide></div>
+  <dialog class="modal-window" aria-labelledby="teste">
+    <button class="dialog__close" type="button" data-a11y-dialog-hide aria-label="Close this dialog window">
+      <i class="material-icons">close</i>
+    </button>
+    <form class="subscribe-form" action=""><input type="text" placeholder="Sign up to receive updates"><input type="submit" value="Subscribe"></form>
+  </dialog>
+</div>
 
