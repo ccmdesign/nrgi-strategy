@@ -17,30 +17,33 @@ layout: layouts/base.njk
         <h1>Toward a resilient and sustainable future</h1>
       </hgroup>
       <section>
-        <p>For the one billion people living in poverty in resource-rich countries, the management of oil, gas and minerals can either improve or degrade the quality of life. The coronavirus pandemic and its devastating economic impacts present an unprecedented opportunity to address this decades-old challenge.</p>
-        <p style="margin-top: var(--s1)">The Natural Resource Governance Institute supports countries to recover and to improve the lives of citizens—now and in the future.</p>
+        <p>For the one billion people living in poverty in resource-rich countries, the management of oil, gas and minerals can either improve or degrade the quality of life. The accelerating climate crisis and the devastating economic impacts of the coronavirus pandemic present an unprecedented opportunity to address this decades-old challenge.</p>
+        <p style="margin-top: var(--s1)">The Natural Resource Governance Institute supports countries to improve the lives of citizens - now and in the future.</p>
       </section>
-      <a class="button button--white-color button--secondary">Learn More</a>
-
-      <div class="nrgi-impact-tag">
-        <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
-        <p>Click on these icons to learn about related achievements in NRGI’s last strategy period</p>
-      </div>
+      {# <a class="button button--white-color button--secondary">Learn More</a> #}
     </div>
   </div>
 </header>
 
 <section class="mission-section text-section">
   <div class="center">
-    <p><strong>We are an independent, global policy analysis and advocacy institute, working with partners to ensure that:</strong></p>
-    <ul>
-      <li>
+    <h1 class="mission-section__title">OUR MISSION</h1>
+    <h3><strong>We are an independent, global policy analysis and advocacy institute, working with partners to ensure that:</strong></h3>
+    <div class="mission-section__missions-container">
+      <div class="mission-section__missions mission-section__missions--oil">
+        <div class="mission-section__icon"></div>
         <p>Countries rich in oil, gas and minerals achieve sustainable, inclusive development.</p>
-      </li>
-      <li>
+      </div>
+      <div class="mission-section__missions mission-section__missions--benefits">
+        <div class="mission-section__icon"></div>
         <p>People receive lasting benefits—and experience reduced harms—from the extractive sector.</p>
-      </li>
-    </ul>
+      </div>
+    </div>
+
+    <div class="nrgi-impact-tag">
+      <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
+      <p><a href="https://resourcegovernance.org/analysis-tools/publications/nrgi-impact-stories" target="_blank">Click on these icons to learn about related achievements in NRGI’s last strategy period</a></p>
+    </div>
   </div>
 </section>
 
@@ -54,7 +57,7 @@ layout: layouts/base.njk
     <p>We believe in rigorous, evidence-driven, dialogue-based decision-making. Our work with in-country reformers and engagement with international influencers inform and reinforce one another.</p>
     <div class="nrgi-impact-tag">
       <div class="nrgi-impact-tag__tag"><span>NRGI</span><span>Impact</span></div>
-      <p>NRGI Impact Resource Governance Index drives reform</p>
+      <p><a href="https://resourcegovernance.org/analysis-tools/publications/nrgi-impact-resource-governance-index-drives-reform" target="_blank">Resource Governance Index drives reform</a></p>
     </div>
   </div>
 </section>
@@ -62,8 +65,8 @@ layout: layouts/base.njk
 <section class="title-section--area-focus title-section">
   <div class="center stack">
     <h1>Our expertise</h1>
-    <p>NRGI focuses on reform of the most critical governance elements of the extractives sector. We work to ensure that citizens can get a good deal for their countries’ 
-    resources and that authorities manage revenue effectivelyand accountably. We willhelp countries to navigate the energy transition, and to eliminate capture and corruption.</p>
+    <p>NRGI focuses on governance reforms most critical to economic ad environmental sustainability. We work to ensure that citizens can get a good deal for their countries’ 
+    resources and that authorities manage revenue effectively and accountably. We will help countries to navigate the energy transition, and to eliminate capture and corruption. Learn more about our areas of focus:</p>
   </div>
 </section>
 
@@ -76,9 +79,6 @@ layout: layouts/base.njk
 
   <div class="lines">
     <div class="lines__wrapper">
-      <div class="lines__text-wrapper">
-        <h1 class="lines__text">Across these two areas, we will also address particular aspects of the energy transition and of corruption and "state capture".</h1>
-      </div>
       <div class="lines__straight-line lines__straight-line--right"></div>
       <div class="lines__straight-line lines__straight-line--left"></div>
       <div class="lines__line lines__line--top-left"></div>
@@ -98,7 +98,7 @@ layout: layouts/base.njk
 <section class="title-section--where-we-work title-section">
   <div class="center stack">
     <h1>Where we work</h1>
-    <p>NRGI works in countries where government actors are open to reform and where accountability actors can inform and support change. Our in-country presence in multiple resource-rich countries is unique among actors in natural resource governance.</p>
+    <p>NRGI works in countries where government actors are open to reform and where accountability actors can inform and support change. Our in-country presence in multiple resource-rich countries enables us to rapidly respond to needs and opportunities.</p>
   </div>
 </section>
 
@@ -107,7 +107,7 @@ layout: layouts/base.njk
     <img class="map" src="/images/nrgi-worldmap-where-we-work.svg" alt="">
     <div class="map-tags center">
       <div class="map-tags__countries">
-        <h4>Focus Countries</h4>
+        <h4>Focus countries</h4>
         <div class="cluster">
           <div>
             {% for country in countries %}
@@ -117,7 +117,7 @@ layout: layouts/base.njk
         </div>  
       </div>
       <div class="map-tags__regions">
-        <h4>Focus Regions</h4>
+        <h4>Focus regions</h4>
         <div class="cluster">
           <div>
             <span class="map-tags__tag">Eurasia</span>
@@ -131,7 +131,7 @@ layout: layouts/base.njk
 
 <section class="text-section">
   <div class="center center--narrow">
-    <p><strong>NRGI’s country programs span five regions and a range of political, socioeconomic and developmental contexts. </strong>We are responsive to local circumstances and agendas, leveraging this diversity for learning and sharing lessons across our programs and with the wider resource governance field. We work in a circumscribednumber of countries because addressing complex governance challenges requires sustained, in-depth engagement.</p>
+    <p><strong>NRGI’s country programs span five regions and a range of political, socioeconomic and developmental contexts. </strong>We are responsive to local circumstances and agendas, leveraging this diversity for learning and sharing lessons across our programs and with the wider resource governance field. We work in a limited number of countries because addressing complex governance challenges requires sustained, in-depth engagement.</p>
   </div>
 </section>
 
@@ -151,13 +151,13 @@ layout: layouts/base.njk
 </section>
 
 <section class="title-section--why-nrgi title-section">
-  <h1>Why NRGI</h1>
+  <h1>Why NRGI?</h1>
 </section>
 
 <section class="text-section shadow-section">
   <div class="center center--narrow stack">
-    <p>NRGI blends a targeted focus on resource-rich countries with a responsive approach to seize reform opportunities. The challenges we seek to address are large and complex, so we work in partnership to amplify and leverage the work of others. To sustain reform beyond our interventions, we identify and empower change agents inside and outside of government. We have processes for learning and adaptation, to ensure our continued relevance, responsiveness and impact.</p>
-    </div>
+    <p>NRGI blends a targeted focus on resource-rich countries with a responsive approach to seizing reform opportunities. The challenges we seek to address are large and complex, so we work in partnership to amplify and leverage the work of others. To sustain reform beyond our interventions, we identify and empower change agents inside and outside of government. We have processes for learning and adaptation, to ensure our continued relevance, responsiveness and impact.</p>
+  </div>
 </section>
 
 <section class="text-section quote-section">
@@ -165,28 +165,33 @@ layout: layouts/base.njk
     <h3 class="color:accent">What people say about NRGI</h3>
 
     <blockquote>
-      <p>NRGI recognizes that the mining industry is critical to modern life but that there are changes that the industry can make that will help to reduce its negative impacts. NRGI also gives the impression that it is open to learning from industry in a way that other NGOs do not. This builds trust and makes for a more open conversation.”</p>
+      <div class="quotes-carousel">
+        {% for quote in quotes %}
+        <p>{{ quote }}</p>
+        {% endfor %}
+      </div>
       <p><small>Quotations taken from respondents to anonymous stakeholder surveys and independent evaluations</small></p>
     </blockquote>
   </div>
 </section>
 
 <section class="base-section text-align:center shadow-section" style="--padding: var(--s1)">
-  <a href="#" class="button button--primary button--accent-color">Download full strategy</a>
+  <a href="https://resourcegovernance.org/sites/default/files/documents/nrgi-strategy-2020-2025.pdf" target="_blank" class="button button--primary button--accent-color">Download full strategy</a>
 </section>
 
 
 <footer class="footer base-section">
   <div class="center center--wrapper">
     <div>
-      <form class="subscribe-form" action=""><input type="text" placeholder="Sign up to receive updates"><input type="submit" value="Subscribe"></form>
+      <a href="https://www.opennorth.ca/newsletter/" target="_blank">
+        <button class="footer__subscribe-button">Subscribe</button>
+      </a>
       <div class="social-media">
-        <a href="#">{% include 'icons/facebook.njk' %}</a>
-        <a href="#">{% include 'icons/linkedin.njk' %}</a>
-        <a href="#">{% include 'icons/twitter.njk' %}</a>
-        <a href="#">{% include 'icons/youtube.njk' %}</a>
+        <a href="https://www.facebook.com/OpenNorth.NordOuvert" target="_blank">{% include 'icons/facebook.njk' %}</a>
+        <a href="https://www.linkedin.com/company/open-north/" target="_blank">{% include 'icons/linkedin.njk' %}</a>
+        <a href="https://twitter.com/opennorth" target="_blank">{% include 'icons/twitter.njk' %}</a>
       </div>
-      <a href="#" class="color:white">resourcegovernance.org</a>
+      <a href="https://resourcegovernance.org/" target="_blank" class="color:white">resourcegovernance.org</a>
     </div>
   </div>
 </footer>
@@ -201,4 +206,3 @@ layout: layouts/base.njk
 {% for card in cards %}
 {% include '_modal-window.njk' %}
 {% endfor %}
-

@@ -74,6 +74,7 @@
   margin-top: var(--s4);
 }
 
+.hero-section .nrgi-impact-tag a { color: hsla(var(--white-hsl), 1); }
 
 /* 
 TODO:

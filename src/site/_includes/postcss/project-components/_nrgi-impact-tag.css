@@ -9,10 +9,12 @@
   p {
     font-size: .8rem;
     font-style: italic;
-    opacity: .5;
+    opacity: .7;
     font-weight: 300;
     letter-spacing: .4px;
   }
+
+  a { color: hsla(var(--black-hsl), 1); }
 }
 
 .nrgi-impact-tag__tag {

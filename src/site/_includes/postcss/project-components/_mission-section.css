@@ -1,0 +1,63 @@
+.mission-section {
+	.nrgi-impact-tag {
+		margin-top: var(--s3);
+	}
+}
+
+.mission-section__missions-container {
+	@media(min-width: 425px) {
+		display: flex;
+	}
+}
+
+.mission-section__missions {
+	margin-top: var(--s1);
+
+	@media(min-width: 425px) {
+		width: 50%;
+	}
+}
+
+.mission-section__missions--oil {
+	padding-right: var(--s1);
+
+	.mission-section__icon {
+		background: url(/images/oil-icon.svg) 50% 50% no-repeat;
+	}
+
+	@media(max-width: 425px) {
+		padding-left: var(--s1);
+	}
+}
+
+.mission-section__missions--benefits {
+	padding-left: var(--s1);
+
+	.mission-section__icon {
+		background: url(/images/benefits-icon.svg) 50% 50% no-repeat;
+	}
+
+	@media(max-width: 425px) {
+		padding-right: var(--s1);
+	}
+}
+
+.mission-section__icon {
+	height: var(--s4);
+}
+
+.mission-section p {
+	font-size: 15px;
+}
+
+.mission-section h3 {
+	@media(max-width: 425px) {
+		font-size: 16px;
+	}
+}
+
+.mission-section__title {
+	text-align: center;
+	margin-bottom: var(--s1);
+	color: var(--accent-color);
+}

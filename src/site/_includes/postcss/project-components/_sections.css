@@ -22,19 +22,15 @@
 .title-section--why-nrgi:before,
 .title-section--bring-change:before {
     content: "";
-    width: 50%;
     position: absolute;
+    width: 50%;
     right: 0;
     top: 0;
     bottom: 0;
     background-size: cover;
-    flex-direction: row;
-    z-index: -2;
-
-  @media (max-width: 850px) {
-    width: 100%;
-    opacity: .4;
-  }
+    z-index: -1;
+    background-image: linear-gradient(to right, var(--bg-color), transparent);
+    @media (max-width: 850px) { width: 100%; }
 }
 
 .title-section--area-focus:after,
@@ -46,15 +42,14 @@
     right: 0;
     top: 0;
     bottom: 0;
-    width: 50.1%;
-    background-image: linear-gradient(to right, var(--bg-color), transparent);
+    width: 50%;
     background-repeat: no-repeat;
-    background-position: center left;
-    background-size: 100% 150%;
-    z-index: -1;
+    background-position: right center;
+    background-size: cover;
+    z-index: -2;
 
-  @media (max-width: 850px) {
-    display: none;
+  @media (max-width: 850px) { 
+    width: 100%;
   }
 }
 
@@ -63,15 +58,16 @@
 .title-section--bring-change,
 .title-section--who-we-are { flex-direction: row; }
 
-.title-section--where-we-work:before { background-image: url(/images/where-we-work.jpg); }
-.title-section--bring-change:before { background-image: url('/images/bring-change.jpg'); }
-.title-section--why-nrgi:before { background-image: url('/images/why-nrgi.png'); }
-.title-section--area-focus:before {
-  background-image: url(/images/area-of-focus.png);
- 
-  @media (max-width: 850px) {
-    background-position: top center;
-  }
+.title-section--area-focus:after {
+  background-image: url('/images/area-of-focus.png');
+}
+
+.title-section--where-we-work:after {
+  background-image: url('/images/where-we-work.jpg');
+}
+
+.title-section--bring-change:after {
+  background-image: url('/images/bring-change.jpg');
 }
 
 .title-section--area-focus {
@@ -95,6 +91,8 @@
   min-height: 260px; 
   align-items: center;
 }
+
+.title-section--why-nrgi:after { background-image: linear-gradient(to right, var(--bg-color), transparent), url('/images/why-nrgi.png'); }
 
 .change-cards {
   .grid { 
