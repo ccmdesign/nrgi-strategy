@@ -6,27 +6,6 @@
     flex-wrap: wrap;
 }
 
-.lines__text-wrapper {
-    position: absolute;
-    width: calc(100% - var(--s3));
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
-
-    @media(max-width: 1024px) {
-        font-size: 10px;
-    }
-}
-
-.lines__text {
-    font-weight: 100;
-    font-style: italic;
-    text-align: center;
-    color: #4c4c4c;
-    transition: .5s ease-out;
-}
-
 .lines__line,
 .lines__straight-line {
     border: solid var(--accent-color);
@@ -85,10 +64,6 @@
 
     .base-card__body {
         padding: 40px 25px 145px;
-    }
-
-    .between-lines-text {
-        font-size: 10px;
     }
 }
 

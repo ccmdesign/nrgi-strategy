@@ -17,6 +17,10 @@
       </div>
     </div>
     <footer class="stack">
+
+      <button class="button connected-card__button" aria-hidden="true" id="{{ card.heading | slug }}" type="button" data-a11y-dialog-show="{{ card.modal_id }}">
+        {{ card.button.label }}
+      </button>
       
       {% if card.tag %}
       <div class="nrgi-impact-tag">
@@ -24,8 +28,6 @@
         <p><a target="_blank" href="{{ card.tag.link }}">{{ card.tag.label }}</a></p>
       </div>
       {% endif %}
-
-      <button class="button connected-card__button" aria-hidden="true" id="{{ card.heading | slug }}" type="button" data-a11y-dialog-show="{{ card.modal_id }}">{{ card.button.label }}</button>
-    </div>
+      
   </footer>
 </li>
