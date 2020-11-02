@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('.quotes-carousel').slick({
 		autoplay: true,
-		autoplaySpeed: 15000,
+		autoplaySpeed: 5000,
 		arrows: false
 	});
 });
