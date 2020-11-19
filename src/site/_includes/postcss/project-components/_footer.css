@@ -2,15 +2,6 @@
   --padding: var(--s1);
   background-color: var(--base-color);
   
-  .center > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-    @media (max-width: 850px) {  flex-direction: column; }
-  }
-
   .social-media {
     @media (max-width: 850px) {  margin: var(--s0) 0 }
   }
@@ -25,4 +16,21 @@
     color: white;
     letter-spacing: .4px;
   }
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 850px) {  flex-direction: column; }
+}
+
+.footer__content > a { flex: 1; }
+.footer__content > a:last-child { text-align: right; }
+
+.footer__content > .social-media { 
+  flex: 4; 
+  text-align: center;
 }
