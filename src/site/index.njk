@@ -167,10 +167,12 @@ layout: layouts/base.njk
     <blockquote>
       <div class="quotes-carousel">
         {% for quote in quotes %}
-        <p>{{ quote }}</p>
+        <div>
+        <p>{{ quote.text }}</p>
+        <p><small>{{ quote.author }}</small></p>
+        </div>
         {% endfor %}
       </div>
-      <p><small>Quotations taken from respondents to anonymous stakeholder surveys and independent evaluations</small></p>
     </blockquote>
   </div>
 </section>
