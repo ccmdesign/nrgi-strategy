@@ -1,6 +1,12 @@
 <li class="base-card card {{ card.class | d('') }}">
   <div class="base-card__content">
-    <h2><a href="#" aria-describedby="{{ card.heading | slug }}">{{ card.heading }}</a></h2>
+    <h2>
+      {% if card.button %}
+      <a data-a11y-dialog-show="{{ card.modal_id }}" aria-describedby="{{ card.heading | slug }}">{{ card.heading }}</a>
+      {% else %}
+      <a target="_blank" href="{{ card.tag.link }}" aria-describedby="{{ card.heading | slug }}">{{ card.heading }}</a>
+      {% endif %}
+    </h2>
 
     <p>{{ card.text }}</p>
     

@@ -2,8 +2,8 @@
   <div class="connected-card__content">
 
     <div class="connected-card__icon {{ card.icon }}"></div>
-
-    <h2><a href="#" aria-describedby="{{ card.heading | slug }}">{{ card.heading }}</a></h2>
+    
+    <h2><a data-a11y-dialog-show="{{ card.modal_id }}" aria-describedby="{{ card.heading | slug }}">{{ card.heading }}</a></h2>
 
     <h5 class="connected-card__subheading">Objective</h5>
 
